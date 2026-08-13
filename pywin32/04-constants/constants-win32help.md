@@ -1,0 +1,172 @@
+# win32help 常量（共 168 个）
+
+> 来源 https://mhammond.github.io/pywin32/win32help_<CONST>.html
+
+- **HHACT_BACK** — --- ## HHACT_BACK const win32help.HHACT_BACK;
+- **HHACT_CONTRACT** — --- ## HHACT_CONTRACT const win32help.HHACT_CONTRACT;
+- **HHACT_CUSTOMIZE** — --- ## HHACT_CUSTOMIZE const win32help.HHACT_CUSTOMIZE;
+- **HHACT_EXPAND** — --- ## HHACT_EXPAND const win32help.HHACT_EXPAND;
+- **HHACT_FORWARD** — --- ## HHACT_FORWARD const win32help.HHACT_FORWARD;
+- **HHACT_HIGHLIGHT** — --- ## HHACT_HIGHLIGHT const win32help.HHACT_HIGHLIGHT;
+- **HHACT_HOME** — --- ## HHACT_HOME const win32help.HHACT_HOME;
+- **HHACT_JUMP1** — --- ## HHACT_JUMP1 const win32help.HHACT_JUMP1;
+- **HHACT_JUMP2** — --- ## HHACT_JUMP2 const win32help.HHACT_JUMP2;
+- **HHACT_LAST_ENUM** — --- ## HHACT_LAST_ENUM const win32help.HHACT_LAST_ENUM;
+- **HHACT_NOTES** — --- ## HHACT_NOTES const win32help.HHACT_NOTES;
+- **HHACT_OPTIONS** — --- ## HHACT_OPTIONS const win32help.HHACT_OPTIONS;
+- **HHACT_PRINT** — --- ## HHACT_PRINT const win32help.HHACT_PRINT;
+- **HHACT_REFRESH** — --- ## HHACT_REFRESH const win32help.HHACT_REFRESH;
+- **HHACT_STOP** — --- ## HHACT_STOP const win32help.HHACT_STOP;
+- **HHACT_SYNC** — --- ## HHACT_SYNC const win32help.HHACT_SYNC;
+- **HHACT_TAB_CONTENTS** — --- ## HHACT_TAB_CONTENTS const win32help.HHACT_TAB_CONTENTS;
+- **HHACT_TAB_FAVORITES** — --- ## HHACT_TAB_FAVORITES const win32help.HHACT_TAB_FAVORITES;
+- **HHACT_TAB_HISTORY** — --- ## HHACT_TAB_HISTORY const win32help.HHACT_TAB_HISTORY;
+- **HHACT_TAB_INDEX** — --- ## HHACT_TAB_INDEX const win32help.HHACT_TAB_INDEX;
+- **HHACT_TAB_SEARCH** — --- ## HHACT_TAB_SEARCH const win32help.HHACT_TAB_SEARCH;
+- **HHACT_TOC_NEXT** — --- ## HHACT_TOC_NEXT const win32help.HHACT_TOC_NEXT;
+- **HHACT_TOC_PREV** — --- ## HHACT_TOC_PREV const win32help.HHACT_TOC_PREV;
+- **HHACT_ZOOM** — --- ## HHACT_ZOOM const win32help.HHACT_ZOOM;
+- **HHN_FIRST** — --- ## HHN_FIRST const win32help.HHN_FIRST;
+- **HHN_LAST** — --- ## HHN_LAST const win32help.HHN_LAST;
+- **HHN_NAVCOMPLETE** — --- ## HHN_NAVCOMPLETE const win32help.HHN_NAVCOMPLETE;
+- **HHN_TRACK** — --- ## HHN_TRACK const win32help.HHN_TRACK;
+- **HHN_WINDOW_CREATE** — --- ## HHN_WINDOW_CREATE const win32help.HHN_WINDOW_CREATE;
+- **HHWIN_BUTTON_BACK** — --- ## HHWIN_BUTTON_BACK const win32help.HHWIN_BUTTON_BACK; Back button
+- **HHWIN_BUTTON_BROWSE_BCK** — --- ## HHWIN_BUTTON_BROWSE_BCK const win32help.HHWIN_BUTTON_BROWSE_BCK; not implemented
+- **HHWIN_BUTTON_BROWSE_FWD** — --- ## HHWIN_BUTTON_BROWSE_FWD const win32help.HHWIN_BUTTON_BROWSE_FWD; not implemented
+- **HHWIN_BUTTON_CONTENTS** — --- ## HHWIN_BUTTON_CONTENTS const win32help.HHWIN_BUTTON_CONTENTS; not implemented
+- **HHWIN_BUTTON_EXPAND** — --- ## HHWIN_BUTTON_EXPAND const win32help.HHWIN_BUTTON_EXPAND; Expand/contract button
+- **HHWIN_BUTTON_FAVORITES** — --- ## HHWIN_BUTTON_FAVORITES const win32help.HHWIN_BUTTON_FAVORITES; not implemented
+- **HHWIN_BUTTON_FORWARD** — --- ## HHWIN_BUTTON_FORWARD const win32help.HHWIN_BUTTON_FORWARD; Forward button
+- **HHWIN_BUTTON_HISTORY** — --- ## HHWIN_BUTTON_HISTORY const win32help.HHWIN_BUTTON_HISTORY; not implemented
+- **HHWIN_BUTTON_HOME** — --- ## HHWIN_BUTTON_HOME const win32help.HHWIN_BUTTON_HOME; Home button
+- **HHWIN_BUTTON_INDEX** — --- ## HHWIN_BUTTON_INDEX const win32help.HHWIN_BUTTON_INDEX; not implemented
+- **HHWIN_BUTTON_JUMP1** — --- ## HHWIN_BUTTON_JUMP1 const win32help.HHWIN_BUTTON_JUMP1;
+- **HHWIN_BUTTON_JUMP2** — --- ## HHWIN_BUTTON_JUMP2 const win32help.HHWIN_BUTTON_JUMP2;
+- **HHWIN_BUTTON_NOTES** — --- ## HHWIN_BUTTON_NOTES const win32help.HHWIN_BUTTON_NOTES; not implemented
+- **HHWIN_BUTTON_OPTIONS** — --- ## HHWIN_BUTTON_OPTIONS const win32help.HHWIN_BUTTON_OPTIONS; Options button
+- **HHWIN_BUTTON_PRINT** — --- ## HHWIN_BUTTON_PRINT const win32help.HHWIN_BUTTON_PRINT; Print button
+- **HHWIN_BUTTON_REFRESH** — --- ## HHWIN_BUTTON_REFRESH const win32help.HHWIN_BUTTON_REFRESH; Refresh button
+- **HHWIN_BUTTON_SEARCH** — --- ## HHWIN_BUTTON_SEARCH const win32help.HHWIN_BUTTON_SEARCH; not implemented
+- **HHWIN_BUTTON_STOP** — --- ## HHWIN_BUTTON_STOP const win32help.HHWIN_BUTTON_STOP; Stop button
+- **HHWIN_BUTTON_SYNC** — --- ## HHWIN_BUTTON_SYNC const win32help.HHWIN_BUTTON_SYNC; Sync button
+- **HHWIN_BUTTON_TOC_NEXT** — --- ## HHWIN_BUTTON_TOC_NEXT const win32help.HHWIN_BUTTON_TOC_NEXT;
+- **HHWIN_BUTTON_TOC_PREV** — --- ## HHWIN_BUTTON_TOC_PREV const win32help.HHWIN_BUTTON_TOC_PREV;
+- **HHWIN_BUTTON_ZOOM** — --- ## HHWIN_BUTTON_ZOOM const win32help.HHWIN_BUTTON_ZOOM;
+- **HHWIN_DEF_BUTTONS** — --- ## HHWIN_DEF_BUTTONS const win32help.HHWIN_DEF_BUTTONS;
+- **HHWIN_NAVTAB_BOTTOM** — --- ## HHWIN_NAVTAB_BOTTOM const win32help.HHWIN_NAVTAB_BOTTOM;
+- **HHWIN_NAVTAB_LEFT** — --- ## HHWIN_NAVTAB_LEFT const win32help.HHWIN_NAVTAB_LEFT;
+- **HHWIN_NAVTAB_TOP** — --- ## HHWIN_NAVTAB_TOP const win32help.HHWIN_NAVTAB_TOP;
+- **HHWIN_PARAM_CUR_TAB** — --- ## HHWIN_PARAM_CUR_TAB const win32help.HHWIN_PARAM_CUR_TAB; valid curNavType
+- **HHWIN_PARAM_EXPANSION** — --- ## HHWIN_PARAM_EXPANSION const win32help.HHWIN_PARAM_EXPANSION; valid notExpanded
+- **HHWIN_PARAM_EXSTYLES** — --- ## HHWIN_PARAM_EXSTYLES const win32help.HHWIN_PARAM_EXSTYLES; valid exStyles
+- **HHWIN_PARAM_HISTORY_COUNT** — --- ## HHWIN_PARAM_HISTORY_COUNT const win32help.HHWIN_PARAM_HISTORY_COUNT; valid cHistory
+- **HHWIN_PARAM_INFOTYPES** — --- ## HHWIN_PARAM_INFOTYPES const win32help.HHWIN_PARAM_INFOTYPES; valid apInfoTypes
+- **HHWIN_PARAM_NAV_WIDTH** — --- ## HHWIN_PARAM_NAV_WIDTH const win32help.HHWIN_PARAM_NAV_WIDTH; valid navWidth
+- **HHWIN_PARAM_PROPERTIES** — --- ## HHWIN_PARAM_PROPERTIES const win32help.HHWIN_PARAM_PROPERTIES; valid winProperties
+- **HHWIN_PARAM_RECT** — --- ## HHWIN_PARAM_RECT const win32help.HHWIN_PARAM_RECT; valid windowPos
+- **HHWIN_PARAM_SHOWSTATE** — --- ## HHWIN_PARAM_SHOWSTATE const win32help.HHWIN_PARAM_SHOWSTATE; valid showState
+- **HHWIN_PARAM_STYLES** — --- ## HHWIN_PARAM_STYLES const win32help.HHWIN_PARAM_STYLES; valid styles
+- **HHWIN_PARAM_TABORDER** — --- ## HHWIN_PARAM_TABORDER const win32help.HHWIN_PARAM_TABORDER; valid taborder
+- **HHWIN_PARAM_TABPOS** — --- ## HHWIN_PARAM_TABPOS const win32help.HHWIN_PARAM_TABPOS; valid tabpos
+- **HHWIN_PARAM_TB_FLAGS** — --- ## HHWIN_PARAM_TB_FLAGS const win32help.HHWIN_PARAM_TB_FLAGS; valid toolBarFlags
+- **HHWIN_PROP_AUTO_SYNC** — --- ## HHWIN_PROP_AUTO_SYNC const win32help.HHWIN_PROP_AUTO_SYNC; automatically ssync contents and index
+- **HHWIN_PROP_CHANGE_TITLE** — --- ## HHWIN_PROP_CHANGE_TITLE const win32help.HHWIN_PROP_CHANGE_TITLE; Put current HTML title in title bar
+- **HHWIN_PROP_MENU** — --- ## HHWIN_PROP_MENU const win32help.HHWIN_PROP_MENU; Menu
+- **HHWIN_PROP_NAV_ONLY_WIN** — --- ## HHWIN_PROP_NAV_ONLY_WIN const win32help.HHWIN_PROP_NAV_ONLY_WIN; Only display the navigation window
+- **HHWIN_PROP_NODEF_EXSTYLES** — --- ## HHWIN_PROP_NODEF_EXSTYLES const win32help.HHWIN_PROP_NODEF_EXSTYLES; no default extended window styles (only HH_WINTYPE.exStyles)
+- **HHWIN_PROP_NODEF_STYLES** — --- ## HHWIN_PROP_NODEF_STYLES const win32help.HHWIN_PROP_NODEF_STYLES; no default window styles (only HH_WINTYPE.styles)
+- **HHWIN_PROP_NOTB_TEXT** — --- ## HHWIN_PROP_NOTB_TEXT const win32help.HHWIN_PROP_NOTB_TEXT; no text on toolbar buttons
+- **HHWIN_PROP_NOTITLEBAR** — --- ## HHWIN_PROP_NOTITLEBAR const win32help.HHWIN_PROP_NOTITLEBAR; no title bar
+- **HHWIN_PROP_NO_TOOLBAR** — --- ## HHWIN_PROP_NO_TOOLBAR const win32help.HHWIN_PROP_NO_TOOLBAR; Don't display a toolbar
+- **HHWIN_PROP_ONTOP** — --- ## HHWIN_PROP_ONTOP const win32help.HHWIN_PROP_ONTOP; Top-most window
+- **HHWIN_PROP_POST_QUIT** — --- ## HHWIN_PROP_POST_QUIT const win32help.HHWIN_PROP_POST_QUIT; post WM_QUIT message when window closes
+- **HHWIN_PROP_TAB_ADVSEARCH** — --- ## HHWIN_PROP_TAB_ADVSEARCH const win32help.HHWIN_PROP_TAB_ADVSEARCH; Advanced FTS UI.
+- **HHWIN_PROP_TAB_AUTOHIDESHOW** — --- ## HHWIN_PROP_TAB_AUTOHIDESHOW const win32help.HHWIN_PROP_TAB_AUTOHIDESHOW; Automatically hide/show tri-pane window
+- **HHWIN_PROP_TAB_CUSTOM1** — --- ## HHWIN_PROP_TAB_CUSTOM1 const win32help.HHWIN_PROP_TAB_CUSTOM1; Use custom tab #1
+- **HHWIN_PROP_TAB_CUSTOM2** — --- ## HHWIN_PROP_TAB_CUSTOM2 const win32help.HHWIN_PROP_TAB_CUSTOM2; Use custom tab #2
+- **HHWIN_PROP_TAB_CUSTOM3** — --- ## HHWIN_PROP_TAB_CUSTOM3 const win32help.HHWIN_PROP_TAB_CUSTOM3; Use custom tab #3
+- **HHWIN_PROP_TAB_CUSTOM4** — --- ## HHWIN_PROP_TAB_CUSTOM4 const win32help.HHWIN_PROP_TAB_CUSTOM4; Use custom tab #4
+- **HHWIN_PROP_TAB_CUSTOM5** — --- ## HHWIN_PROP_TAB_CUSTOM5 const win32help.HHWIN_PROP_TAB_CUSTOM5; Use custom tab #5
+- **HHWIN_PROP_TAB_CUSTOM6** — --- ## HHWIN_PROP_TAB_CUSTOM6 const win32help.HHWIN_PROP_TAB_CUSTOM6; Use custom tab #6
+- **HHWIN_PROP_TAB_CUSTOM7** — --- ## HHWIN_PROP_TAB_CUSTOM7 const win32help.HHWIN_PROP_TAB_CUSTOM7; Use custom tab #7
+- **HHWIN_PROP_TAB_CUSTOM8** — --- ## HHWIN_PROP_TAB_CUSTOM8 const win32help.HHWIN_PROP_TAB_CUSTOM8; Use custom tab #8
+- **HHWIN_PROP_TAB_CUSTOM9** — --- ## HHWIN_PROP_TAB_CUSTOM9 const win32help.HHWIN_PROP_TAB_CUSTOM9; Use custom tab #9
+- **HHWIN_PROP_TAB_FAVORITES** — --- ## HHWIN_PROP_TAB_FAVORITES const win32help.HHWIN_PROP_TAB_FAVORITES; include favorites tab in navigation pane
+- **HHWIN_PROP_TAB_HISTORY** — --- ## HHWIN_PROP_TAB_HISTORY const win32help.HHWIN_PROP_TAB_HISTORY; include history tab in navigation pane
+- **HHWIN_PROP_TAB_SEARCH** — --- ## HHWIN_PROP_TAB_SEARCH const win32help.HHWIN_PROP_TAB_SEARCH; include search tab in navigation pane
+- **HHWIN_PROP_TRACKING** — --- ## HHWIN_PROP_TRACKING const win32help.HHWIN_PROP_TRACKING; send tracking notification messages
+- **HHWIN_PROP_TRI_PANE** — --- ## HHWIN_PROP_TRI_PANE const win32help.HHWIN_PROP_TRI_PANE; use a tri-pane window
+- **HHWIN_PROP_USER_POS** — --- ## HHWIN_PROP_USER_POS const win32help.HHWIN_PROP_USER_POS; After initial creation, user controls window size/position
+- **HHWIN_TB_MARGIN** — --- ## HHWIN_TB_MARGIN const win32help.HHWIN_TB_MARGIN; the window type has a margin
+- **HH_ALINK_LOOKUP** — --- ## HH_ALINK_LOOKUP const win32help.HH_ALINK_LOOKUP; ALink version of HH_KEYWORD_LOOKUP
+- **HH_CLOSE_ALL** — --- ## HH_CLOSE_ALL const win32help.HH_CLOSE_ALL; close all windows opened directly or indirectly by the caller
+- **HH_DISPLAY_INDEX** — --- ## HH_DISPLAY_INDEX const win32help.HH_DISPLAY_INDEX; not currently implemented
+- **HH_DISPLAY_SEARCH** — --- ## HH_DISPLAY_SEARCH const win32help.HH_DISPLAY_SEARCH; not currently implemented
+- **HH_DISPLAY_TEXT_POPUP** — --- ## HH_DISPLAY_TEXT_POPUP const win32help.HH_DISPLAY_TEXT_POPUP; display string resource id or text in a popup window
+- **HH_DISPLAY_TOC** — --- ## HH_DISPLAY_TOC const win32help.HH_DISPLAY_TOC; not currently implemented
+- **HH_DISPLAY_TOPIC** — --- ## HH_DISPLAY_TOPIC const win32help.HH_DISPLAY_TOPIC;
+- **HH_ENUM_CATEGORY** — --- ## HH_ENUM_CATEGORY const win32help.HH_ENUM_CATEGORY; Get category name, call repeatedly to enumerate, -1 at end
+- **HH_ENUM_CATEGORY_IT** — --- ## HH_ENUM_CATEGORY_IT const win32help.HH_ENUM_CATEGORY_IT; Get category info type members, call repeatedly to enumerate, -1 at end
+- **HH_ENUM_INFO_TYPE** — --- ## HH_ENUM_INFO_TYPE const win32help.HH_ENUM_INFO_TYPE; Get Info type name, call repeatedly to enumerate, -1 at end
+- **HH_FTS_DEFAULT_PROXIMITY** — --- ## HH_FTS_DEFAULT_PROXIMITY const win32help.HH_FTS_DEFAULT_PROXIMITY;
+- **HH_GET_LAST_ERROR** — --- ## HH_GET_LAST_ERROR const win32help.HH_GET_LAST_ERROR; not currently implemented See HHERROR.h
+- **HH_GET_WIN_HANDLE** — --- ## HH_GET_WIN_HANDLE const win32help.HH_GET_WIN_HANDLE;
+- **HH_GET_WIN_TYPE** — --- ## HH_GET_WIN_TYPE const win32help.HH_GET_WIN_TYPE;
+- **HH_GPROPID_CONTENT_LANGUAGE** — --- ## HH_GPROPID_CONTENT_LANGUAGE const win32help.HH_GPROPID_CONTENT_LANGUAGE; long: LandId for desired content.
+- **HH_GPROPID_CURRENT_SUBSET** — --- ## HH_GPROPID_CURRENT_SUBSET const win32help.HH_GPROPID_CURRENT_SUBSET; BSTR: Current subset.
+- **HH_GPROPID_SINGLETHREAD** — --- ## HH_GPROPID_SINGLETHREAD const win32help.HH_GPROPID_SINGLETHREAD; VARIANT_BOOL: True for single thread
+- **HH_GPROPID_TOOLBAR_MARGIN** — --- ## HH_GPROPID_TOOLBAR_MARGIN const win32help.HH_GPROPID_TOOLBAR_MARGIN; long: Provides a left/right margin around the toolbar.
+- **HH_GPROPID_UI_LANGUAGE** — --- ## HH_GPROPID_UI_LANGUAGE const win32help.HH_GPROPID_UI_LANGUAGE; long: LangId of the UI.
+- **HH_HELP_CONTEXT** — --- ## HH_HELP_CONTEXT const win32help.HH_HELP_CONTEXT; display mapped numeric value in dwData
+- **HH_HELP_FINDER** — --- ## HH_HELP_FINDER const win32help.HH_HELP_FINDER; WinHelp equivalent
+- **HH_INITIALIZE** — --- ## HH_INITIALIZE const win32help.HH_INITIALIZE; Initializes the help system.
+- **HH_KEYWORD_LOOKUP** — --- ## HH_KEYWORD_LOOKUP const win32help.HH_KEYWORD_LOOKUP;
+- **HH_MAX_TABS_CUSTOM** — --- ## HH_MAX_TABS_CUSTOM const win32help.HH_MAX_TABS_CUSTOM;
+- **HH_PRETRANSLATEMESSAGE** — --- ## HH_PRETRANSLATEMESSAGE const win32help.HH_PRETRANSLATEMESSAGE; Pumps messages. (NULL, NULL, MSG*).
+- **HH_RESERVED1** — --- ## HH_RESERVED1 const win32help.HH_RESERVED1;
+- **HH_RESERVED2** — --- ## HH_RESERVED2 const win32help.HH_RESERVED2;
+- **HH_RESERVED3** — --- ## HH_RESERVED3 const win32help.HH_RESERVED3;
+- **HH_RESET_IT_FILTER** — --- ## HH_RESET_IT_FILTER const win32help.HH_RESET_IT_FILTER; Clear the info type filter of all info types.
+- **HH_SET_EXCLUSIVE_FILTER** — --- ## HH_SET_EXCLUSIVE_FILTER const win32help.HH_SET_EXCLUSIVE_FILTER; set exclusive filtering method for untyped topics to be excluded from display
+- **HH_SET_GLOBAL_PROPERTY** — --- ## HH_SET_GLOBAL_PROPERTY const win32help.HH_SET_GLOBAL_PROPERTY; Set a global property. (NULL, NULL, HH_GPROP).
+- **HH_SET_INCLUSIVE_FILTER** — --- ## HH_SET_INCLUSIVE_FILTER const win32help.HH_SET_INCLUSIVE_FILTER; set inclusive filtering method for untyped topics to be included in display
+- **HH_SET_INFO_TYPE** — --- ## HH_SET_INFO_TYPE const win32help.HH_SET_INFO_TYPE; Add Info type to filter.
+- **HH_SET_WIN_TYPE** — --- ## HH_SET_WIN_TYPE const win32help.HH_SET_WIN_TYPE;
+- **HH_SYNC** — --- ## HH_SYNC const win32help.HH_SYNC;
+- **HH_TAB_AUTHOR** — --- ## HH_TAB_AUTHOR const win32help.HH_TAB_AUTHOR;
+- **HH_TAB_CONTENTS** — --- ## HH_TAB_CONTENTS const win32help.HH_TAB_CONTENTS;
+- **HH_TAB_CUSTOM_FIRST** — --- ## HH_TAB_CUSTOM_FIRST const win32help.HH_TAB_CUSTOM_FIRST;
+- **HH_TAB_CUSTOM_LAST** — --- ## HH_TAB_CUSTOM_LAST const win32help.HH_TAB_CUSTOM_LAST;
+- **HH_TAB_FAVORITES** — --- ## HH_TAB_FAVORITES const win32help.HH_TAB_FAVORITES;
+- **HH_TAB_HISTORY** — --- ## HH_TAB_HISTORY const win32help.HH_TAB_HISTORY;
+- **HH_TAB_INDEX** — --- ## HH_TAB_INDEX const win32help.HH_TAB_INDEX;
+- **HH_TAB_SEARCH** — --- ## HH_TAB_SEARCH const win32help.HH_TAB_SEARCH;
+- **HH_TP_HELP_CONTEXTMENU** — --- ## HH_TP_HELP_CONTEXTMENU const win32help.HH_TP_HELP_CONTEXTMENU; text popup help, same as WinHelp HELP_CONTEXTMENU
+- **HH_TP_HELP_WM_HELP** — --- ## HH_TP_HELP_WM_HELP const win32help.HH_TP_HELP_WM_HELP; text popup help, same as WinHelp HELP_WM_HELP
+- **HH_UNINITIALIZE** — --- ## HH_UNINITIALIZE const win32help.HH_UNINITIALIZE; Uninitializes the help system.
+- **IDTB_BACK** — --- ## IDTB_BACK const win32help.IDTB_BACK;
+- **IDTB_BROWSE_BACK** — --- ## IDTB_BROWSE_BACK const win32help.IDTB_BROWSE_BACK;
+- **IDTB_BROWSE_FWD** — --- ## IDTB_BROWSE_FWD const win32help.IDTB_BROWSE_FWD;
+- **IDTB_CONTENTS** — --- ## IDTB_CONTENTS const win32help.IDTB_CONTENTS; not implemented
+- **IDTB_CONTRACT** — --- ## IDTB_CONTRACT const win32help.IDTB_CONTRACT;
+- **IDTB_CUSTOMIZE** — --- ## IDTB_CUSTOMIZE const win32help.IDTB_CUSTOMIZE;
+- **IDTB_EXPAND** — --- ## IDTB_EXPAND const win32help.IDTB_EXPAND;
+- **IDTB_FAVORITES** — --- ## IDTB_FAVORITES const win32help.IDTB_FAVORITES; not implemented
+- **IDTB_FORWARD** — --- ## IDTB_FORWARD const win32help.IDTB_FORWARD;
+- **IDTB_HISTORY** — --- ## IDTB_HISTORY const win32help.IDTB_HISTORY; not implemented
+- **IDTB_HOME** — --- ## IDTB_HOME const win32help.IDTB_HOME;
+- **IDTB_INDEX** — --- ## IDTB_INDEX const win32help.IDTB_INDEX; not implemented
+- **IDTB_JUMP1** — --- ## IDTB_JUMP1 const win32help.IDTB_JUMP1;
+- **IDTB_JUMP2** — --- ## IDTB_JUMP2 const win32help.IDTB_JUMP2;
+- **IDTB_NOTES** — --- ## IDTB_NOTES const win32help.IDTB_NOTES; not implemented
+- **IDTB_OPTIONS** — --- ## IDTB_OPTIONS const win32help.IDTB_OPTIONS;
+- **IDTB_PRINT** — --- ## IDTB_PRINT const win32help.IDTB_PRINT;
+- **IDTB_REFRESH** — --- ## IDTB_REFRESH const win32help.IDTB_REFRESH;
+- **IDTB_SEARCH** — --- ## IDTB_SEARCH const win32help.IDTB_SEARCH; not implemented
+- **IDTB_STOP** — --- ## IDTB_STOP const win32help.IDTB_STOP;
+- **IDTB_SYNC** — --- ## IDTB_SYNC const win32help.IDTB_SYNC;
+- **IDTB_TOC_NEXT** — --- ## IDTB_TOC_NEXT const win32help.IDTB_TOC_NEXT;
+- **IDTB_TOC_PREV** — --- ## IDTB_TOC_PREV const win32help.IDTB_TOC_PREV;
+- **IDTB_ZOOM** — --- ## IDTB_ZOOM const win32help.IDTB_ZOOM;
+- **debug** — --- ## debug const win32help.debug; 1 if we are current using a _DEBUG build of win32help, else 0.

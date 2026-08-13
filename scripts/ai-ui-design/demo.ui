@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.1">
+  <object class="tk.Toplevel" id="mainwindow">
+    <property name="title">Pygubu 示例 · 任务速记</property>
+    <property name="geometry">520x380</property>
+    <property name="resizable">none</property>
+    <child>
+      <object class="ttk.Frame" id="content">
+        <property name="padding">16</property>
+        <layout manager="pack">
+          <property name="fill">both</property>
+          <property name="expand">true</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="title">
+            <property name="text">任务速记</property>
+            <property name="font">{'family': 'Microsoft YaHei UI', 'size': 14, 'weight': 'bold'}</property>
+            <layout manager="pack">
+              <property name="anchor">w</property>
+              <property name="pady">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="lbl_name">
+            <property name="text">事项：</property>
+            <layout manager="pack">
+              <property name="anchor">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_name">
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="pady">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="btnrow">
+            <layout manager="pack">
+              <property name="fill">x</property>
+            </layout>
+            <child>
+              <object class="ttk.Button" id="btn_add">
+                <property name="text">添加</property>
+                <property name="command">{"value": "on_add", "cbtype": "simple"}</property>
+                <layout manager="pack">
+                  <property name="side">left</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_clear">
+                <property name="text">清空</property>
+                <property name="command">{"value": "on_clear", "cbtype": "simple"}</property>
+                <layout manager="pack">
+                  <property name="side">left</property>
+                  <property name="padx">8</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="listframe">
+            <property name="padding">0 10 0 0</property>
+            <property name="borderwidth">1</property>
+            <property name="relief">solid</property>
+            <layout manager="pack">
+              <property name="fill">both</property>
+              <property name="expand">true</property>
+            </layout>
+            <child>
+              <object class="ttk.Treeview" id="tree">
+                <property name="show">headings</property>
+                <property name="height">8</property>
+                <property name="selectmode">browse</property>
+                <layout manager="pack">
+                  <property name="fill">both</property>
+                  <property name="expand">true</property>
+                </layout>
+                <!-- 列必须写成 ttk.Treeview.Column 子节点。
+                     legacy 的 <columns><column/></columns> 会被 pygubu 静默忽略，
+                     结果是一张 0 列的空白表格，且不报任何错。
+                     column_anchor 必须显式写：pygubu 默认值是空串，
+                     会导致运行期 TclError: ambiguous anchor ""。 -->
+                <child>
+                  <object class="ttk.Treeview.Column" id="idx">
+                    <property name="text">#</property>
+                    <property name="heading_anchor">center</property>
+                    <property name="column_anchor">center</property>
+                    <property name="width">60</property>
+                    <property name="minwidth">40</property>
+                    <property name="stretch">false</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Treeview.Column" id="task">
+                    <property name="text">事项</property>
+                    <property name="heading_anchor">w</property>
+                    <property name="column_anchor">w</property>
+                    <property name="width">380</property>
+                    <property name="minwidth">120</property>
+                    <property name="stretch">true</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

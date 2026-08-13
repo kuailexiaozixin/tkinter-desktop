@@ -1,0 +1,25 @@
+# __TITLE__
+
+Tkinter 桌面应用（tkinter-desktop 技能蓝图生成）。
+
+## 开发运行
+
+```bat
+set PYTHONPATH=src
+.venv\Scripts\python.exe -m __PKG__
+```
+
+## 测试
+
+```bat
+.venv\Scripts\python.exe -m pytest -q
+set PYTHONPATH=src && .venv\Scripts\python.exe scripts\smoke_test_gui.py
+```
+
+## 打包
+
+```bat
+powershell -ExecutionPolicy Bypass -File <技能目录>\scripts\build_windows_exe.ps1 -ProjectDir . -AppName __TITLE__
+```
+
+产物：`dist/*.exe`。数据在 EXE 同级 `data/`，日志在 `logs/`。

@@ -1,0 +1,49 @@
+### NAME
+
+Tcl_Concat — concatenate a collection of strings
+
+### SYNOPSIS
+
+**#include <tcl.h>**  
+const char *  
+**Tcl_Concat**(*argc, argv*)  
+
+### ARGUMENTS
+
+int **[argc](../TclCmd/tclvars.md)** (in)     Number of strings.
+
+const char *const **argv[]** (in)     Array of strings to concatenate. Must
+have *argc* entries.
+
+### DESCRIPTION
+
+**Tcl_Concat** is a utility procedure used by several of the Tcl commands.
+Given a collection of strings, it concatenates them together into a single
+string, with the original strings separated by spaces. This procedure behaves
+differently than **[Tcl_Merge](../TclLib/SplitList.md)** , in that the
+arguments are simply concatenated: no effort is made to ensure proper list
+structure. However, in most common usage the arguments will all be proper lists
+themselves; if this is true, then the result will also have proper list
+structure.
+
+**Tcl_Concat** eliminates leading and trailing white space as it copies strings
+from **[argv](../TclCmd/tclvars.md)** to the result. If an element of
+**[argv](../TclCmd/tclvars.md)** consists of nothing but white space, then
+that string is ignored entirely. This white-space removal was added to make the
+output of the **[concat](../TclCmd/concat.md)** command cleaner-looking.
+
+The result string is dynamically allocated using
+**[Tcl_Alloc](../TclLib/Alloc.md)** ; the caller must eventually release the
+space by calling **[Tcl_Free](../TclLib/Alloc.md)**.
+
+### SEE ALSO
+
+**[Tcl_ConcatObj](../TclLib/StringObj.md)**
+
+### KEYWORDS
+
+[concatenate](../Keywords/C.htm#concatenate),
+[strings](../Keywords/S.htm#strings)
+
+Copyright © 1989-1993 The Regents of the University of California.  
+Copyright © 1994-1996 Sun Microsystems, Inc.

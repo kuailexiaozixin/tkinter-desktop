@@ -1,0 +1,55 @@
+# -*- coding: utf-8 -*-
+"""无头 GUI 冒烟：真实控件级验证，不进 mainloop。
+运行：set PYTHONPATH=src && python scripts/smoke_test_gui.py
+"""
+import sys
+import tempfile
+import tkinter as tk
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+
+FAILED = []
+
+
+def check(name: str, cond: bool) -> None:
+    if cond:
+        print(f"[OK] {name}")
+    else:
+        FAILED.append(name)
+        print(f"[FAIL] {name}")
+
+
+def main() -> int:
+    from __PKG__.app import build_app
+    from __PKG__.models import db
+
+    # 隔离数据库（不动生产 data/）
+    tmp = tempfile.mkdtemp()
+    db.DB_PATH = Path(tmp) / "smoke.db"  # noqa: 冒烟专用重定向
+
+    root = tk.Tk()
+    root.withdraw()
+    win = build_app(root)
+    root.update()
+
+    check("主窗口组装成功", win is not None)
+    check("Notebook 至少 1 页", len(win.notebook.tabs()) >= 1)
+
+    # 交互路径：走 Controller 稳定接口
+    win.item_controller.add("冒烟条目")
+    root.update()
+    ids = win.item_view.tree.get_children()
+    check("新增后表格有数据", len(ids) >= 1)
+    win.item_view.tree.selection_set(ids[0])
+    win.item_controller.delete(confirm=False)
+    root.update()
+    check("删除后表格清空", len(win.item_view.tree.get_children()) == 0)
+
+    root.destroy()
+    print(f"\n结果：{'全部通过' if not FAILED else f'{len(FAILED)} 项失败: {FAILED}'}")
+    return 1 if FAILED else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

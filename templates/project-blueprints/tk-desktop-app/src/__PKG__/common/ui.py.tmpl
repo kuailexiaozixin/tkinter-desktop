@@ -1,0 +1,57 @@
+# -*- coding: utf-8 -*-
+"""UI 基础设施：DPI、字体、样式、窗口工具。"""
+import ctypes
+import sys
+import tkinter as tk
+from tkinter import font, ttk
+
+# 语义色
+COLOR_PRIMARY = "#2563eb"
+COLOR_SUCCESS = "#16a34a"
+COLOR_DANGER = "#dc2626"
+COLOR_MUTED = "#6b7280"
+COLOR_STRIPE = "#f5f7fa"
+
+
+def setup_dpi(app_id: str) -> None:
+    """必须在 tk.Tk() 之前调用。"""
+    if sys.platform == "win32":
+        try:
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(app_id)
+        except Exception:
+            pass
+        try:
+            ctypes.windll.shcore.SetProcessDpiAwareness(1)
+        except Exception:
+            pass
+
+
+def setup_fonts(family: str = "Microsoft YaHei UI", size: int = 10) -> None:
+    for name in ("TkDefaultFont", "TkTextFont", "TkHeadingFont", "TkMenuFont"):
+        try:
+            font.nametofont(name).configure(family=family, size=size)
+        except tk.TclError:
+            pass
+
+
+def setup_style() -> ttk.Style:
+    style = ttk.Style()
+    style.theme_use("clam")
+    style.configure("TButton", padding=6)
+    style.configure("Treeview", rowheight=26)
+    style.configure("Treeview.Heading", font=("Microsoft YaHei UI", 10, "bold"))
+    style.configure("Accent.TButton", foreground="#ffffff", background=COLOR_PRIMARY)
+    style.map(
+        "Accent.TButton",
+        background=[("active", "#1d4ed8"), ("disabled", "#93c5fd")],
+    )
+    style.configure("Danger.TButton", foreground="#ffffff", background=COLOR_DANGER)
+    style.map("Danger.TButton", background=[("active", "#b91c1c")])
+    return style
+
+
+def center_window(root: tk.Tk, w: int, h: int) -> None:
+    root.update_idletasks()
+    x = max((root.winfo_screenwidth() - w) // 2, 0)
+    y = max((root.winfo_screenheight() - h) // 2, 0)
+    root.geometry(f"{w}x{h}+{x}+{y}")

@@ -1,0 +1,57 @@
+# -*- coding: utf-8 -*-
+"""应用组装入口。顺序敏感：DPI → 日志 → Tk → 字体/样式 → 数据 → UI → mainloop"""
+from __future__ import annotations
+
+import io
+import logging
+import sys
+import tkinter as tk
+from tkinter import messagebox, ttk
+
+from .common.config import APP_ID, APP_TITLE
+from .common.logging_setup import setup_logging
+from .common.ui import center_window, setup_dpi, setup_fonts, setup_style
+from .models.db import get_conn, init_db
+from .views.main_window import MainWindow
+
+log = logging.getLogger(__name__)
+
+
+def _guard_std_streams() -> None:
+    """--windowed 下 stdout/stderr 为 None，print 会炸，兜底。"""
+    if sys.stdout is None:
+        sys.stdout = io.StringIO()
+    if sys.stderr is None:
+        sys.stderr = io.StringIO()
+
+
+def build_app(root: tk.Tk):
+    """与生产一致的组装函数——无头冒烟测试也调它。"""
+    setup_fonts()
+    setup_style()
+    conn = get_conn()
+    init_db(conn)
+    win = MainWindow(root, conn)
+    win.pack(fill="both", expand=True)
+    return win
+
+
+def main() -> None:
+    _guard_std_streams()
+    setup_dpi(APP_ID)
+    setup_logging()
+    root = tk.Tk()
+    root.withdraw()
+    root.title(APP_TITLE)
+
+    def ui_excepthook(exc_type, exc, tb):
+        log.error("UI 回调异常", exc_info=(exc_type, exc, tb))
+        messagebox.showerror("程序出错", f"{exc}\n\n详情见 logs/ 目录")
+
+    root.report_callback_exception = ui_excepthook
+
+    build_app(root)
+    root.minsize(960, 640)
+    center_window(root, 1200, 760)
+    root.deiconify()
+    root.mainloop()

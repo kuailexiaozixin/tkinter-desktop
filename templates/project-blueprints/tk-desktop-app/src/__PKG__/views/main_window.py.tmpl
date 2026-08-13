@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+"""主窗口：工具条 + 表格 + 状态栏骨架。View 不写 SQL、不写业务规则。"""
+import tkinter as tk
+from tkinter import ttk
+
+from ..controllers.item_controller import ItemController
+from ..views.item_view import ItemView
+
+
+class MainWindow(ttk.Frame):
+    def __init__(self, master, conn):
+        super().__init__(master)
+        self.columnconfigure(0, weight=1)
+        self.rowconfigure(0, weight=1)
+
+        self.notebook = ttk.Notebook(self)
+        self.notebook.grid(row=0, column=0, sticky="nsew")
+
+        self.item_view = ItemView(self.notebook)
+        self.notebook.add(self.item_view, text="  示例条目  ")
+
+        self.status = ttk.Label(self, text="就绪", anchor="w")
+        self.status.grid(row=1, column=0, sticky="ew", padx=8, pady=4)
+
+        # Controller 接线
+        self.item_controller = ItemController(self.item_view, conn, self.set_status)
+
+    def set_status(self, text: str) -> None:
+        self.status.configure(text=text)

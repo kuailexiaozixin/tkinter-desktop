@@ -1,0 +1,5 @@
+# pygubu-designer 示例的运行期依赖
+# 运行时加载 .ui 只需 pygubu；要启用可视化设计器再加 pygubu-designer
+# pillow 用于 check_ui_visual.py 的截图校验（可选，不装则跳过视觉检查）
+pygubu
+pillow

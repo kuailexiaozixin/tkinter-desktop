@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+"""示例控制器：事件 → Model → 刷新 View。"""
+from tkinter import messagebox, simpledialog
+
+from ..models.repository import ItemRepo
+
+
+class ItemController:
+    def __init__(self, view, conn, set_status):
+        self.view = view
+        self.repo = ItemRepo(conn)
+        self.set_status = set_status
+        view.on_add = self.add
+        view.on_delete = self.delete
+        view.on_search = self.reload
+        self.reload()
+
+    def reload(self) -> None:
+        rows = self.repo.list(self.view.kw_var.get().strip())
+        self.view.refresh(rows)
+        self.set_status(f"共 {len(rows)} 条")
+
+    # 测试友好：数据参数化，不弹窗时可直接调用
+    def add(self, name: str | None = None) -> None:
+        if name is None:
+            name = simpledialog.askstring("新增", "名称：", parent=self.view)
+            if not name:
+                return
+        self.repo.create(name.strip())
+        self.reload()
+        self.set_status("已新增")
+
+    def delete(self, item_id: int | None = None, confirm: bool = True) -> None:
+        item_id = item_id or self.view.selected_id()
+        if item_id is None:
+            messagebox.showwarning("提示", "请先选择一行")
+            return
+        if confirm and not messagebox.askyesno("确认", "确定删除选中条目？"):
+            return
+        self.repo.delete(item_id)
+        self.reload()
+        self.set_status("已删除")

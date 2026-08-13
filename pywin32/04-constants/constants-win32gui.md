@@ -1,0 +1,59 @@
+# win32gui 常量（共 55 个）
+
+> 来源 https://mhammond.github.io/pywin32/win32gui_<CONST>.html
+
+- **CLR_NONE** — --- ## CLR_NONE const win32gui.CLR_NONE;
+- **ILC_COLOR** — --- ## ILC_COLOR const win32gui.ILC_COLOR;
+- **ILC_COLOR16** — --- ## ILC_COLOR16 const win32gui.ILC_COLOR16;
+- **ILC_COLOR24** — --- ## ILC_COLOR24 const win32gui.ILC_COLOR24;
+- **ILC_COLOR32** — --- ## ILC_COLOR32 const win32gui.ILC_COLOR32;
+- **ILC_COLOR4** — --- ## ILC_COLOR4 const win32gui.ILC_COLOR4;
+- **ILC_COLOR8** — --- ## ILC_COLOR8 const win32gui.ILC_COLOR8;
+- **ILC_COLORDDB** — --- ## ILC_COLORDDB const win32gui.ILC_COLORDDB;
+- **ILC_MASK** — --- ## ILC_MASK const win32gui.ILC_MASK;
+- **ILD_BLEND** — --- ## ILD_BLEND const win32gui.ILD_BLEND;
+- **ILD_BLEND25** — --- ## ILD_BLEND25 const win32gui.ILD_BLEND25;
+- **ILD_BLEND50** — --- ## ILD_BLEND50 const win32gui.ILD_BLEND50;
+- **ILD_FOCUS** — --- ## ILD_FOCUS const win32gui.ILD_FOCUS;
+- **ILD_MASK** — --- ## ILD_MASK const win32gui.ILD_MASK;
+- **ILD_NORMAL** — --- ## ILD_NORMAL const win32gui.ILD_NORMAL;
+- **ILD_SELECTED** — --- ## ILD_SELECTED const win32gui.ILD_SELECTED;
+- **ILD_TRANSPARENT** — --- ## ILD_TRANSPARENT const win32gui.ILD_TRANSPARENT;
+- **IMAGE_BITMAP** — --- ## IMAGE_BITMAP const win32gui.IMAGE_BITMAP;
+- **IMAGE_CURSOR** — --- ## IMAGE_CURSOR const win32gui.IMAGE_CURSOR;
+- **IMAGE_ICON** — --- ## IMAGE_ICON const win32gui.IMAGE_ICON;
+- **LR_CREATEDIBSECTION** — --- ## LR_CREATEDIBSECTION const win32gui.LR_CREATEDIBSECTION;
+- **LR_DEFAULTCOLOR** — --- ## LR_DEFAULTCOLOR const win32gui.LR_DEFAULTCOLOR;
+- **LR_DEFAULTSIZE** — --- ## LR_DEFAULTSIZE const win32gui.LR_DEFAULTSIZE;
+- **LR_LOADFROMFILE** — --- ## LR_LOADFROMFILE const win32gui.LR_LOADFROMFILE;
+- **LR_LOADMAP3DCOLORS** — --- ## LR_LOADMAP3DCOLORS const win32gui.LR_LOADMAP3DCOLORS;
+- **LR_LOADTRANSPARENT** — --- ## LR_LOADTRANSPARENT const win32gui.LR_LOADTRANSPARENT;
+- **LR_MONOCHROME** — --- ## LR_MONOCHROME const win32gui.LR_MONOCHROME;
+- **LR_SHARED** — --- ## LR_SHARED const win32gui.LR_SHARED;
+- **LR_VGACOLOR** — --- ## LR_VGACOLOR const win32gui.LR_VGACOLOR;
+- **NIF_ICON** — --- ## NIF_ICON const win32gui.NIF_ICON;
+- **NIF_INFO** — --- ## NIF_INFO const win32gui.NIF_INFO;
+- **NIF_MESSAGE** — --- ## NIF_MESSAGE const win32gui.NIF_MESSAGE;
+- **NIF_STATE** — --- ## NIF_STATE const win32gui.NIF_STATE; #define NIF_GUID NIF_GUID
+- **NIF_TIP** — --- ## NIF_TIP const win32gui.NIF_TIP;
+- **NIIF_ERROR** — --- ## NIIF_ERROR const win32gui.NIIF_ERROR;
+- **NIIF_ICON_MASK** — --- ## NIIF_ICON_MASK const win32gui.NIIF_ICON_MASK;
+- **NIIF_INFO** — --- ## NIIF_INFO const win32gui.NIIF_INFO; #define NIIF_USER NIIF_USER
+- **NIIF_NONE** — --- ## NIIF_NONE const win32gui.NIIF_NONE;
+- **NIIF_NOSOUND** — --- ## NIIF_NOSOUND const win32gui.NIIF_NOSOUND;
+- **NIIF_WARNING** — --- ## NIIF_WARNING const win32gui.NIIF_WARNING;
+- **NIM_ADD** — --- ## NIM_ADD const win32gui.NIM_ADD; Adds an icon to the status area.
+- **NIM_DELETE** — --- ## NIM_DELETE const win32gui.NIM_DELETE; Deletes an icon from the status area.
+- **NIM_MODIFY** — --- ## NIM_MODIFY const win32gui.NIM_MODIFY; Modifies an icon in the status area.
+- **NIM_SETFOCUS** — --- ## NIM_SETFOCUS const win32gui.NIM_SETFOCUS; Give the icon focus.
+- **NIM_SETVERSION** — --- ## NIM_SETVERSION const win32gui.NIM_SETVERSION;
+- **TPM_BOTTOMALIGN** — --- ## TPM_BOTTOMALIGN const win32gui.TPM_BOTTOMALIGN;
+- **TPM_CENTERALIGN** — --- ## TPM_CENTERALIGN const win32gui.TPM_CENTERALIGN;
+- **TPM_LEFTALIGN** — --- ## TPM_LEFTALIGN const win32gui.TPM_LEFTALIGN;
+- **TPM_LEFTBUTTON** — --- ## TPM_LEFTBUTTON const win32gui.TPM_LEFTBUTTON;
+- **TPM_NONOTIFY** — --- ## TPM_NONOTIFY const win32gui.TPM_NONOTIFY;
+- **TPM_RETURNCMD** — --- ## TPM_RETURNCMD const win32gui.TPM_RETURNCMD;
+- **TPM_RIGHTALIGN** — --- ## TPM_RIGHTALIGN const win32gui.TPM_RIGHTALIGN;
+- **TPM_RIGHTBUTTON** — --- ## TPM_RIGHTBUTTON const win32gui.TPM_RIGHTBUTTON;
+- **TPM_TOPALIGN** — --- ## TPM_TOPALIGN const win32gui.TPM_TOPALIGN;
+- **TPM_VCENTERALIGN** — --- ## TPM_VCENTERALIGN const win32gui.TPM_VCENTERALIGN;

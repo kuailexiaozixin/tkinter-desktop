@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+launcher.py — PyInstaller 打包入口 / 一键启动薄壳（__PKG__）。
+
+存在的理由（tkinter-desktop 技能）：
+- PyInstaller 对 `-m package` 形式支持不佳，需要一个真实的顶层脚本；
+- 开发期 `python launcher.py` 与冻结后行为一致，便于对照排错；
+- 由 `启动.bat` 调用（优先 pythonw 无黑框），用户双击即用。
+"""
+from __PKG__.app import main
+
+if __name__ == "__main__":
+    raise SystemExit(main())

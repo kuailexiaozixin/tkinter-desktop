@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+"""路径与常量。可写数据基于 sys.executable；只读资源走 resource_path。"""
+import sys
+from pathlib import Path
+
+APP_TITLE = "__TITLE__"
+APP_ID = "local.__PKG__"          # 任务栏 AppUserModelID
+
+FROZEN = getattr(sys, "frozen", False)
+BASE_DIR = (
+    Path(sys.executable).parent if FROZEN else Path(__file__).resolve().parents[3]
+)
+DATA_DIR = BASE_DIR / "data"
+LOG_DIR = BASE_DIR / "logs"
+
+
+def resource_path(rel: str) -> Path:
+    """打包进 EXE 的只读资源（图标、主题）。写数据禁止用这里。"""
+    base = Path(getattr(sys, "_MEIPASS", BASE_DIR))
+    return base / rel

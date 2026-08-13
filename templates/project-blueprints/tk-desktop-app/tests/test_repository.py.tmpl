@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+"""Model 层单元测试：禁止 import tkinter。"""
+import sqlite3
+
+import pytest
+
+from __PKG__.models.db import init_db
+from __PKG__.models.repository import ItemRepo
+
+
+@pytest.fixture
+def conn():
+    c = sqlite3.connect(":memory:")
+    c.row_factory = sqlite3.Row
+    c.execute("PRAGMA foreign_keys = ON")
+    init_db(c)
+    yield c
+    c.close()
+
+
+def test_create_and_list(conn):
+    repo = ItemRepo(conn)
+    rid = repo.create("测试条目", "备注")
+    rows = repo.list()
+    assert rid == 1
+    assert rows[0]["name"] == "测试条目"
+
+
+def test_search(conn):
+    repo = ItemRepo(conn)
+    repo.create("苹果")
+    repo.create("香蕉")
+    assert len(repo.list("苹")) == 1
+
+
+def test_delete(conn):
+    repo = ItemRepo(conn)
+    rid = repo.create("待删除")
+    repo.delete(rid)
+    assert repo.list() == []

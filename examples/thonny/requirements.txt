@@ -1,0 +1,11 @@
+# Thonny 5.0.0 运行期依赖（取自官方 wheel 的 METADATA）。
+# 示例目录内的 thonny 源码本身是完整的；运行前请在当前 Python 环境安装下列依赖：
+jedi>=0.18.1
+setuptools>=45.2
+pyserial>=3.4
+pylint>=2.4
+docutils>=0.16
+mypy>=0.761
+asttokens>=2.0
+send2trash>=1.5
+wheel

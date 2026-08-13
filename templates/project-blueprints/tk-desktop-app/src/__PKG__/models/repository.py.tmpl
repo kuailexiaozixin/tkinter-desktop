@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+"""Repository：SQL 全部收敛在此。一律参数化查询。"""
+import sqlite3
+
+
+class ItemRepo:
+    def __init__(self, conn: sqlite3.Connection):
+        self.conn = conn
+
+    def list(self, keyword: str = "") -> list[sqlite3.Row]:
+        return self.conn.execute(
+            "SELECT * FROM item WHERE name LIKE ? ORDER BY id DESC",
+            (f"%{keyword}%",),
+        ).fetchall()
+
+    def create(self, name: str, remark: str = "") -> int:
+        cur = self.conn.execute(
+            "INSERT INTO item(name, remark) VALUES(?, ?)", (name, remark)
+        )
+        self.conn.commit()
+        return cur.lastrowid
+
+    def delete(self, item_id: int) -> None:
+        self.conn.execute("DELETE FROM item WHERE id = ?", (item_id,))
+        self.conn.commit()

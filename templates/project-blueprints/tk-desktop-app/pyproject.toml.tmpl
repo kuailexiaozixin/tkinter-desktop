@@ -1,0 +1,14 @@
+[project]
+name = "__PKG__"
+version = "0.1.0"
+description = "__TITLE__"
+requires-python = ">=3.11"
+dependencies = []            # tkinter/sqlite3 为标准库；业务依赖用 pip/uv 添加后写入此处
+
+[dependency-groups]
+dev = ["pytest>=8"]
+build = ["pyinstaller>=6"]   # 构建期依赖，严禁进 dependencies
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

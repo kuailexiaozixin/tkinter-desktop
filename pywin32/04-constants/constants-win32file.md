@@ -1,0 +1,202 @@
+# win32file 常量（共 198 个）
+
+> 来源 https://mhammond.github.io/pywin32/win32file_<CONST>.html
+
+- **CALLBACK_CHUNK_FINISHED** — --- ## CALLBACK_CHUNK_FINISHED const win32file.CALLBACK_CHUNK_FINISHED;
+- **CALLBACK_STREAM_SWITCH** — --- ## CALLBACK_STREAM_SWITCH const win32file.CALLBACK_STREAM_SWITCH;
+- **CBR_110** — --- ## CBR_110 const win32file.CBR_110;
+- **CBR_115200** — --- ## CBR_115200 const win32file.CBR_115200;
+- **CBR_1200** — --- ## CBR_1200 const win32file.CBR_1200;
+- **CBR_128000** — --- ## CBR_128000 const win32file.CBR_128000;
+- **CBR_14400** — --- ## CBR_14400 const win32file.CBR_14400;
+- **CBR_19200** — --- ## CBR_19200 const win32file.CBR_19200;
+- **CBR_2400** — --- ## CBR_2400 const win32file.CBR_2400;
+- **CBR_256000** — --- ## CBR_256000 const win32file.CBR_256000;
+- **CBR_300** — --- ## CBR_300 const win32file.CBR_300;
+- **CBR_38400** — --- ## CBR_38400 const win32file.CBR_38400;
+- **CBR_4800** — --- ## CBR_4800 const win32file.CBR_4800;
+- **CBR_56000** — --- ## CBR_56000 const win32file.CBR_56000;
+- **CBR_57600** — --- ## CBR_57600 const win32file.CBR_57600;
+- **CBR_600** — --- ## CBR_600 const win32file.CBR_600;
+- **CBR_9600** — --- ## CBR_9600 const win32file.CBR_9600;
+- **CLRBREAK** — --- ## CLRBREAK const win32file.CLRBREAK; Restores character transmission and places the transmission line in a nonbreak state. The CLRBREAK extended function code is identical to the ClearCommBreak function.
+- **CLRDTR** — --- ## CLRDTR const win32file.CLRDTR; Clears the DTR (data-terminal-ready) signal.
+- **CLRRTS** — --- ## CLRRTS const win32file.CLRRTS; Clears the RTS (request-to-send) signal.
+- **COPY_FILE_ALLOW_DECRYPTED_DESTINATION** — --- ## COPY_FILE_ALLOW_DECRYPTED_DESTINATION const win32file.COPY_FILE_ALLOW_DECRYPTED_DESTINATION;
+- **COPY_FILE_COPY_SYMLINK** — --- ## COPY_FILE_COPY_SYMLINK const win32file.COPY_FILE_COPY_SYMLINK;
+- **COPY_FILE_FAIL_IF_EXISTS** — --- ## COPY_FILE_FAIL_IF_EXISTS const win32file.COPY_FILE_FAIL_IF_EXISTS;
+- **COPY_FILE_OPEN_SOURCE_FOR_WRITE** — --- ## COPY_FILE_OPEN_SOURCE_FOR_WRITE const win32file.COPY_FILE_OPEN_SOURCE_FOR_WRITE;
+- **COPY_FILE_RESTARTABLE** — --- ## COPY_FILE_RESTARTABLE const win32file.COPY_FILE_RESTARTABLE;
+- **CREATE_ALWAYS** — --- ## CREATE_ALWAYS const win32file.CREATE_ALWAYS; Creates a new file. The function overwrites the file if it exists.
+- **CREATE_FOR_DIR** — --- ## CREATE_FOR_DIR const win32file.CREATE_FOR_DIR;
+- **CREATE_FOR_IMPORT** — --- ## CREATE_FOR_IMPORT const win32file.CREATE_FOR_IMPORT;
+- **CREATE_NEW** — --- ## CREATE_NEW const win32file.CREATE_NEW; Creates a new file. The function fails if the specified file already exists.
+- **DRIVE_CDROM** — --- ## DRIVE_CDROM const win32file.DRIVE_CDROM; The drive is a CD-ROM drive.
+- **DRIVE_FIXED** — --- ## DRIVE_FIXED const win32file.DRIVE_FIXED; The disk cannot be removed from the drive.
+- **DRIVE_NO_ROOT_DIR** — --- ## DRIVE_NO_ROOT_DIR const win32file.DRIVE_NO_ROOT_DIR; The root directory does not exist.
+- **DRIVE_RAMDISK** — --- ## DRIVE_RAMDISK const win32file.DRIVE_RAMDISK; The drive is a RAM disk.
+- **DRIVE_REMOTE** — --- ## DRIVE_REMOTE const win32file.DRIVE_REMOTE; The drive is a remote (network) drive.
+- **DRIVE_REMOVABLE** — --- ## DRIVE_REMOVABLE const win32file.DRIVE_REMOVABLE; The disk can be removed from the drive.
+- **DRIVE_UNKNOWN** — --- ## DRIVE_UNKNOWN const win32file.DRIVE_UNKNOWN; The drive type cannot be determined.
+- **DTR_CONTROL_DISABLE** — --- ## DTR_CONTROL_DISABLE const win32file.DTR_CONTROL_DISABLE; Disables the DTR line when the device is opened and leaves it disabled.
+- **DTR_CONTROL_ENABLE** — --- ## DTR_CONTROL_ENABLE const win32file.DTR_CONTROL_ENABLE; Enables the DTR line when the device is opened and leaves it on.
+- **DTR_CONTROL_HANDSHAKE** — --- ## DTR_CONTROL_HANDSHAKE const win32file.DTR_CONTROL_HANDSHAKE; Enables DTR handshaking. If handshaking is enabled, it is an error for the application to adjust the line by using the EscapeCommFunction function.
+- **EVENPARITY** — --- ## EVENPARITY const win32file.EVENPARITY;
+- **EV_BREAK** — --- ## EV_BREAK const win32file.EV_BREAK; A break was detected on input.
+- **EV_CTS** — --- ## EV_CTS const win32file.EV_CTS; The CTS (clear-to-send) signal changed state.
+- **EV_DSR** — --- ## EV_DSR const win32file.EV_DSR; The DSR (data-set-ready) signal changed state.
+- **EV_ERR** — --- ## EV_ERR const win32file.EV_ERR; A line-status error occurred. Line-status errors are CE_FRAME, CE_OVERRUN, and CE_RXPARITY.
+- **EV_RING** — --- ## EV_RING const win32file.EV_RING; A ring indicator was detected.
+- **EV_RLSD** — --- ## EV_RLSD const win32file.EV_RLSD; The RLSD (receive-line-signal-detect) signal changed state.
+- **EV_RXCHAR** — --- ## EV_RXCHAR const win32file.EV_RXCHAR; A character was received and placed in the input buffer.
+- **EV_RXFLAG** — --- ## EV_RXFLAG const win32file.EV_RXFLAG; The event character was received and placed in the input buffer. The event character is specified in the device's DCB structure, which is applied to a serial port by using the SetCommState function.
+- **EV_TXEMPTY** — --- ## EV_TXEMPTY const win32file.EV_TXEMPTY; The last character in the output buffer was sent.
+- **FD_ACCEPT** — --- ## FD_ACCEPT const win32file.FD_ACCEPT;
+- **FD_ADDRESS_LIST_CHANGE** — --- ## FD_ADDRESS_LIST_CHANGE const win32file.FD_ADDRESS_LIST_CHANGE;
+- **FD_CLOSE** — --- ## FD_CLOSE const win32file.FD_CLOSE;
+- **FD_CONNECT** — --- ## FD_CONNECT const win32file.FD_CONNECT;
+- **FD_GROUP_QOS** — --- ## FD_GROUP_QOS const win32file.FD_GROUP_QOS;
+- **FD_OOB** — --- ## FD_OOB const win32file.FD_OOB;
+- **FD_QOS** — --- ## FD_QOS const win32file.FD_QOS;
+- **FD_READ** — --- ## FD_READ const win32file.FD_READ;
+- **FD_ROUTING_INTERFACE_CHANGE** — --- ## FD_ROUTING_INTERFACE_CHANGE const win32file.FD_ROUTING_INTERFACE_CHANGE;
+- **FD_WRITE** — --- ## FD_WRITE const win32file.FD_WRITE;
+- **FILE_ALL_ACCESS** — --- ## FILE_ALL_ACCESS const win32file.FILE_ALL_ACCESS;
+- **FILE_ATTRIBUTE_ARCHIVE** — --- ## FILE_ATTRIBUTE_ARCHIVE const win32file.FILE_ATTRIBUTE_ARCHIVE; The file should be archived. Applications use this attribute to mark files for backup or removal.
+- **FILE_ATTRIBUTE_COMPRESSED** — --- ## FILE_ATTRIBUTE_COMPRESSED const win32file.FILE_ATTRIBUTE_COMPRESSED; The file or directory is compressed. For a file, this means that all of the data in the file is compressed. For a directory, this means that compression is the default for newly created files and subdirectories.
+- **FILE_ATTRIBUTE_DIRECTORY** — --- ## FILE_ATTRIBUTE_DIRECTORY const win32file.FILE_ATTRIBUTE_DIRECTORY; The file is a directory
+- **FILE_ATTRIBUTE_HIDDEN** — --- ## FILE_ATTRIBUTE_HIDDEN const win32file.FILE_ATTRIBUTE_HIDDEN; The file is hidden. It is not to be included in an ordinary directory listing.
+- **FILE_ATTRIBUTE_NORMAL** — --- ## FILE_ATTRIBUTE_NORMAL const win32file.FILE_ATTRIBUTE_NORMAL; The file has no other attributes set. This attribute is valid only if used alone.
+- **FILE_ATTRIBUTE_OFFLINE** — --- ## FILE_ATTRIBUTE_OFFLINE const win32file.FILE_ATTRIBUTE_OFFLINE; The data of the file is not immediately available. Indicates that the file data has been physically moved to offline storage.
+- **FILE_ATTRIBUTE_READONLY** — --- ## FILE_ATTRIBUTE_READONLY const win32file.FILE_ATTRIBUTE_READONLY; The file is read only. Applications can read the file but cannot write to it or delete it.
+- **FILE_ATTRIBUTE_SYSTEM** — --- ## FILE_ATTRIBUTE_SYSTEM const win32file.FILE_ATTRIBUTE_SYSTEM; The file is part of or is used exclusively by the operating system.
+- **FILE_ATTRIBUTE_TEMPORARY** — --- ## FILE_ATTRIBUTE_TEMPORARY const win32file.FILE_ATTRIBUTE_TEMPORARY; The file is being used for temporary storage. File systems attempt to keep all of the data in memory for quicker access rather than flushing the data back to mass storage. A temporary file should be deleted by the application as soon as it is no longer needed.
+- **FILE_BEGIN** — --- ## FILE_BEGIN const win32file.FILE_BEGIN;
+- **FILE_CURRENT** — --- ## FILE_CURRENT const win32file.FILE_CURRENT;
+- **FILE_ENCRYPTABLE** — --- ## FILE_ENCRYPTABLE const win32file.FILE_ENCRYPTABLE;
+- **FILE_END** — --- ## FILE_END const win32file.FILE_END;
+- **FILE_FLAG_BACKUP_SEMANTICS** — --- ## FILE_FLAG_BACKUP_SEMANTICS const win32file.FILE_FLAG_BACKUP_SEMANTICS; Windows NT only: Indicates that the file is being opened or created for a backup or restore operation. The operating system ensures that the calling process overrides file security checks, provided it has the necessary permission to do so. The relevant permissions are SE_BACKUP_NAME and SE_RESTORE_NAME. You can also set this flag to obtain a handle to a directory. A directory handle can be passed to some Win32 functions in place of a file handle.
+- **FILE_FLAG_DELETE_ON_CLOSE** — --- ## FILE_FLAG_DELETE_ON_CLOSE const win32file.FILE_FLAG_DELETE_ON_CLOSE; Indicates that the operating system is to delete the file immediately after all of its handles have been closed, not just the handle for which you specified FILE_FLAG_DELETE_ON_CLOSE. Subsequent open requests for the file will fail, unless FILE_SHARE_DELETE is used.
+- **FILE_FLAG_NO_BUFFERING** — --- ## FILE_FLAG_NO_BUFFERING const win32file.FILE_FLAG_NO_BUFFERING; Instructs the system to open the file with no intermediate buffering or caching. When combined with FILE_FLAG_OVERLAPPED, the flag gives maximum asynchronous performance, because the I/O does not rely on the synchronous operations of the memory manager. However, some I/O operations will take longer, because data is not being held in the cache. An application must meet certain requirements when working with files opened with FILE_FLAG_NO_BUFFERING: - File access must begin at byte offsets within the file that are integer multiples of the volume's sector size. - File access must be for numbers of bytes that are integer multiples of the volume's sector size. For example, if the sector size is 512 bytes, an application can request reads and writes of 512, 1024, or 2048 bytes, but not of 335, 981, or 7171 bytes. - Buffer addresses for read and write operations must be aligned on addresses in memory that are integer multiples of the volume's sector size. One way to align buffers on integer multiples of the volume sector size is to use VirtualAlloc to allocate the buffers. It allocates memory that is aligned on addresses that are integer multiples of the operating system's memory page size. Because both memory page and volume sector sizes are powers of 2, this memory is also aligned on addresses that are integer multiples of a volume's sector size. An application can determine a volume's sector size by calling the GetDiskFreeSpace function.
+- **FILE_FLAG_OPEN_REPARSE_POINT** — --- ## FILE_FLAG_OPEN_REPARSE_POINT const win32file.FILE_FLAG_OPEN_REPARSE_POINT; used to open a handle for use with DeviceIoControl and FSCTL_GET_REPARSE_POINT/FSCTL_SET_REPARSE_POINT)
+- **FILE_FLAG_OVERLAPPED** — --- ## FILE_FLAG_OVERLAPPED const win32file.FILE_FLAG_OVERLAPPED; Instructs the system to initialize the object, so that operations that take a significant amount of time to process return ERROR_IO_PENDING. When the operation is finished, the specified event is set to the signaled state. When you specify FILE_FLAG_OVERLAPPED, the ReadFile and WriteFile functions must specify an OVERLAPPED structure. That is, when FILE_FLAG_OVERLAPPED is specified, an application must perform overlapped reading and writing. When FILE_FLAG_OVERLAPPED is specified, the system does not maintain the file pointer. The file position must be passed as part of the lpOverlapped parameter (pointing to an OVERLAPPED structure) to the ReadFile and WriteFile functions. This flag also enables more than one operation to be performed simultaneously with the handle (a simultaneous read and write operation, for example).
+- **FILE_FLAG_POSIX_SEMANTICS** — --- ## FILE_FLAG_POSIX_SEMANTICS const win32file.FILE_FLAG_POSIX_SEMANTICS; Indicates that the file is to be accessed according to POSIX rules. This includes allowing multiple files with names, differing only in case, for file systems that support such naming. Use care when using this option because files created with this flag may not be accessible by applications written for MS-DOS or Windows.
+- **FILE_FLAG_RANDOM_ACCESS** — --- ## FILE_FLAG_RANDOM_ACCESS const win32file.FILE_FLAG_RANDOM_ACCESS; Indicates that the file is accessed randomly. The system can use this as a hint to optimize file caching.
+- **FILE_FLAG_SEQUENTIAL_SCAN** — --- ## FILE_FLAG_SEQUENTIAL_SCAN const win32file.FILE_FLAG_SEQUENTIAL_SCAN; Indicates that the file is to be accessed sequentially from beginning to end. The system can use this as a hint to optimize file caching. If an application moves the file pointer for random access, optimum caching may not occur; however, correct operation is still guaranteed. Specifying this flag can increase performance for applications that read large files using sequential access. Performance gains can be even more noticeable for applications that read large files mostly sequentially, but occasionally skip over small ranges of bytes.
+- **FILE_FLAG_WRITE_THROUGH** — --- ## FILE_FLAG_WRITE_THROUGH const win32file.FILE_FLAG_WRITE_THROUGH; Instructs the system to write through any intermediate cache and go directly to disk. Windows can still cache write operations, but cannot lazily flush them.
+- **FILE_GENERIC_READ** — --- ## FILE_GENERIC_READ const win32file.FILE_GENERIC_READ;
+- **FILE_GENERIC_WRITE** — --- ## FILE_GENERIC_WRITE const win32file.FILE_GENERIC_WRITE;
+- **FILE_IS_ENCRYPTED** — --- ## FILE_IS_ENCRYPTED const win32file.FILE_IS_ENCRYPTED;
+- **FILE_READ_ONLY** — --- ## FILE_READ_ONLY const win32file.FILE_READ_ONLY;
+- **FILE_ROOT_DIR** — --- ## FILE_ROOT_DIR const win32file.FILE_ROOT_DIR;
+- **FILE_SHARE_DELETE** — --- ## FILE_SHARE_DELETE const win32file.FILE_SHARE_DELETE; Windows NT only: Subsequent open operations on the object will succeed only if delete access is requested.
+- **FILE_SHARE_READ** — --- ## FILE_SHARE_READ const win32file.FILE_SHARE_READ; Subsequent open operations on the object will succeed only if read access is requested.
+- **FILE_SHARE_WRITE** — --- ## FILE_SHARE_WRITE const win32file.FILE_SHARE_WRITE; Subsequent open operations on the object will succeed only if write access is requested.
+- **FILE_SYSTEM_ATTR** — --- ## FILE_SYSTEM_ATTR const win32file.FILE_SYSTEM_ATTR;
+- **FILE_SYSTEM_DIR** — --- ## FILE_SYSTEM_DIR const win32file.FILE_SYSTEM_DIR;
+- **FILE_SYSTEM_NOT_SUPPORT** — --- ## FILE_SYSTEM_NOT_SUPPORT const win32file.FILE_SYSTEM_NOT_SUPPORT;
+- **FILE_TYPE_CHAR** — --- ## FILE_TYPE_CHAR const win32file.FILE_TYPE_CHAR; The specified file is a character file, typically an LPT device or a console.
+- **FILE_TYPE_DISK** — --- ## FILE_TYPE_DISK const win32file.FILE_TYPE_DISK; The specified file is a disk file.
+- **FILE_TYPE_PIPE** — --- ## FILE_TYPE_PIPE const win32file.FILE_TYPE_PIPE; The specified file is either a named or anonymous pipe.
+- **FILE_TYPE_UNKNOWN** — --- ## FILE_TYPE_UNKNOWN const win32file.FILE_TYPE_UNKNOWN; The type of the specified file is unknown.
+- **FILE_UNKNOWN** — --- ## FILE_UNKNOWN const win32file.FILE_UNKNOWN;
+- **FILE_USER_DISALLOWED** — --- ## FILE_USER_DISALLOWED const win32file.FILE_USER_DISALLOWED;
+- **FileAllocationInfo** — --- ## FileAllocationInfo const win32file.FileAllocationInfo;
+- **FileAttributeTagInfo** — --- ## FileAttributeTagInfo const win32file.FileAttributeTagInfo;
+- **FileBasicInfo** — --- ## FileBasicInfo const win32file.FileBasicInfo;
+- **FileCompressionInfo** — --- ## FileCompressionInfo const win32file.FileCompressionInfo;
+- **FileDispositionInfo** — --- ## FileDispositionInfo const win32file.FileDispositionInfo;
+- **FileEndOfFileInfo** — --- ## FileEndOfFileInfo const win32file.FileEndOfFileInfo;
+- **FileIdBothDirectoryInfo** — --- ## FileIdBothDirectoryInfo const win32file.FileIdBothDirectoryInfo;
+- **FileIdBothDirectoryRestartInfo** — --- ## FileIdBothDirectoryRestartInfo const win32file.FileIdBothDirectoryRestartInfo;
+- **FileIdType** — --- ## FileIdType const win32file.FileIdType;
+- **FileIoPriorityHintInfo** — --- ## FileIoPriorityHintInfo const win32file.FileIoPriorityHintInfo;
+- **FileNameInfo** — --- ## FileNameInfo const win32file.FileNameInfo;
+- **FileRenameInfo** — --- ## FileRenameInfo const win32file.FileRenameInfo;
+- **FileStandardInfo** — --- ## FileStandardInfo const win32file.FileStandardInfo;
+- **FileStreamInfo** — --- ## FileStreamInfo const win32file.FileStreamInfo;
+- **GENERIC_EXECUTE** — --- ## GENERIC_EXECUTE const win32file.GENERIC_EXECUTE; Specifies execute access.
+- **GENERIC_READ** — --- ## GENERIC_READ const win32file.GENERIC_READ; Specifies read access to the object. Data can be read from the file and the file pointer can be moved. Combine with GENERIC_WRITE for read-write access.
+- **GENERIC_WRITE** — --- ## GENERIC_WRITE const win32file.GENERIC_WRITE; Specifies write access to the object. Data can be written to the file and the file pointer can be moved. Combine with GENERIC_READ for read-write access.
+- **GetFileExInfoStandard** — --- ## GetFileExInfoStandard const win32file.GetFileExInfoStandard;
+- **IoPriorityHintLow** — --- ## IoPriorityHintLow const win32file.IoPriorityHintLow;
+- **IoPriorityHintNormal** — --- ## IoPriorityHintNormal const win32file.IoPriorityHintNormal;
+- **IoPriorityHintVeryLow** — --- ## IoPriorityHintVeryLow const win32file.IoPriorityHintVeryLow;
+- **MARKPARITY** — --- ## MARKPARITY const win32file.MARKPARITY;
+- **MOVEFILE_COPY_ALLOWED** — --- ## MOVEFILE_COPY_ALLOWED const win32file.MOVEFILE_COPY_ALLOWED; If the file is to be moved to a different volume, the function simulates the move by using the CopyFile and DeleteFile functions. Cannot be combined with the MOVEFILE_DELAY_UNTIL_REBOOT flag.
+- **MOVEFILE_CREATE_HARDLINK** — --- ## MOVEFILE_CREATE_HARDLINK const win32file.MOVEFILE_CREATE_HARDLINK;
+- **MOVEFILE_DELAY_UNTIL_REBOOT** — --- ## MOVEFILE_DELAY_UNTIL_REBOOT const win32file.MOVEFILE_DELAY_UNTIL_REBOOT; Windows NT only: The function does not move the file until the operating system is restarted. The system moves the file immediately after AUTOCHK is executed, but before creating any paging files. Consequently, this parameter enables the function to delete paging files from previous startups.
+- **MOVEFILE_FAIL_IF_NOT_TRACKABLE** — --- ## MOVEFILE_FAIL_IF_NOT_TRACKABLE const win32file.MOVEFILE_FAIL_IF_NOT_TRACKABLE;
+- **MOVEFILE_REPLACE_EXISTING** — --- ## MOVEFILE_REPLACE_EXISTING const win32file.MOVEFILE_REPLACE_EXISTING; If a file of the name specified by lpNewFileName already exists, the function replaces its contents with those specified by lpExistingFileName.
+- **MOVEFILE_WRITE_THROUGH** — --- ## MOVEFILE_WRITE_THROUGH const win32file.MOVEFILE_WRITE_THROUGH; Windows NT only: The function does not return until the file has actually been moved on the disk. Setting this flag guarantees that a move performed as a copy and delete operation is flushed to disk before the function returns. The flush occurs at the end of the copy operation. This flag has no effect if the MOVEFILE_DELAY_UNTIL_REBOOT flag is set.
+- **NOPARITY** — --- ## NOPARITY const win32file.NOPARITY;
+- **ODDPARITY** — --- ## ODDPARITY const win32file.ODDPARITY;
+- **ONE5STOPBITS** — --- ## ONE5STOPBITS const win32file.ONE5STOPBITS;
+- **ONESTOPBIT** — --- ## ONESTOPBIT const win32file.ONESTOPBIT;
+- **OPEN_ALWAYS** — --- ## OPEN_ALWAYS const win32file.OPEN_ALWAYS; Opens the file, if it exists. If the file does not exist, the function creates the file as if dwCreationDistribution were CREATE_NEW.
+- **OPEN_EXISTING** — --- ## OPEN_EXISTING const win32file.OPEN_EXISTING; Opens the file. The function fails if the file does not exist.
+- **OVERWRITE_HIDDEN** — --- ## OVERWRITE_HIDDEN const win32file.OVERWRITE_HIDDEN;
+- **ObjectIdType** — --- ## ObjectIdType const win32file.ObjectIdType;
+- **PROGRESS_CANCEL** — --- ## PROGRESS_CANCEL const win32file.PROGRESS_CANCEL;
+- **PROGRESS_CONTINUE** — --- ## PROGRESS_CONTINUE const win32file.PROGRESS_CONTINUE;
+- **PROGRESS_QUIET** — --- ## PROGRESS_QUIET const win32file.PROGRESS_QUIET;
+- **PROGRESS_STOP** — --- ## PROGRESS_STOP const win32file.PROGRESS_STOP;
+- **PURGE_RXABORT** — --- ## PURGE_RXABORT const win32file.PURGE_RXABORT; Terminates all outstanding overlapped read operations and returns immediately, even if the read operations have not been completed.
+- **PURGE_RXCLEAR** — --- ## PURGE_RXCLEAR const win32file.PURGE_RXCLEAR; Clears the input buffer (if the device driver has one).
+- **PURGE_TXABORT** — --- ## PURGE_TXABORT const win32file.PURGE_TXABORT; Terminates all outstanding overlapped write operations and returns immediately, even if the write operations have not been completed.
+- **PURGE_TXCLEAR** — --- ## PURGE_TXCLEAR const win32file.PURGE_TXCLEAR; Clears the output buffer (if the device driver has one).
+- **REPLACEFILE_IGNORE_MERGE_ERRORS** — --- ## REPLACEFILE_IGNORE_MERGE_ERRORS const win32file.REPLACEFILE_IGNORE_MERGE_ERRORS;
+- **REPLACEFILE_WRITE_THROUGH** — --- ## REPLACEFILE_WRITE_THROUGH const win32file.REPLACEFILE_WRITE_THROUGH;
+- **RTS_CONTROL_DISABLE** — --- ## RTS_CONTROL_DISABLE const win32file.RTS_CONTROL_DISABLE; Disables the RTS line when the device is opened and leaves it disabled.
+- **RTS_CONTROL_ENABLE** — --- ## RTS_CONTROL_ENABLE const win32file.RTS_CONTROL_ENABLE; Enables the RTS line when the device is opened and leaves it on.
+- **RTS_CONTROL_HANDSHAKE** — --- ## RTS_CONTROL_HANDSHAKE const win32file.RTS_CONTROL_HANDSHAKE; Enables RTS handshaking. The driver raises the RTS line when the "type-ahead" (input) buffer is less than one-half full and lowers the RTS line when the buffer is more than three-quarters full. If handshaking is enabled, it is an error for the application to adjust the line by using the EscapeCommFunction function.
+- **RTS_CONTROL_TOGGLE** — --- ## RTS_CONTROL_TOGGLE const win32file.RTS_CONTROL_TOGGLE; Specifies that the RTS line will be high if bytes are available for transmission. After all buffered bytes have been sent, the RTS line will be low.
+- **SCS_32BIT_BINARY** — --- ## SCS_32BIT_BINARY const win32file.SCS_32BIT_BINARY; A Win32-based application
+- **SCS_DOS_BINARY** — --- ## SCS_DOS_BINARY const win32file.SCS_DOS_BINARY; An MS-DOS - based application
+- **SCS_OS216_BINARY** — --- ## SCS_OS216_BINARY const win32file.SCS_OS216_BINARY; A 16-bit OS/2-based application
+- **SCS_PIF_BINARY** — --- ## SCS_PIF_BINARY const win32file.SCS_PIF_BINARY; A PIF file that executes an MS-DOS - based application
+- **SCS_POSIX_BINARY** — --- ## SCS_POSIX_BINARY const win32file.SCS_POSIX_BINARY; A POSIX - based application
+- **SCS_WOW_BINARY** — --- ## SCS_WOW_BINARY const win32file.SCS_WOW_BINARY; A 16-bit Windows-based application
+- **SECURITY_ANONYMOUS** — --- ## SECURITY_ANONYMOUS const win32file.SECURITY_ANONYMOUS; Specifies to impersonate the client at the Anonymous impersonation level.
+- **SECURITY_CONTEXT_TRACKING** — --- ## SECURITY_CONTEXT_TRACKING const win32file.SECURITY_CONTEXT_TRACKING; Specifies that the security tracking mode is dynamic. If this flag is not specified, Security Tracking Mode is static.
+- **SECURITY_DELEGATION** — --- ## SECURITY_DELEGATION const win32file.SECURITY_DELEGATION; Specifies to impersonate the client at the Delegation impersonation level.
+- **SECURITY_EFFECTIVE_ONLY** — --- ## SECURITY_EFFECTIVE_ONLY const win32file.SECURITY_EFFECTIVE_ONLY; Specifies that only the enabled aspects
+- **SECURITY_IDENTIFICATION** — --- ## SECURITY_IDENTIFICATION const win32file.SECURITY_IDENTIFICATION; Specifies to impersonate the client at the Identification impersonation level.
+- **SECURITY_IMPERSONATION** — --- ## SECURITY_IMPERSONATION const win32file.SECURITY_IMPERSONATION; Specifies to impersonate the client at the Impersonation impersonation level.
+- **SETBREAK** — --- ## SETBREAK const win32file.SETBREAK; Suspends character transmission and places the transmission line in a break state until the ClearCommBreak function is called (or EscapeCommFunction is called with the CLRBREAK extended function code). The SETBREAK extended function code is identical to the SetCommBreak function. Note that this extended function does not flush data that has not been transmitted.
+- **SETDTR** — --- ## SETDTR const win32file.SETDTR; Sends the DTR (data-terminal-ready) signal.
+- **SETRTS** — --- ## SETRTS const win32file.SETRTS; Sends the RTS (request-to-send) signal.
+- **SETXOFF** — --- ## SETXOFF const win32file.SETXOFF; Causes transmission to act as if an XOFF character has been received.
+- **SETXON** — --- ## SETXON const win32file.SETXON; Causes transmission to act as if an XON character has been received.
+- **SO_CONNECT_TIME** — --- ## SO_CONNECT_TIME const win32file.SO_CONNECT_TIME;
+- **SO_UPDATE_ACCEPT_CONTEXT** — --- ## SO_UPDATE_ACCEPT_CONTEXT const win32file.SO_UPDATE_ACCEPT_CONTEXT;
+- **SO_UPDATE_CONNECT_CONTEXT** — --- ## SO_UPDATE_CONNECT_CONTEXT const win32file.SO_UPDATE_CONNECT_CONTEXT;
+- **SPACEPARITY** — --- ## SPACEPARITY const win32file.SPACEPARITY;
+- **SYMBOLIC_LINK_FLAG_ALLOW_UNPRIVILEGED_CREATE** — --- ## SYMBOLIC_LINK_FLAG_ALLOW_UNPRIVILEGED_CREATE const win32file.SYMBOLIC_LINK_FLAG_ALLOW_UNPRIVILEGED_CREATE;
+- **SYMBOLIC_LINK_FLAG_DIRECTORY** — --- ## SYMBOLIC_LINK_FLAG_DIRECTORY const win32file.SYMBOLIC_LINK_FLAG_DIRECTORY;
+- **TF_DISCONNECT** — --- ## TF_DISCONNECT const win32file.TF_DISCONNECT;
+- **TF_REUSE_SOCKET** — --- ## TF_REUSE_SOCKET const win32file.TF_REUSE_SOCKET;
+- **TF_USE_DEFAULT_WORKER** — --- ## TF_USE_DEFAULT_WORKER const win32file.TF_USE_DEFAULT_WORKER;
+- **TF_USE_KERNEL_APC** — --- ## TF_USE_KERNEL_APC const win32file.TF_USE_KERNEL_APC;
+- **TF_USE_SYSTEM_THREAD** — --- ## TF_USE_SYSTEM_THREAD const win32file.TF_USE_SYSTEM_THREAD;
+- **TF_WRITE_BEHIND** — --- ## TF_WRITE_BEHIND const win32file.TF_WRITE_BEHIND;
+- **TRUNCATE_EXISTING** — --- ## TRUNCATE_EXISTING const win32file.TRUNCATE_EXISTING; Opens the file. Once opened, the file is truncated so that its size is zero bytes. The calling process must open the file with at least GENERIC_WRITE access. The function fails if the file does not exist.
+- **TWOSTOPBITS** — --- ## TWOSTOPBITS const win32file.TWOSTOPBITS;
+- **WSAECONNABORTED** — --- ## WSAECONNABORTED const win32file.WSAECONNABORTED;
+- **WSAECONNRESET** — --- ## WSAECONNRESET const win32file.WSAECONNRESET;
+- **WSAEDISCON** — --- ## WSAEDISCON const win32file.WSAEDISCON;
+- **WSAEFAULT** — --- ## WSAEFAULT const win32file.WSAEFAULT;
+- **WSAEINPROGRESS** — --- ## WSAEINPROGRESS const win32file.WSAEINPROGRESS;
+- **WSAEINTR** — --- ## WSAEINTR const win32file.WSAEINTR;
+- **WSAEINVAL** — --- ## WSAEINVAL const win32file.WSAEINVAL;
+- **WSAEMSGSIZE** — --- ## WSAEMSGSIZE const win32file.WSAEMSGSIZE;
+- **WSAENETDOWN** — --- ## WSAENETDOWN const win32file.WSAENETDOWN;
+- **WSAENETRESET** — --- ## WSAENETRESET const win32file.WSAENETRESET;
+- **WSAENOBUFS** — --- ## WSAENOBUFS const win32file.WSAENOBUFS;
+- **WSAENOTCONN** — --- ## WSAENOTCONN const win32file.WSAENOTCONN;
+- **WSAENOTSOCK** — --- ## WSAENOTSOCK const win32file.WSAENOTSOCK;
+- **WSAEOPNOTSUPP** — --- ## WSAEOPNOTSUPP const win32file.WSAEOPNOTSUPP;
+- **WSAESHUTDOWN** — --- ## WSAESHUTDOWN const win32file.WSAESHUTDOWN;
+- **WSAEWOULDBLOCK** — --- ## WSAEWOULDBLOCK const win32file.WSAEWOULDBLOCK;
+- **WSA_IO_PENDING** — --- ## WSA_IO_PENDING const win32file.WSA_IO_PENDING;
+- **WSA_OPERATION_ABORTED** — --- ## WSA_OPERATION_ABORTED const win32file.WSA_OPERATION_ABORTED;

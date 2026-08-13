@@ -1,0 +1,198 @@
+# win32ui 常量（共 194 个）
+
+> 来源 https://mhammond.github.io/pywin32/win32ui_<CONST>.html
+
+- **AFX_IDW_PANE_FIRST** — --- ## AFX_IDW_PANE_FIRST const win32ui.AFX_IDW_PANE_FIRST; Id of the first splitter pane
+- **AFX_IDW_PANE_LAST** — --- ## AFX_IDW_PANE_LAST const win32ui.AFX_IDW_PANE_LAST; Id of the last splitter pane
+- **AFX_WS_DEFAULT_VIEW** — --- ## AFX_WS_DEFAULT_VIEW const win32ui.AFX_WS_DEFAULT_VIEW;
+- **CDocTemplate_Confidence_maybeAttemptForeign** — --- ## CDocTemplate_Confidence_maybeAttemptForeign const win32ui.CDocTemplate_Confidence_maybeAttemptForeign;
+- **CDocTemplate_Confidence_maybeAttemptNative** — --- ## CDocTemplate_Confidence_maybeAttemptNative const win32ui.CDocTemplate_Confidence_maybeAttemptNative;
+- **CDocTemplate_Confidence_noAttempt** — --- ## CDocTemplate_Confidence_noAttempt const win32ui.CDocTemplate_Confidence_noAttempt;
+- **CDocTemplate_Confidence_yesAlreadyOpen** — --- ## CDocTemplate_Confidence_yesAlreadyOpen const win32ui.CDocTemplate_Confidence_yesAlreadyOpen;
+- **CDocTemplate_Confidence_yesAttemptForeign** — --- ## CDocTemplate_Confidence_yesAttemptForeign const win32ui.CDocTemplate_Confidence_yesAttemptForeign;
+- **CDocTemplate_Confidence_yesAttemptNative** — --- ## CDocTemplate_Confidence_yesAttemptNative const win32ui.CDocTemplate_Confidence_yesAttemptNative;
+- **CDocTemplate_docName** — --- ## CDocTemplate_docName const win32ui.CDocTemplate_docName;
+- **CDocTemplate_fileNewName** — --- ## CDocTemplate_fileNewName const win32ui.CDocTemplate_fileNewName;
+- **CDocTemplate_filterExt** — --- ## CDocTemplate_filterExt const win32ui.CDocTemplate_filterExt;
+- **CDocTemplate_filterName** — --- ## CDocTemplate_filterName const win32ui.CDocTemplate_filterName;
+- **CDocTemplate_regFileTypeId** — --- ## CDocTemplate_regFileTypeId const win32ui.CDocTemplate_regFileTypeId;
+- **CDocTemplate_regFileTypeName** — --- ## CDocTemplate_regFileTypeName const win32ui.CDocTemplate_regFileTypeName;
+- **CDocTemplate_windowTitle** — --- ## CDocTemplate_windowTitle const win32ui.CDocTemplate_windowTitle;
+- **CRichEditView_WrapNone** — --- ## CRichEditView_WrapNone const win32ui.CRichEditView_WrapNone;
+- **CRichEditView_WrapToTargetDevice** — --- ## CRichEditView_WrapToTargetDevice const win32ui.CRichEditView_WrapToTargetDevice;
+- **CRichEditView_WrapToWindow** — --- ## CRichEditView_WrapToWindow const win32ui.CRichEditView_WrapToWindow;
+- **FWS_ADDTOTITLE** — --- ## FWS_ADDTOTITLE const win32ui.FWS_ADDTOTITLE; MFC Frame Window style extension. Add document title to window title.
+- **FWS_PREFIXTITLE** — --- ## FWS_PREFIXTITLE const win32ui.FWS_PREFIXTITLE; MFC Frame Window style extension.
+- **FWS_SNAPTOBARS** — --- ## FWS_SNAPTOBARS const win32ui.FWS_SNAPTOBARS; MFC Frame Window style extension.
+- **IDB_BROWSER_HIER** — --- ## IDB_BROWSER_HIER const win32ui.IDB_BROWSER_HIER; Id of built in bitmap for the browser
+- **IDB_DEBUGGER_HIER** — --- ## IDB_DEBUGGER_HIER const win32ui.IDB_DEBUGGER_HIER;
+- **IDB_HIERFOLDERS** — --- ## IDB_HIERFOLDERS const win32ui.IDB_HIERFOLDERS; Id of built in bitmap for default hierarchical list
+- **IDC_ABOUT_VERSION** — --- ## IDC_ABOUT_VERSION const win32ui.IDC_ABOUT_VERSION; Id of 'Version' control
+- **IDC_AUTOCOMPLETE** — --- ## IDC_AUTOCOMPLETE const win32ui.IDC_AUTOCOMPLETE;
+- **IDC_AUTO_RELOAD** — --- ## IDC_AUTO_RELOAD const win32ui.IDC_AUTO_RELOAD;
+- **IDC_BUTTON1** — --- ## IDC_BUTTON1 const win32ui.IDC_BUTTON1;
+- **IDC_BUTTON2** — --- ## IDC_BUTTON2 const win32ui.IDC_BUTTON2;
+- **IDC_BUTTON3** — --- ## IDC_BUTTON3 const win32ui.IDC_BUTTON3;
+- **IDC_BUTTON4** — --- ## IDC_BUTTON4 const win32ui.IDC_BUTTON4;
+- **IDC_CALLTIPS** — --- ## IDC_CALLTIPS const win32ui.IDC_CALLTIPS;
+- **IDC_CHECK1** — --- ## IDC_CHECK1 const win32ui.IDC_CHECK1;
+- **IDC_CHECK2** — --- ## IDC_CHECK2 const win32ui.IDC_CHECK2;
+- **IDC_CHECK3** — --- ## IDC_CHECK3 const win32ui.IDC_CHECK3;
+- **IDC_COMBO1** — --- ## IDC_COMBO1 const win32ui.IDC_COMBO1;
+- **IDC_COMBO2** — --- ## IDC_COMBO2 const win32ui.IDC_COMBO2;
+- **IDC_EDIT1** — --- ## IDC_EDIT1 const win32ui.IDC_EDIT1;
+- **IDC_EDIT2** — --- ## IDC_EDIT2 const win32ui.IDC_EDIT2;
+- **IDC_EDIT3** — --- ## IDC_EDIT3 const win32ui.IDC_EDIT3;
+- **IDC_EDIT4** — --- ## IDC_EDIT4 const win32ui.IDC_EDIT4;
+- **IDC_EDIT_COLOE** — --- ## IDC_EDIT_COLOE const win32ui.IDC_EDIT_COLOE;
+- **IDC_EDIT_TABS** — --- ## IDC_EDIT_TABS const win32ui.IDC_EDIT_TABS;
+- **IDC_INDENT_SIZE** — --- ## IDC_INDENT_SIZE const win32ui.IDC_INDENT_SIZE;
+- **IDC_KEYBOARD_CONFIG** — --- ## IDC_KEYBOARD_CONFIG const win32ui.IDC_KEYBOARD_CONFIG;
+- **IDC_LIST1** — --- ## IDC_LIST1 const win32ui.IDC_LIST1;
+- **IDC_PROMPT1** — --- ## IDC_PROMPT1 const win32ui.IDC_PROMPT1;
+- **IDC_PROMPT2** — --- ## IDC_PROMPT2 const win32ui.IDC_PROMPT2;
+- **IDC_PROMPT3** — --- ## IDC_PROMPT3 const win32ui.IDC_PROMPT3;
+- **IDC_PROMPT4** — --- ## IDC_PROMPT4 const win32ui.IDC_PROMPT4;
+- **IDC_PROMPT_TABS** — --- ## IDC_PROMPT_TABS const win32ui.IDC_PROMPT_TABS;
+- **IDC_RADIO1** — --- ## IDC_RADIO1 const win32ui.IDC_RADIO1;
+- **IDC_RADIO2** — --- ## IDC_RADIO2 const win32ui.IDC_RADIO2;
+- **IDC_RIGHTEDGE_COLUMN** — --- ## IDC_RIGHTEDGE_COLUMN const win32ui.IDC_RIGHTEDGE_COLUMN;
+- **IDC_RIGHTEDGE_DEFINE** — --- ## IDC_RIGHTEDGE_DEFINE const win32ui.IDC_RIGHTEDGE_DEFINE;
+- **IDC_RIGHTEDGE_ENABLE** — --- ## IDC_RIGHTEDGE_ENABLE const win32ui.IDC_RIGHTEDGE_ENABLE;
+- **IDC_RIGHTEDGE_SAMPLE** — --- ## IDC_RIGHTEDGE_SAMPLE const win32ui.IDC_RIGHTEDGE_SAMPLE;
+- **IDC_SPIN1** — --- ## IDC_SPIN1 const win32ui.IDC_SPIN1;
+- **IDC_SPIN2** — --- ## IDC_SPIN2 const win32ui.IDC_SPIN2;
+- **IDC_SPIN3** — --- ## IDC_SPIN3 const win32ui.IDC_SPIN3;
+- **IDC_TAB_SIZE** — --- ## IDC_TAB_SIZE const win32ui.IDC_TAB_SIZE;
+- **IDC_USE_SMART_TABS** — --- ## IDC_USE_SMART_TABS const win32ui.IDC_USE_SMART_TABS;
+- **IDC_USE_TABS** — --- ## IDC_USE_TABS const win32ui.IDC_USE_TABS;
+- **IDC_VIEW_WHITESPACE** — --- ## IDC_VIEW_WHITESPACE const win32ui.IDC_VIEW_WHITESPACE;
+- **IDC_VSS_INTEGRATE** — --- ## IDC_VSS_INTEGRATE const win32ui.IDC_VSS_INTEGRATE;
+- **IDD_ABOUTBOX** — --- ## IDD_ABOUTBOX const win32ui.IDD_ABOUTBOX; Id of built in 'About Box' dialog
+- **IDD_DUMMYPROPPAGE** — --- ## IDD_DUMMYPROPPAGE const win32ui.IDD_DUMMYPROPPAGE; Id of built in dummy property page
+- **IDD_GENERAL_STATUS** — --- ## IDD_GENERAL_STATUS const win32ui.IDD_GENERAL_STATUS; Id of a general status dialog box (fairly small, 3 static controls, minimize box)
+- **IDD_LARGE_EDIT** — --- ## IDD_LARGE_EDIT const win32ui.IDD_LARGE_EDIT; Id of built in 'Large Edit' dialog (dialog box with a large edit control)
+- **IDD_PP_DEBUGGER** — --- ## IDD_PP_DEBUGGER const win32ui.IDD_PP_DEBUGGER;
+- **IDD_PP_EDITOR** — --- ## IDD_PP_EDITOR const win32ui.IDD_PP_EDITOR; Id of built in 'Editor' property page
+- **IDD_PP_FORMAT** — --- ## IDD_PP_FORMAT const win32ui.IDD_PP_FORMAT; Id of built in 'Format' property page
+- **IDD_PP_IDE** — --- ## IDD_PP_IDE const win32ui.IDD_PP_IDE; Id of built in 'IDE' property page
+- **IDD_PP_TABS** — --- ## IDD_PP_TABS const win32ui.IDD_PP_TABS; Id of built in 'Tabs and Whitespace' property page
+- **IDD_PP_TOOLMENU** — --- ## IDD_PP_TOOLMENU const win32ui.IDD_PP_TOOLMENU; Id of built in 'ToolsMenu' property page
+- **IDD_PROPDEMO1** — --- ## IDD_PROPDEMO1 const win32ui.IDD_PROPDEMO1; Id of built in Property Page demo dialog 1
+- **IDD_PROPDEMO2** — --- ## IDD_PROPDEMO2 const win32ui.IDD_PROPDEMO2; Id of built in Property Page demo dialog 2
+- **IDD_RUN_SCRIPT** — --- ## IDD_RUN_SCRIPT const win32ui.IDD_RUN_SCRIPT; Id of built in 'Run Script' dialog
+- **IDD_SET_TABSTOPS** — --- ## IDD_SET_TABSTOPS const win32ui.IDD_SET_TABSTOPS; Id of built in 'Set Tab Stops' dialog
+- **IDD_SIMPLE_INPUT** — --- ## IDD_SIMPLE_INPUT const win32ui.IDD_SIMPLE_INPUT; Id of built in 'Simple Input' property page.
+- **IDD_TREE** — --- ## IDD_TREE const win32ui.IDD_TREE; Id of built in dialog with a tree control.
+- **IDD_TREE_MB** — --- ## IDD_TREE_MB const win32ui.IDD_TREE_MB; Id of built in dialog with a tree control with multiple buttons.
+- **IDR_CNTR_INPLACE** — --- ## IDR_CNTR_INPLACE const win32ui.IDR_CNTR_INPLACE;
+- **IDR_DEBUGGER** — --- ## IDR_DEBUGGER const win32ui.IDR_DEBUGGER;
+- **IDR_MAINFRAME** — --- ## IDR_MAINFRAME const win32ui.IDR_MAINFRAME;
+- **IDR_PYTHONCONTYPE** — --- ## IDR_PYTHONCONTYPE const win32ui.IDR_PYTHONCONTYPE;
+- **IDR_PYTHONTYPE** — --- ## IDR_PYTHONTYPE const win32ui.IDR_PYTHONTYPE;
+- **IDR_PYTHONTYPE_CNTR_IP** — --- ## IDR_PYTHONTYPE_CNTR_IP const win32ui.IDR_PYTHONTYPE_CNTR_IP;
+- **IDR_TEXTTYPE** — --- ## IDR_TEXTTYPE const win32ui.IDR_TEXTTYPE;
+- **ID_APP_ABOUT** — --- ## ID_APP_ABOUT const win32ui.ID_APP_ABOUT;
+- **ID_APP_EXIT** — --- ## ID_APP_EXIT const win32ui.ID_APP_EXIT;
+- **ID_EDIT_CLEAR** — --- ## ID_EDIT_CLEAR const win32ui.ID_EDIT_CLEAR;
+- **ID_EDIT_CLEAR_ALL** — --- ## ID_EDIT_CLEAR_ALL const win32ui.ID_EDIT_CLEAR_ALL;
+- **ID_EDIT_COPY** — --- ## ID_EDIT_COPY const win32ui.ID_EDIT_COPY;
+- **ID_EDIT_CUT** — --- ## ID_EDIT_CUT const win32ui.ID_EDIT_CUT;
+- **ID_EDIT_FIND** — --- ## ID_EDIT_FIND const win32ui.ID_EDIT_FIND;
+- **ID_EDIT_GOTO_LINE** — --- ## ID_EDIT_GOTO_LINE const win32ui.ID_EDIT_GOTO_LINE;
+- **ID_EDIT_PASTE** — --- ## ID_EDIT_PASTE const win32ui.ID_EDIT_PASTE;
+- **ID_EDIT_REDO** — --- ## ID_EDIT_REDO const win32ui.ID_EDIT_REDO;
+- **ID_EDIT_REPEAT** — --- ## ID_EDIT_REPEAT const win32ui.ID_EDIT_REPEAT;
+- **ID_EDIT_REPLACE** — --- ## ID_EDIT_REPLACE const win32ui.ID_EDIT_REPLACE;
+- **ID_EDIT_SELECT_ALL** — --- ## ID_EDIT_SELECT_ALL const win32ui.ID_EDIT_SELECT_ALL;
+- **ID_EDIT_SELECT_BLOCK** — --- ## ID_EDIT_SELECT_BLOCK const win32ui.ID_EDIT_SELECT_BLOCK;
+- **ID_EDIT_UNDO** — --- ## ID_EDIT_UNDO const win32ui.ID_EDIT_UNDO;
+- **ID_FILE_CHECK** — --- ## ID_FILE_CHECK const win32ui.ID_FILE_CHECK;
+- **ID_FILE_CLOSE** — --- ## ID_FILE_CLOSE const win32ui.ID_FILE_CLOSE;
+- **ID_FILE_IMPORT** — --- ## ID_FILE_IMPORT const win32ui.ID_FILE_IMPORT;
+- **ID_FILE_LOCATE** — --- ## ID_FILE_LOCATE const win32ui.ID_FILE_LOCATE;
+- **ID_FILE_MRU_FILE1** — --- ## ID_FILE_MRU_FILE1 const win32ui.ID_FILE_MRU_FILE1;
+- **ID_FILE_MRU_FILE2** — --- ## ID_FILE_MRU_FILE2 const win32ui.ID_FILE_MRU_FILE2;
+- **ID_FILE_MRU_FILE3** — --- ## ID_FILE_MRU_FILE3 const win32ui.ID_FILE_MRU_FILE3;
+- **ID_FILE_MRU_FILE4** — --- ## ID_FILE_MRU_FILE4 const win32ui.ID_FILE_MRU_FILE4;
+- **ID_FILE_NEW** — --- ## ID_FILE_NEW const win32ui.ID_FILE_NEW;
+- **ID_FILE_OPEN** — --- ## ID_FILE_OPEN const win32ui.ID_FILE_OPEN;
+- **ID_FILE_PAGE_SETUP** — --- ## ID_FILE_PAGE_SETUP const win32ui.ID_FILE_PAGE_SETUP;
+- **ID_FILE_PRINT** — --- ## ID_FILE_PRINT const win32ui.ID_FILE_PRINT;
+- **ID_FILE_PRINT_PREVIEW** — --- ## ID_FILE_PRINT_PREVIEW const win32ui.ID_FILE_PRINT_PREVIEW;
+- **ID_FILE_PRINT_SETUP** — --- ## ID_FILE_PRINT_SETUP const win32ui.ID_FILE_PRINT_SETUP;
+- **ID_FILE_RUN** — --- ## ID_FILE_RUN const win32ui.ID_FILE_RUN;
+- **ID_FILE_SAVE** — --- ## ID_FILE_SAVE const win32ui.ID_FILE_SAVE;
+- **ID_FILE_SAVE_ALL** — --- ## ID_FILE_SAVE_ALL const win32ui.ID_FILE_SAVE_ALL;
+- **ID_FILE_SAVE_AS** — --- ## ID_FILE_SAVE_AS const win32ui.ID_FILE_SAVE_AS;
+- **ID_HELP_GUI_REF** — --- ## ID_HELP_GUI_REF const win32ui.ID_HELP_GUI_REF;
+- **ID_HELP_OTHER** — --- ## ID_HELP_OTHER const win32ui.ID_HELP_OTHER;
+- **ID_HELP_PYTHON** — --- ## ID_HELP_PYTHON const win32ui.ID_HELP_PYTHON;
+- **ID_INDICATOR_COLNUM** — --- ## ID_INDICATOR_COLNUM const win32ui.ID_INDICATOR_COLNUM;
+- **ID_INDICATOR_LINENUM** — --- ## ID_INDICATOR_LINENUM const win32ui.ID_INDICATOR_LINENUM;
+- **ID_NEXT_PANE** — --- ## ID_NEXT_PANE const win32ui.ID_NEXT_PANE;
+- **ID_PREV_PANE** — --- ## ID_PREV_PANE const win32ui.ID_PREV_PANE;
+- **ID_SEPARATOR** — --- ## ID_SEPARATOR const win32ui.ID_SEPARATOR;
+- **ID_VIEW_BROWSE** — --- ## ID_VIEW_BROWSE const win32ui.ID_VIEW_BROWSE;
+- **ID_VIEW_EOL** — --- ## ID_VIEW_EOL const win32ui.ID_VIEW_EOL;
+- **ID_VIEW_FIXED_FONT** — --- ## ID_VIEW_FIXED_FONT const win32ui.ID_VIEW_FIXED_FONT;
+- **ID_VIEW_FOLD_COLLAPSE** — --- ## ID_VIEW_FOLD_COLLAPSE const win32ui.ID_VIEW_FOLD_COLLAPSE;
+- **ID_VIEW_FOLD_COLLAPSE_ALL** — --- ## ID_VIEW_FOLD_COLLAPSE_ALL const win32ui.ID_VIEW_FOLD_COLLAPSE_ALL;
+- **ID_VIEW_FOLD_EXPAND** — --- ## ID_VIEW_FOLD_EXPAND const win32ui.ID_VIEW_FOLD_EXPAND;
+- **ID_VIEW_FOLD_EXPAND_ALL** — --- ## ID_VIEW_FOLD_EXPAND_ALL const win32ui.ID_VIEW_FOLD_EXPAND_ALL;
+- **ID_VIEW_FOLD_TOGGLE** — --- ## ID_VIEW_FOLD_TOGGLE const win32ui.ID_VIEW_FOLD_TOGGLE;
+- **ID_VIEW_INDENTATIONGUIDES** — --- ## ID_VIEW_INDENTATIONGUIDES const win32ui.ID_VIEW_INDENTATIONGUIDES;
+- **ID_VIEW_INTERACTIVE** — --- ## ID_VIEW_INTERACTIVE const win32ui.ID_VIEW_INTERACTIVE;
+- **ID_VIEW_OPTIONS** — --- ## ID_VIEW_OPTIONS const win32ui.ID_VIEW_OPTIONS;
+- **ID_VIEW_RIGHT_EDGE** — --- ## ID_VIEW_RIGHT_EDGE const win32ui.ID_VIEW_RIGHT_EDGE;
+- **ID_VIEW_STATUS_BAR** — --- ## ID_VIEW_STATUS_BAR const win32ui.ID_VIEW_STATUS_BAR;
+- **ID_VIEW_TOOLBAR** — --- ## ID_VIEW_TOOLBAR const win32ui.ID_VIEW_TOOLBAR;
+- **ID_VIEW_TOOLBAR_DBG** — --- ## ID_VIEW_TOOLBAR_DBG const win32ui.ID_VIEW_TOOLBAR_DBG;
+- **ID_VIEW_WHITESPACE** — --- ## ID_VIEW_WHITESPACE const win32ui.ID_VIEW_WHITESPACE;
+- **ID_WINDOW_ARRANGE** — --- ## ID_WINDOW_ARRANGE const win32ui.ID_WINDOW_ARRANGE;
+- **ID_WINDOW_CASCADE** — --- ## ID_WINDOW_CASCADE const win32ui.ID_WINDOW_CASCADE;
+- **ID_WINDOW_NEW** — --- ## ID_WINDOW_NEW const win32ui.ID_WINDOW_NEW;
+- **ID_WINDOW_SPLIT** — --- ## ID_WINDOW_SPLIT const win32ui.ID_WINDOW_SPLIT;
+- **ID_WINDOW_TILE_HORZ** — --- ## ID_WINDOW_TILE_HORZ const win32ui.ID_WINDOW_TILE_HORZ;
+- **ID_WINDOW_TILE_VERT** — --- ## ID_WINDOW_TILE_VERT const win32ui.ID_WINDOW_TILE_VERT;
+- **LM_COMMIT** — --- ## LM_COMMIT const win32ui.LM_COMMIT; Remember MRUWidth
+- **LM_HORZ** — --- ## LM_HORZ const win32ui.LM_HORZ; same as bHorz in CalcFixedLayout
+- **LM_HORZDOCK** — --- ## LM_HORZDOCK const win32ui.LM_HORZDOCK; Horizontal Docked Dimensions
+- **LM_LENGTHY** — --- ## LM_LENGTHY const win32ui.LM_LENGTHY; Set if nLength is a Height instead of a Width
+- **LM_MRUWIDTH** — --- ## LM_MRUWIDTH const win32ui.LM_MRUWIDTH; Most Recently Used Dynamic Width
+- **LM_STRETCH** — --- ## LM_STRETCH const win32ui.LM_STRETCH; same meaning as bStretch in CalcFixedLayout. If set, ignores nLength and returns dimensions based on LM_HORZ state, otherwise LM_HORZ is used to determine if nLength is the desired horizontal or vertical length and dimensions are returned based on nLength
+- **LM_VERTDOCK** — --- ## LM_VERTDOCK const win32ui.LM_VERTDOCK; Vertical Docked Dimensions
+- **MFS_4THICKFRAME** — --- ## MFS_4THICKFRAME const win32ui.MFS_4THICKFRAME; thick frame all around (no tiles)
+- **MFS_BLOCKSYSMENU** — --- ## MFS_BLOCKSYSMENU const win32ui.MFS_BLOCKSYSMENU; block hit testing on system menu
+- **MFS_MOVEFRAME** — --- ## MFS_MOVEFRAME const win32ui.MFS_MOVEFRAME; no sizing, just moving
+- **MFS_SYNCACTIVE** — --- ## MFS_SYNCACTIVE const win32ui.MFS_SYNCACTIVE; syncronize activation w/ parent
+- **MFS_THICKFRAME** — --- ## MFS_THICKFRAME const win32ui.MFS_THICKFRAME; use instead of WS_THICKFRAME
+- **PD_ALLPAGES** — --- ## PD_ALLPAGES const win32ui.PD_ALLPAGES; The default flag that indicates that the All radio button is initially selected. This flag is used as a placeholder to indicate that the PD_PAGENUMS and PD_SELECTION flags are not specified.
+- **PD_COLLATE** — --- ## PD_COLLATE const win32ui.PD_COLLATE; If this flag is set, the Collate check box is checked. If this flag is set when the PrintDlg function returns, the application must simulate collation of multiple copies. For more information, see the description of the PD_USEDEVMODECOPIESANDCOLLATE flag.
+- **PD_DISABLEPRINTTOFILE** — --- ## PD_DISABLEPRINTTOFILE const win32ui.PD_DISABLEPRINTTOFILE; Disables the Print to File check box.
+- **PD_ENABLEPRINTHOOK** — --- ## PD_ENABLEPRINTHOOK const win32ui.PD_ENABLEPRINTHOOK; Enables the hook procedure specified in the lpfnPrintHook member. This enables the hook procedure for the Print dialog box.
+- **PD_ENABLEPRINTTEMPLATE** — --- ## PD_ENABLEPRINTTEMPLATE const win32ui.PD_ENABLEPRINTTEMPLATE; PD_ENABLEPRINTTEMPLATE
+- **PD_ENABLEPRINTTEMPLATEHANDLE** — --- ## PD_ENABLEPRINTTEMPLATEHANDLE const win32ui.PD_ENABLEPRINTTEMPLATEHANDLE; Indicates that the hPrintTemplate member identifies a data block that contains a preloaded dialog box template. This template replaces the default template for the Print dialog box. The system ignores the lpPrintTemplateName member if this flag is specified.
+- **PD_ENABLESETUPHOOK** — --- ## PD_ENABLESETUPHOOK const win32ui.PD_ENABLESETUPHOOK; Enables the hook procedure specified in the lpfnSetupHook member. This enables the hook procedure for the Print Setup dialog box.
+- **PD_ENABLESETUPTEMPLATE** — --- ## PD_ENABLESETUPTEMPLATE const win32ui.PD_ENABLESETUPTEMPLATE; Indicates that the hInstance and lpSetupTemplateName members specify a replacement for the default Print Setup dialog box template.
+- **PD_ENABLESETUPTEMPLATEHANDLE** — --- ## PD_ENABLESETUPTEMPLATEHANDLE const win32ui.PD_ENABLESETUPTEMPLATEHANDLE; Indicates that the hSetupTemplate member identifies a data block that contains a preloaded dialog box template. This template replaces the default template for the Print Setup dialog box. The system ignores the lpSetupTemplateName member if this flag is specified.
+- **PD_HIDEPRINTTOFILE** — --- ## PD_HIDEPRINTTOFILE const win32ui.PD_HIDEPRINTTOFILE; Hides the Print to File check box.
+- **PD_NONETWORKBUTTON** — --- ## PD_NONETWORKBUTTON const win32ui.PD_NONETWORKBUTTON; Hides and disables the Network button.
+- **PD_NOPAGENUMS** — --- ## PD_NOPAGENUMS const win32ui.PD_NOPAGENUMS; Disables the Pages radio button and the associated edit controls.
+- **PD_NOSELECTION** — --- ## PD_NOSELECTION const win32ui.PD_NOSELECTION; Disables the Selection radio button.
+- **PD_NOWARNING** — --- ## PD_NOWARNING const win32ui.PD_NOWARNING; Prevents the warning message from being displayed when there is no default printer.
+- **PD_PAGENUMS** — --- ## PD_PAGENUMS const win32ui.PD_PAGENUMS; If this flag is set, the Pages radio button is selected. If this flag is set when the PrintDlg function returns, the nFromPage and nFromPage members indicate the starting and ending pages specified by the user.
+- **PD_PRINTSETUP** — --- ## PD_PRINTSETUP const win32ui.PD_PRINTSETUP; Causes the system to display the Print Setup dialog box rather than the Print dialog box.
+- **PD_PRINTTOFILE** — --- ## PD_PRINTTOFILE const win32ui.PD_PRINTTOFILE; If this flag is set, the Print to File check box is selected. If this flag is set when the PrintDlg function returns, the offset indicated by the wOutputOffset member of the DEVNAMES structure contains the string "FILE:". When you call theStartDoc function to start the printing operation, specify this "FILE:" string in the lpszOutput member of theDOCINFO structure. Specifying this string causes the print subsystem to query the user for the name of the output file.
+- **PD_RETURNDC** — --- ## PD_RETURNDC const win32ui.PD_RETURNDC; Causes PrintDlg to return a device context matching the selections the user made in the dialog box. The device context is returned in hDC.
+- **PD_RETURNDEFAULT** — --- ## PD_RETURNDEFAULT const win32ui.PD_RETURNDEFAULT; If this flag is set, the PrintDlg function does not display the dialog box. Instead, it sets the hDevNames and hDevMode members to handles toDEVMODE and DEVNAMES structures that are initialized for the system default printer. Both hDevNames and hDevMode must be NULL, or PrintDlg returns an error. If the system default printer is supported by an old printer driver (earlier than Windows version 3.0), only hDevNames is returned; hDevMode is NULL.
+- **PD_RETURNIC** — --- ## PD_RETURNIC const win32ui.PD_RETURNIC; Similar to the PD_RETURNDC flag, except this flag returns an information context rather than a device context. If neither PD_RETURNDC nor PD_RETURNIC is specified, hDC is undefined on output.
+- **PD_SELECTION** — --- ## PD_SELECTION const win32ui.PD_SELECTION; If this flag is set, the Selection radio button is selected. If neither PD_PAGENUMS nor PD_SELECTION is set, the All radio button is selected.
+- **PD_SHOWHELP** — --- ## PD_SHOWHELP const win32ui.PD_SHOWHELP; Causes the dialog box to display the Help button. The hwndOwner member must specify the window to receive the HELPMSGSTRING registered messages that the dialog box sends when the user clicks the Help button.
+- **PD_USEDEVMODECOPIES** — --- ## PD_USEDEVMODECOPIES const win32ui.PD_USEDEVMODECOPIES; Same as PD_USEDEVMODECOPIESANDCOLLATE
+- **PD_USEDEVMODECOPIESANDCOLLATE** — --- ## PD_USEDEVMODECOPIESANDCOLLATE const win32ui.PD_USEDEVMODECOPIESANDCOLLATE; This flag indicates whether your application supports multiple copies and collation. Set this flag on input to indicate that your application does not support multiple copies and collation. In this case, the nCopies member of the PRINTDLG structure always returns 1, and PD_COLLATE is never set in the Flags member. If this flag is not set, the application is responsible for printing and collating multiple copies. In this case, the nCopies member of the PRINTDLG structure indicates the number of copies the user wants to print, and the PD_COLLATE flag in the Flags member indicates whether the user wants collation. Regardless of whether this flag is set, an application can determine from nCopies and PD_COLLATE how many copies to render and whether to print them collated. If this flag is set and the printer driver does not support multiple copies, the Copies edit control is disabled. Similarly, if this flag is set and the printer driver does not support collation, the Collate checkbox is disabled. The dmCopies and dmCollate members of theDEVMODE structure contain the copies and collate information used by the printer driver. If this flag is set and the printer driver supports multiple copies, the dmCopies member indicates the number of copies requested by the user. If this flag is set and the printer driver supports collation, the dmCollate member of the DEVMODE structure indicates whether the user wants collation. If this flag is not set, the dmCopies member always returns 1, and the dmCollate member is always zero.
+- **PSWIZB_BACK** — --- ## PSWIZB_BACK const win32ui.PSWIZB_BACK; Enable/Disable the Property sheet Back button
+- **PSWIZB_DISABLEDFINISH** — --- ## PSWIZB_DISABLEDFINISH const win32ui.PSWIZB_DISABLEDFINISH; Enable/Disable the Property sheet disabled Finish button
+- **PSWIZB_FINISH** — --- ## PSWIZB_FINISH const win32ui.PSWIZB_FINISH; Enable/Disable the Property sheet Finish button
+- **PSWIZB_NEXT** — --- ## PSWIZB_NEXT const win32ui.PSWIZB_NEXT; Enable/Disable the Property sheet Next button
+- **debug** — --- ## debug const win32ui.debug; 1 if we are current using a _DEBUG build of win32ui, else 0.

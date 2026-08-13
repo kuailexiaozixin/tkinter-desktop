@@ -1,0 +1,105 @@
+# win32service 常量（共 101 个）
+
+> 来源 https://mhammond.github.io/pywin32/win32service_<CONST>.html
+
+- **DBT_CONFIGCHANGECANCELED** — --- ## DBT_CONFIGCHANGECANCELED const win32service.DBT_CONFIGCHANGECANCELED;
+- **DBT_CONFIGCHANGED** — --- ## DBT_CONFIGCHANGED const win32service.DBT_CONFIGCHANGED;
+- **DBT_CUSTOMEVENT** — --- ## DBT_CUSTOMEVENT const win32service.DBT_CUSTOMEVENT; user-defined event
+- **DBT_DEVICEARRIVAL** — --- ## DBT_DEVICEARRIVAL const win32service.DBT_DEVICEARRIVAL; system detected a new device
+- **DBT_DEVICEQUERYREMOVE** — --- ## DBT_DEVICEQUERYREMOVE const win32service.DBT_DEVICEQUERYREMOVE; wants to remove, may fail
+- **DBT_DEVICEQUERYREMOVEFAILED** — --- ## DBT_DEVICEQUERYREMOVEFAILED const win32service.DBT_DEVICEQUERYREMOVEFAILED; removal aborted
+- **DBT_DEVICEREMOVECOMPLETE** — --- ## DBT_DEVICEREMOVECOMPLETE const win32service.DBT_DEVICEREMOVECOMPLETE; device is gone
+- **DBT_DEVICEREMOVEPENDING** — --- ## DBT_DEVICEREMOVEPENDING const win32service.DBT_DEVICEREMOVEPENDING; about to remove, still avail.
+- **DBT_DEVICETYPESPECIFIC** — --- ## DBT_DEVICETYPESPECIFIC const win32service.DBT_DEVICETYPESPECIFIC; type specific event
+- **DBT_QUERYCHANGECONFIG** — --- ## DBT_QUERYCHANGECONFIG const win32service.DBT_QUERYCHANGECONFIG;
+- **DF_ALLOWOTHERACCOUNTHOOK** — --- ## DF_ALLOWOTHERACCOUNTHOOK const win32service.DF_ALLOWOTHERACCOUNTHOOK; #define CWF_CREATE_ONLY CWF_CREATE_ONLY
+- **SC_ACTION_NONE** — --- ## SC_ACTION_NONE const win32service.SC_ACTION_NONE;
+- **SC_ACTION_REBOOT** — --- ## SC_ACTION_REBOOT const win32service.SC_ACTION_REBOOT;
+- **SC_ACTION_RESTART** — --- ## SC_ACTION_RESTART const win32service.SC_ACTION_RESTART;
+- **SC_ACTION_RUN_COMMAND** — --- ## SC_ACTION_RUN_COMMAND const win32service.SC_ACTION_RUN_COMMAND;
+- **SC_ENUM_PROCESS_INFO** — --- ## SC_ENUM_PROCESS_INFO const win32service.SC_ENUM_PROCESS_INFO;
+- **SC_GROUP_IDENTIFIER** — --- ## SC_GROUP_IDENTIFIER const win32service.SC_GROUP_IDENTIFIER;
+- **SC_MANAGER_ALL_ACCESS** — --- ## SC_MANAGER_ALL_ACCESS const win32service.SC_MANAGER_ALL_ACCESS; Includes STANDARD_RIGHTS_REQUIRED, in addition to all of the access types listed in this table.
+- **SC_MANAGER_CONNECT** — --- ## SC_MANAGER_CONNECT const win32service.SC_MANAGER_CONNECT; Enables connecting to the service control manager.
+- **SC_MANAGER_CREATE_SERVICE** — --- ## SC_MANAGER_CREATE_SERVICE const win32service.SC_MANAGER_CREATE_SERVICE; Enables calling of the CreateService function to create a service object and add it to the database.
+- **SC_MANAGER_ENUMERATE_SERVICE** — --- ## SC_MANAGER_ENUMERATE_SERVICE const win32service.SC_MANAGER_ENUMERATE_SERVICE; Enables calling of the EnumServicesStatus function to list the services that are in the database.
+- **SC_MANAGER_LOCK** — --- ## SC_MANAGER_LOCK const win32service.SC_MANAGER_LOCK; Enables calling of the LockServiceDatabase function to acquire a lock on the database.
+- **SC_MANAGER_MODIFY_BOOT_CONFIG** — --- ## SC_MANAGER_MODIFY_BOOT_CONFIG const win32service.SC_MANAGER_MODIFY_BOOT_CONFIG;
+- **SC_MANAGER_QUERY_LOCK_STATUS** — --- ## SC_MANAGER_QUERY_LOCK_STATUS const win32service.SC_MANAGER_QUERY_LOCK_STATUS; Enables calling of the QueryServiceLockStatus function to retrieve the lock status information for the database.
+- **SERVICE_ACCEPT_HARDWAREPROFILECHANGE** — --- ## SERVICE_ACCEPT_HARDWAREPROFILECHANGE const win32service.SERVICE_ACCEPT_HARDWAREPROFILECHANGE;
+- **SERVICE_ACCEPT_NETBINDCHANGE** — --- ## SERVICE_ACCEPT_NETBINDCHANGE const win32service.SERVICE_ACCEPT_NETBINDCHANGE;
+- **SERVICE_ACCEPT_PARAMCHANGE** — --- ## SERVICE_ACCEPT_PARAMCHANGE const win32service.SERVICE_ACCEPT_PARAMCHANGE;
+- **SERVICE_ACCEPT_PAUSE_CONTINUE** — --- ## SERVICE_ACCEPT_PAUSE_CONTINUE const win32service.SERVICE_ACCEPT_PAUSE_CONTINUE; The service can be paused and continued. This enables the SERVICE_CONTROL_PAUSE and SERVICE_CONTROL_CONTINUE values.
+- **SERVICE_ACCEPT_POWEREVENT** — --- ## SERVICE_ACCEPT_POWEREVENT const win32service.SERVICE_ACCEPT_POWEREVENT;
+- **SERVICE_ACCEPT_PRESHUTDOWN** — --- ## SERVICE_ACCEPT_PRESHUTDOWN const win32service.SERVICE_ACCEPT_PRESHUTDOWN;
+- **SERVICE_ACCEPT_SESSIONCHANGE** — --- ## SERVICE_ACCEPT_SESSIONCHANGE const win32service.SERVICE_ACCEPT_SESSIONCHANGE;
+- **SERVICE_ACCEPT_SHUTDOWN** — --- ## SERVICE_ACCEPT_SHUTDOWN const win32service.SERVICE_ACCEPT_SHUTDOWN; The service is notified when system shutdown occurs. This enables the system to send a SERVICE_CONTROL_SHUTDOWN value to the service. The ControlService function cannot send this control
+- **SERVICE_ACCEPT_STOP** — --- ## SERVICE_ACCEPT_STOP const win32service.SERVICE_ACCEPT_STOP; The service can be stopped. This enables the SERVICE_CONTROL_STOP value.
+- **SERVICE_ACTIVE** — --- ## SERVICE_ACTIVE const win32service.SERVICE_ACTIVE;
+- **SERVICE_ALL_ACCESS** — --- ## SERVICE_ALL_ACCESS const win32service.SERVICE_ALL_ACCESS; Includes STANDARD_RIGHTS_REQUIRED in addition to all of the access types listed in this table.
+- **SERVICE_AUTO_START** — --- ## SERVICE_AUTO_START const win32service.SERVICE_AUTO_START; Specifies a device driver or Win32 service started by the service control manager automatically during system startup.
+- **SERVICE_BOOT_START** — --- ## SERVICE_BOOT_START const win32service.SERVICE_BOOT_START; Specifies a device driver started by the operating system loader. This value is valid only if the service type is SERVICE_KERNEL_DRIVER or SERVICE_FILE_SYSTEM_DRIVER.
+- **SERVICE_CHANGE_CONFIG** — --- ## SERVICE_CHANGE_CONFIG const win32service.SERVICE_CHANGE_CONFIG; Enables calling of the ChangeServiceConfig function to change the service configuration.
+- **SERVICE_CONFIG_DELAYED_AUTO_START_INFO** — --- ## SERVICE_CONFIG_DELAYED_AUTO_START_INFO const win32service.SERVICE_CONFIG_DELAYED_AUTO_START_INFO;
+- **SERVICE_CONFIG_DESCRIPTION** — --- ## SERVICE_CONFIG_DESCRIPTION const win32service.SERVICE_CONFIG_DESCRIPTION;
+- **SERVICE_CONFIG_FAILURE_ACTIONS** — --- ## SERVICE_CONFIG_FAILURE_ACTIONS const win32service.SERVICE_CONFIG_FAILURE_ACTIONS;
+- **SERVICE_CONFIG_FAILURE_ACTIONS_FLAG** — --- ## SERVICE_CONFIG_FAILURE_ACTIONS_FLAG const win32service.SERVICE_CONFIG_FAILURE_ACTIONS_FLAG;
+- **SERVICE_CONFIG_PRESHUTDOWN_INFO** — --- ## SERVICE_CONFIG_PRESHUTDOWN_INFO const win32service.SERVICE_CONFIG_PRESHUTDOWN_INFO;
+- **SERVICE_CONFIG_REQUIRED_PRIVILEGES_INFO** — --- ## SERVICE_CONFIG_REQUIRED_PRIVILEGES_INFO const win32service.SERVICE_CONFIG_REQUIRED_PRIVILEGES_INFO;
+- **SERVICE_CONFIG_SERVICE_SID_INFO** — --- ## SERVICE_CONFIG_SERVICE_SID_INFO const win32service.SERVICE_CONFIG_SERVICE_SID_INFO;
+- **SERVICE_CONTINUE_PENDING** — --- ## SERVICE_CONTINUE_PENDING const win32service.SERVICE_CONTINUE_PENDING; The service continue is pending.
+- **SERVICE_CONTROL_CONTINUE** — --- ## SERVICE_CONTROL_CONTINUE const win32service.SERVICE_CONTROL_CONTINUE; Requests the paused service to resume. The hService handle must have SERVICE_PAUSE_CONTINUE access.
+- **SERVICE_CONTROL_DEVICEEVENT** — --- ## SERVICE_CONTROL_DEVICEEVENT const win32service.SERVICE_CONTROL_DEVICEEVENT;
+- **SERVICE_CONTROL_HARDWAREPROFILECHANGE** — --- ## SERVICE_CONTROL_HARDWAREPROFILECHANGE const win32service.SERVICE_CONTROL_HARDWAREPROFILECHANGE;
+- **SERVICE_CONTROL_INTERROGATE** — --- ## SERVICE_CONTROL_INTERROGATE const win32service.SERVICE_CONTROL_INTERROGATE; Requests the service to update immediately its current status information to the service control manager. The hService handle must have SERVICE_INTERROGATE access.
+- **SERVICE_CONTROL_NETBINDADD** — --- ## SERVICE_CONTROL_NETBINDADD const win32service.SERVICE_CONTROL_NETBINDADD;
+- **SERVICE_CONTROL_NETBINDDISABLE** — --- ## SERVICE_CONTROL_NETBINDDISABLE const win32service.SERVICE_CONTROL_NETBINDDISABLE;
+- **SERVICE_CONTROL_NETBINDENABLE** — --- ## SERVICE_CONTROL_NETBINDENABLE const win32service.SERVICE_CONTROL_NETBINDENABLE;
+- **SERVICE_CONTROL_NETBINDREMOVE** — --- ## SERVICE_CONTROL_NETBINDREMOVE const win32service.SERVICE_CONTROL_NETBINDREMOVE;
+- **SERVICE_CONTROL_PARAMCHANGE** — --- ## SERVICE_CONTROL_PARAMCHANGE const win32service.SERVICE_CONTROL_PARAMCHANGE;
+- **SERVICE_CONTROL_PAUSE** — --- ## SERVICE_CONTROL_PAUSE const win32service.SERVICE_CONTROL_PAUSE; Requests the service to pause. The hService handle must have SERVICE_PAUSE_CONTINUE access.
+- **SERVICE_CONTROL_POWEREVENT** — --- ## SERVICE_CONTROL_POWEREVENT const win32service.SERVICE_CONTROL_POWEREVENT;
+- **SERVICE_CONTROL_PRESHUTDOWN** — --- ## SERVICE_CONTROL_PRESHUTDOWN const win32service.SERVICE_CONTROL_PRESHUTDOWN;
+- **SERVICE_CONTROL_SESSIONCHANGE** — --- ## SERVICE_CONTROL_SESSIONCHANGE const win32service.SERVICE_CONTROL_SESSIONCHANGE;
+- **SERVICE_CONTROL_SHUTDOWN** — --- ## SERVICE_CONTROL_SHUTDOWN const win32service.SERVICE_CONTROL_SHUTDOWN; The ControlService function fails if this control code is specified.
+- **SERVICE_CONTROL_STOP** — --- ## SERVICE_CONTROL_STOP const win32service.SERVICE_CONTROL_STOP; Requests the service to stop. The hService handle must have SERVICE_STOP access.
+- **SERVICE_DEMAND_START** — --- ## SERVICE_DEMAND_START const win32service.SERVICE_DEMAND_START; Specifies a device driver or Win32 service started by the service control manager when a process calls the StartService function.
+- **SERVICE_DISABLED** — --- ## SERVICE_DISABLED const win32service.SERVICE_DISABLED; Specifies a device driver or Win32 service that can no longer be started.
+- **SERVICE_DRIVER** — --- ## SERVICE_DRIVER const win32service.SERVICE_DRIVER;
+- **SERVICE_ENUMERATE_DEPENDENTS** — --- ## SERVICE_ENUMERATE_DEPENDENTS const win32service.SERVICE_ENUMERATE_DEPENDENTS; Enables calling of the EnumDependentServices function to enumerate all the services dependent on the service.
+- **SERVICE_ERROR_CRITICAL** — --- ## SERVICE_ERROR_CRITICAL const win32service.SERVICE_ERROR_CRITICAL; The startup program logs the error, if possible. If the last-known good configuration is being started, the startup operation fails. Otherwise, the system is restarted with the last-known good configuration.
+- **SERVICE_ERROR_IGNORE** — --- ## SERVICE_ERROR_IGNORE const win32service.SERVICE_ERROR_IGNORE; The startup (boot) program logs the error but continues the startup operation.
+- **SERVICE_ERROR_NORMAL** — --- ## SERVICE_ERROR_NORMAL const win32service.SERVICE_ERROR_NORMAL; The startup program logs the error and displays a message box pop-up but continues the startup operation.
+- **SERVICE_ERROR_SEVERE** — --- ## SERVICE_ERROR_SEVERE const win32service.SERVICE_ERROR_SEVERE; The startup program logs the error. If the last-known good configuration is being started, the startup operation continues. Otherwise, the system is restarted with the last-known-good configuration.
+- **SERVICE_FILE_SYSTEM_DRIVER** — --- ## SERVICE_FILE_SYSTEM_DRIVER const win32service.SERVICE_FILE_SYSTEM_DRIVER; A service type flag that indicates a Windows NT file system driver.
+- **SERVICE_INACTIVE** — --- ## SERVICE_INACTIVE const win32service.SERVICE_INACTIVE;
+- **SERVICE_INTERACTIVE_PROCESS** — --- ## SERVICE_INTERACTIVE_PROCESS const win32service.SERVICE_INTERACTIVE_PROCESS; A flag that indicates a Win32 service process that can interact with the desktop.
+- **SERVICE_INTERROGATE** — --- ## SERVICE_INTERROGATE const win32service.SERVICE_INTERROGATE; Enables calling of the ControlService function to ask the service to report its status immediately.
+- **SERVICE_KERNEL_DRIVER** — --- ## SERVICE_KERNEL_DRIVER const win32service.SERVICE_KERNEL_DRIVER; A service type flag that indicates a Windows NT device driver.
+- **SERVICE_NO_CHANGE** — --- ## SERVICE_NO_CHANGE const win32service.SERVICE_NO_CHANGE; Indicates the parameter should not be changed.
+- **SERVICE_PAUSED** — --- ## SERVICE_PAUSED const win32service.SERVICE_PAUSED; The service is paused.
+- **SERVICE_PAUSE_CONTINUE** — --- ## SERVICE_PAUSE_CONTINUE const win32service.SERVICE_PAUSE_CONTINUE; Enables calling of the ControlService function to pause or continue the service.
+- **SERVICE_PAUSE_PENDING** — --- ## SERVICE_PAUSE_PENDING const win32service.SERVICE_PAUSE_PENDING; The service pause is pending.
+- **SERVICE_QUERY_CONFIG** — --- ## SERVICE_QUERY_CONFIG const win32service.SERVICE_QUERY_CONFIG; Enables calling of the QueryServiceConfig function to query the service configuration.
+- **SERVICE_QUERY_STATUS** — --- ## SERVICE_QUERY_STATUS const win32service.SERVICE_QUERY_STATUS; Enables calling of the QueryServiceStatus function to ask the service control manager about the status of the service.
+- **SERVICE_RUNNING** — --- ## SERVICE_RUNNING const win32service.SERVICE_RUNNING; The service is running.
+- **SERVICE_SID_TYPE_NONE** — --- ## SERVICE_SID_TYPE_NONE const win32service.SERVICE_SID_TYPE_NONE;
+- **SERVICE_SID_TYPE_RESTRICTED** — --- ## SERVICE_SID_TYPE_RESTRICTED const win32service.SERVICE_SID_TYPE_RESTRICTED;
+- **SERVICE_SID_TYPE_UNRESTRICTED** — --- ## SERVICE_SID_TYPE_UNRESTRICTED const win32service.SERVICE_SID_TYPE_UNRESTRICTED;
+- **SERVICE_SPECIFIC_ERROR** — --- ## SERVICE_SPECIFIC_ERROR const win32service.SERVICE_SPECIFIC_ERROR; A service specific error has occurred.
+- **SERVICE_START** — --- ## SERVICE_START const win32service.SERVICE_START; Enables calling of the StartService function to start the service.
+- **SERVICE_START_PENDING** — --- ## SERVICE_START_PENDING const win32service.SERVICE_START_PENDING; The service is starting.
+- **SERVICE_STATE_ALL** — --- ## SERVICE_STATE_ALL const win32service.SERVICE_STATE_ALL;
+- **SERVICE_STOP** — --- ## SERVICE_STOP const win32service.SERVICE_STOP; Enables calling of the ControlService function to stop the service.
+- **SERVICE_STOPPED** — --- ## SERVICE_STOPPED const win32service.SERVICE_STOPPED; The service is not running.
+- **SERVICE_STOP_PENDING** — --- ## SERVICE_STOP_PENDING const win32service.SERVICE_STOP_PENDING; The service is stopping.
+- **SERVICE_SYSTEM_START** — --- ## SERVICE_SYSTEM_START const win32service.SERVICE_SYSTEM_START; Specifies a device driver started by the IoInitSystem function. This value is valid only if the service type is SERVICE_KERNEL_DRIVER or SERVICE_FILE_SYSTEM_DRIVER.
+- **SERVICE_USER_DEFINED_CONTROL** — --- ## SERVICE_USER_DEFINED_CONTROL const win32service.SERVICE_USER_DEFINED_CONTROL; Enables calling of the ControlService function to specify a user-defined control code.
+- **SERVICE_WIN32** — --- ## SERVICE_WIN32 const win32service.SERVICE_WIN32;
+- **SERVICE_WIN32_OWN_PROCESS** — --- ## SERVICE_WIN32_OWN_PROCESS const win32service.SERVICE_WIN32_OWN_PROCESS; A service type flag that indicates a Win32 service that runs in its own process.
+- **SERVICE_WIN32_SHARE_PROCESS** — --- ## SERVICE_WIN32_SHARE_PROCESS const win32service.SERVICE_WIN32_SHARE_PROCESS; A service type flag that indicates a Win32 service that shares a process with other services.
+- **UOI_FLAGS** — --- ## UOI_FLAGS const win32service.UOI_FLAGS;
+- **UOI_NAME** — --- ## UOI_NAME const win32service.UOI_NAME;
+- **UOI_TYPE** — --- ## UOI_TYPE const win32service.UOI_TYPE;
+- **UOI_USER_SID** — --- ## UOI_USER_SID const win32service.UOI_USER_SID;
+- **WSF_VISIBLE** — --- ## WSF_VISIBLE const win32service.WSF_VISIBLE;

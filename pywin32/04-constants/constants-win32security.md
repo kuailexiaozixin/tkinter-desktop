@@ -1,0 +1,232 @@
+# win32security 常量（共 228 个）
+
+> 来源 https://mhammond.github.io/pywin32/win32security_<CONST>.html
+
+- **ACCESS_ALLOWED_ACE_TYPE** — --- ## ACCESS_ALLOWED_ACE_TYPE const win32security.ACCESS_ALLOWED_ACE_TYPE; Access-allowed ACE that uses the ACCESS_ALLOWED_ACE structure.
+- **ACCESS_ALLOWED_OBJECT_ACE_TYPE** — --- ## ACCESS_ALLOWED_OBJECT_ACE_TYPE const win32security.ACCESS_ALLOWED_OBJECT_ACE_TYPE; Object-specific access-allowed ACE that uses the ACCESS_ALLOWED_OBJECT_ACE structure.
+- **ACCESS_DENIED_ACE_TYPE** — --- ## ACCESS_DENIED_ACE_TYPE const win32security.ACCESS_DENIED_ACE_TYPE; Access-denied ACE that uses the ACCESS_DENIED_ACE structure.
+- **ACCESS_DENIED_OBJECT_ACE_TYPE** — --- ## ACCESS_DENIED_OBJECT_ACE_TYPE const win32security.ACCESS_DENIED_OBJECT_ACE_TYPE; Object-specific access-denied ACE that uses the ACCESS_DENIED_OBJECT_ACE structure.
+- **ACL_REVISION** — --- ## ACL_REVISION const win32security.ACL_REVISION;
+- **ACL_REVISION_DS** — --- ## ACL_REVISION_DS const win32security.ACL_REVISION_DS;
+- **AuditCategoryAccountLogon** — --- ## AuditCategoryAccountLogon const win32security.AuditCategoryAccountLogon;
+- **AuditCategoryAccountManagement** — --- ## AuditCategoryAccountManagement const win32security.AuditCategoryAccountManagement;
+- **AuditCategoryDetailedTracking** — --- ## AuditCategoryDetailedTracking const win32security.AuditCategoryDetailedTracking;
+- **AuditCategoryDirectoryServiceAccess** — --- ## AuditCategoryDirectoryServiceAccess const win32security.AuditCategoryDirectoryServiceAccess;
+- **AuditCategoryLogon** — --- ## AuditCategoryLogon const win32security.AuditCategoryLogon;
+- **AuditCategoryObjectAccess** — --- ## AuditCategoryObjectAccess const win32security.AuditCategoryObjectAccess;
+- **AuditCategoryPolicyChange** — --- ## AuditCategoryPolicyChange const win32security.AuditCategoryPolicyChange;
+- **AuditCategoryPrivilegeUse** — --- ## AuditCategoryPrivilegeUse const win32security.AuditCategoryPrivilegeUse;
+- **AuditCategorySystem** — --- ## AuditCategorySystem const win32security.AuditCategorySystem;
+- **CONTAINER_INHERIT_ACE** — --- ## CONTAINER_INHERIT_ACE const win32security.CONTAINER_INHERIT_ACE;
+- **DACL_SECURITY_INFORMATION** — --- ## DACL_SECURITY_INFORMATION const win32security.DACL_SECURITY_INFORMATION; Indicates the discretionary ACL of the object is being referenced.
+- **DENY_ACCESS** — --- ## DENY_ACCESS const win32security.DENY_ACCESS;
+- **DISABLE_MAX_PRIVILEGE** — --- ## DISABLE_MAX_PRIVILEGE const win32security.DISABLE_MAX_PRIVILEGE;
+- **DS_SPN_ADD_SPN_OP** — --- ## DS_SPN_ADD_SPN_OP const win32security.DS_SPN_ADD_SPN_OP;
+- **DS_SPN_DELETE_SPN_OP** — --- ## DS_SPN_DELETE_SPN_OP const win32security.DS_SPN_DELETE_SPN_OP;
+- **DS_SPN_DNS_HOST** — --- ## DS_SPN_DNS_HOST const win32security.DS_SPN_DNS_HOST;
+- **DS_SPN_DN_HOST** — --- ## DS_SPN_DN_HOST const win32security.DS_SPN_DN_HOST;
+- **DS_SPN_DOMAIN** — --- ## DS_SPN_DOMAIN const win32security.DS_SPN_DOMAIN;
+- **DS_SPN_NB_DOMAIN** — --- ## DS_SPN_NB_DOMAIN const win32security.DS_SPN_NB_DOMAIN;
+- **DS_SPN_NB_HOST** — --- ## DS_SPN_NB_HOST const win32security.DS_SPN_NB_HOST;
+- **DS_SPN_REPLACE_SPN_OP** — --- ## DS_SPN_REPLACE_SPN_OP const win32security.DS_SPN_REPLACE_SPN_OP;
+- **DS_SPN_SERVICE** — --- ## DS_SPN_SERVICE const win32security.DS_SPN_SERVICE;
+- **FAILED_ACCESS_ACE_FLAG** — --- ## FAILED_ACCESS_ACE_FLAG const win32security.FAILED_ACCESS_ACE_FLAG;
+- **GRANT_ACCESS** — --- ## GRANT_ACCESS const win32security.GRANT_ACCESS;
+- **GROUP_SECURITY_INFORMATION** — --- ## GROUP_SECURITY_INFORMATION const win32security.GROUP_SECURITY_INFORMATION; Indicates the primary group identifier of the object is being referenced.
+- **INHERITED_ACE** — --- ## INHERITED_ACE const win32security.INHERITED_ACE;
+- **INHERIT_ONLY_ACE** — --- ## INHERIT_ONLY_ACE const win32security.INHERIT_ONLY_ACE;
+- **LABEL_SECURITY_INFORMATION** — --- ## LABEL_SECURITY_INFORMATION const win32security.LABEL_SECURITY_INFORMATION;
+- **LOGON32_LOGON_BATCH** — --- ## LOGON32_LOGON_BATCH const win32security.LOGON32_LOGON_BATCH; This logon type is intended for batch servers, where processes may be executing on behalf of a user without their direct intervention; or for higher performance servers that process many clear-text authentication attempts at a time, such as mail or web servers. LogonUser does not cache credentials for this logon type.
+- **LOGON32_LOGON_INTERACTIVE** — --- ## LOGON32_LOGON_INTERACTIVE const win32security.LOGON32_LOGON_INTERACTIVE; This logon type is intended for users who will be interactively using the machine, such as a user being logged on by a terminal server, remote shell, or similar process. This logon type has the additional expense of caching logon information for disconnected operation, and is therefore inappropriate for some client/server applications, such as a mail server.
+- **LOGON32_LOGON_NETWORK** — --- ## LOGON32_LOGON_NETWORK const win32security.LOGON32_LOGON_NETWORK; This logon type is intended for high performance servers to authenticate clear text passwords. LogonUser does not cache credentials for this logon type. This is the fastest logon path, but there are two limitations. First, the function returns an impersonation token, not a primary token. You cannot use this token directly in the CreateProcessAsUser function. However, you can call the DuplicateTokenEx function to convert the token to a primary token, and then use it in CreateProcessAsUser. Second, if you convert the token to a primary token and use it in CreateProcessAsUser to start a process, the new process will not be able to access other network resources, such as remote servers or printers, through the redirector.
+- **LOGON32_LOGON_NETWORK_CLEARTEXT** — --- ## LOGON32_LOGON_NETWORK_CLEARTEXT const win32security.LOGON32_LOGON_NETWORK_CLEARTEXT;
+- **LOGON32_LOGON_NEW_CREDENTIALS** — --- ## LOGON32_LOGON_NEW_CREDENTIALS const win32security.LOGON32_LOGON_NEW_CREDENTIALS;
+- **LOGON32_LOGON_SERVICE** — --- ## LOGON32_LOGON_SERVICE const win32security.LOGON32_LOGON_SERVICE; Indicates a service-type logon. The account provided must have the service privilege enabled.
+- **LOGON32_LOGON_UNLOCK** — --- ## LOGON32_LOGON_UNLOCK const win32security.LOGON32_LOGON_UNLOCK;
+- **LOGON32_PROVIDER_DEFAULT** — --- ## LOGON32_PROVIDER_DEFAULT const win32security.LOGON32_PROVIDER_DEFAULT; Use the standard logon provider for the system. This is the recommended value for the dwLogonProvider parameter. It provides maximum compatibility with current and future releases of Windows NT.
+- **LOGON32_PROVIDER_WINNT35** — --- ## LOGON32_PROVIDER_WINNT35 const win32security.LOGON32_PROVIDER_WINNT35; Use the Windows NT 3.5 logon provider.
+- **LOGON32_PROVIDER_WINNT40** — --- ## LOGON32_PROVIDER_WINNT40 const win32security.LOGON32_PROVIDER_WINNT40; Use the Windows NT 4.0 logon provider
+- **LOGON32_PROVIDER_WINNT50** — --- ## LOGON32_PROVIDER_WINNT50 const win32security.LOGON32_PROVIDER_WINNT50; Use the Negotiate protocol
+- **NOT_USED_ACCESS** — --- ## NOT_USED_ACCESS const win32security.NOT_USED_ACCESS;
+- **NO_INHERITANCE** — --- ## NO_INHERITANCE const win32security.NO_INHERITANCE;
+- **NO_PROPAGATE_INHERIT_ACE** — --- ## NO_PROPAGATE_INHERIT_ACE const win32security.NO_PROPAGATE_INHERIT_ACE;
+- **OBJECT_INHERIT_ACE** — --- ## OBJECT_INHERIT_ACE const win32security.OBJECT_INHERIT_ACE;
+- **OWNER_SECURITY_INFORMATION** — --- ## OWNER_SECURITY_INFORMATION const win32security.OWNER_SECURITY_INFORMATION; Indicates the owner identifier of the object is being referenced.
+- **POLICY_ALL_ACCESS** — --- ## POLICY_ALL_ACCESS const win32security.POLICY_ALL_ACCESS;
+- **POLICY_AUDIT_EVENT_FAILURE** — --- ## POLICY_AUDIT_EVENT_FAILURE const win32security.POLICY_AUDIT_EVENT_FAILURE; Generate audit records for failed attempts to cause an event of this type to occur.
+- **POLICY_AUDIT_EVENT_NONE** — --- ## POLICY_AUDIT_EVENT_NONE const win32security.POLICY_AUDIT_EVENT_NONE; Do not generate audit records for events of this type.
+- **POLICY_AUDIT_EVENT_SUCCESS** — --- ## POLICY_AUDIT_EVENT_SUCCESS const win32security.POLICY_AUDIT_EVENT_SUCCESS; Generate audit records for successful events of this type.
+- **POLICY_AUDIT_EVENT_UNCHANGED** — --- ## POLICY_AUDIT_EVENT_UNCHANGED const win32security.POLICY_AUDIT_EVENT_UNCHANGED; For set operations, specify this value to leave the current options unchanged. This is the default.
+- **POLICY_AUDIT_LOG_ADMIN** — --- ## POLICY_AUDIT_LOG_ADMIN const win32security.POLICY_AUDIT_LOG_ADMIN;
+- **POLICY_CREATE_ACCOUNT** — --- ## POLICY_CREATE_ACCOUNT const win32security.POLICY_CREATE_ACCOUNT;
+- **POLICY_CREATE_PRIVILEGE** — --- ## POLICY_CREATE_PRIVILEGE const win32security.POLICY_CREATE_PRIVILEGE;
+- **POLICY_CREATE_SECRET** — --- ## POLICY_CREATE_SECRET const win32security.POLICY_CREATE_SECRET;
+- **POLICY_EXECUTE** — --- ## POLICY_EXECUTE const win32security.POLICY_EXECUTE;
+- **POLICY_GET_PRIVATE_INFORMATION** — --- ## POLICY_GET_PRIVATE_INFORMATION const win32security.POLICY_GET_PRIVATE_INFORMATION;
+- **POLICY_LOOKUP_NAMES** — --- ## POLICY_LOOKUP_NAMES const win32security.POLICY_LOOKUP_NAMES;
+- **POLICY_NOTIFICATION** — --- ## POLICY_NOTIFICATION const win32security.POLICY_NOTIFICATION;
+- **POLICY_READ** — --- ## POLICY_READ const win32security.POLICY_READ;
+- **POLICY_SERVER_ADMIN** — --- ## POLICY_SERVER_ADMIN const win32security.POLICY_SERVER_ADMIN;
+- **POLICY_SET_AUDIT_REQUIREMENTS** — --- ## POLICY_SET_AUDIT_REQUIREMENTS const win32security.POLICY_SET_AUDIT_REQUIREMENTS;
+- **POLICY_SET_DEFAULT_QUOTA_LIMITS** — --- ## POLICY_SET_DEFAULT_QUOTA_LIMITS const win32security.POLICY_SET_DEFAULT_QUOTA_LIMITS;
+- **POLICY_TRUST_ADMIN** — --- ## POLICY_TRUST_ADMIN const win32security.POLICY_TRUST_ADMIN;
+- **POLICY_VIEW_AUDIT_INFORMATION** — --- ## POLICY_VIEW_AUDIT_INFORMATION const win32security.POLICY_VIEW_AUDIT_INFORMATION;
+- **POLICY_VIEW_LOCAL_INFORMATION** — --- ## POLICY_VIEW_LOCAL_INFORMATION const win32security.POLICY_VIEW_LOCAL_INFORMATION;
+- **POLICY_WRITE** — --- ## POLICY_WRITE const win32security.POLICY_WRITE;
+- **PROTECTED_DACL_SECURITY_INFORMATION** — --- ## PROTECTED_DACL_SECURITY_INFORMATION const win32security.PROTECTED_DACL_SECURITY_INFORMATION;
+- **PROTECTED_SACL_SECURITY_INFORMATION** — --- ## PROTECTED_SACL_SECURITY_INFORMATION const win32security.PROTECTED_SACL_SECURITY_INFORMATION;
+- **PolicyAccountDomainInformation** — --- ## PolicyAccountDomainInformation const win32security.PolicyAccountDomainInformation;
+- **PolicyAuditEventsInformation** — --- ## PolicyAuditEventsInformation const win32security.PolicyAuditEventsInformation;
+- **PolicyAuditFullQueryInformation** — --- ## PolicyAuditFullQueryInformation const win32security.PolicyAuditFullQueryInformation;
+- **PolicyAuditFullSetInformation** — --- ## PolicyAuditFullSetInformation const win32security.PolicyAuditFullSetInformation;
+- **PolicyAuditLogInformation** — --- ## PolicyAuditLogInformation const win32security.PolicyAuditLogInformation;
+- **PolicyDefaultQuotaInformation** — --- ## PolicyDefaultQuotaInformation const win32security.PolicyDefaultQuotaInformation;
+- **PolicyDnsDomainInformation** — --- ## PolicyDnsDomainInformation const win32security.PolicyDnsDomainInformation;
+- **PolicyLsaServerRoleInformation** — --- ## PolicyLsaServerRoleInformation const win32security.PolicyLsaServerRoleInformation;
+- **PolicyModificationInformation** — --- ## PolicyModificationInformation const win32security.PolicyModificationInformation;
+- **PolicyNotifyAccountDomainInformation** — --- ## PolicyNotifyAccountDomainInformation const win32security.PolicyNotifyAccountDomainInformation;
+- **PolicyNotifyAuditEventsInformation** — --- ## PolicyNotifyAuditEventsInformation const win32security.PolicyNotifyAuditEventsInformation;
+- **PolicyNotifyDnsDomainInformation** — --- ## PolicyNotifyDnsDomainInformation const win32security.PolicyNotifyDnsDomainInformation;
+- **PolicyNotifyDomainEfsInformation** — --- ## PolicyNotifyDomainEfsInformation const win32security.PolicyNotifyDomainEfsInformation;
+- **PolicyNotifyDomainKerberosTicketInformation** — --- ## PolicyNotifyDomainKerberosTicketInformation const win32security.PolicyNotifyDomainKerberosTicketInformation;
+- **PolicyNotifyMachineAccountPasswordInformation** — --- ## PolicyNotifyMachineAccountPasswordInformation const win32security.PolicyNotifyMachineAccountPasswordInformation;
+- **PolicyNotifyServerRoleInformation** — --- ## PolicyNotifyServerRoleInformation const win32security.PolicyNotifyServerRoleInformation;
+- **PolicyPdAccountInformation** — --- ## PolicyPdAccountInformation const win32security.PolicyPdAccountInformation;
+- **PolicyPrimaryDomainInformation** — --- ## PolicyPrimaryDomainInformation const win32security.PolicyPrimaryDomainInformation;
+- **PolicyReplicaSourceInformation** — --- ## PolicyReplicaSourceInformation const win32security.PolicyReplicaSourceInformation;
+- **PolicyServerDisabled** — --- ## PolicyServerDisabled const win32security.PolicyServerDisabled;
+- **PolicyServerDisabled_1** — --- ## PolicyServerDisabled const win32security.PolicyServerDisabled;
+- **PolicyServerEnabled** — --- ## PolicyServerEnabled const win32security.PolicyServerEnabled;
+- **PolicyServerEnabled_1** — --- ## PolicyServerEnabled const win32security.PolicyServerEnabled;
+- **PolicyServerRoleBackup** — --- ## PolicyServerRoleBackup const win32security.PolicyServerRoleBackup;
+- **PolicyServerRolePrimary** — --- ## PolicyServerRolePrimary const win32security.PolicyServerRolePrimary;
+- **REVOKE_ACCESS** — --- ## REVOKE_ACCESS const win32security.REVOKE_ACCESS;
+- **SACL_SECURITY_INFORMATION** — --- ## SACL_SECURITY_INFORMATION const win32security.SACL_SECURITY_INFORMATION; Indicates the system ACL of the object is being referenced.
+- **SANDBOX_INERT** — --- ## SANDBOX_INERT const win32security.SANDBOX_INERT;
+- **SDDL_REVISION_1** — --- ## SDDL_REVISION_1 const win32security.SDDL_REVISION_1;
+- **SECPKG_CRED_BOTH** — --- ## SECPKG_CRED_BOTH const win32security.SECPKG_CRED_BOTH;
+- **SECPKG_CRED_INBOUND** — --- ## SECPKG_CRED_INBOUND const win32security.SECPKG_CRED_INBOUND;
+- **SECPKG_CRED_OUTBOUND** — --- ## SECPKG_CRED_OUTBOUND const win32security.SECPKG_CRED_OUTBOUND;
+- **SECPKG_FLAG_ACCEPT_WIN32_NAME** — --- ## SECPKG_FLAG_ACCEPT_WIN32_NAME const win32security.SECPKG_FLAG_ACCEPT_WIN32_NAME;
+- **SECPKG_FLAG_CLIENT_ONLY** — --- ## SECPKG_FLAG_CLIENT_ONLY const win32security.SECPKG_FLAG_CLIENT_ONLY;
+- **SECPKG_FLAG_CONNECTION** — --- ## SECPKG_FLAG_CONNECTION const win32security.SECPKG_FLAG_CONNECTION;
+- **SECPKG_FLAG_DATAGRAM** — --- ## SECPKG_FLAG_DATAGRAM const win32security.SECPKG_FLAG_DATAGRAM;
+- **SECPKG_FLAG_EXTENDED_ERROR** — --- ## SECPKG_FLAG_EXTENDED_ERROR const win32security.SECPKG_FLAG_EXTENDED_ERROR;
+- **SECPKG_FLAG_IMPERSONATION** — --- ## SECPKG_FLAG_IMPERSONATION const win32security.SECPKG_FLAG_IMPERSONATION;
+- **SECPKG_FLAG_INTEGRITY** — --- ## SECPKG_FLAG_INTEGRITY const win32security.SECPKG_FLAG_INTEGRITY;
+- **SECPKG_FLAG_MULTI_REQUIRED** — --- ## SECPKG_FLAG_MULTI_REQUIRED const win32security.SECPKG_FLAG_MULTI_REQUIRED;
+- **SECPKG_FLAG_PRIVACY** — --- ## SECPKG_FLAG_PRIVACY const win32security.SECPKG_FLAG_PRIVACY;
+- **SECPKG_FLAG_STREAM** — --- ## SECPKG_FLAG_STREAM const win32security.SECPKG_FLAG_STREAM;
+- **SECPKG_FLAG_TOKEN_ONLY** — --- ## SECPKG_FLAG_TOKEN_ONLY const win32security.SECPKG_FLAG_TOKEN_ONLY;
+- **SECURITY_CREATOR_SID_AUTHORITY** — --- ## SECURITY_CREATOR_SID_AUTHORITY const win32security.SECURITY_CREATOR_SID_AUTHORITY;
+- **SECURITY_LOCAL_SID_AUTHORITY** — --- ## SECURITY_LOCAL_SID_AUTHORITY const win32security.SECURITY_LOCAL_SID_AUTHORITY;
+- **SECURITY_NON_UNIQUE_AUTHORITY** — --- ## SECURITY_NON_UNIQUE_AUTHORITY const win32security.SECURITY_NON_UNIQUE_AUTHORITY;
+- **SECURITY_NT_AUTHORITY** — --- ## SECURITY_NT_AUTHORITY const win32security.SECURITY_NT_AUTHORITY;
+- **SECURITY_NULL_SID_AUTHORITY** — --- ## SECURITY_NULL_SID_AUTHORITY const win32security.SECURITY_NULL_SID_AUTHORITY;
+- **SECURITY_RESOURCE_MANAGER_AUTHORITY** — --- ## SECURITY_RESOURCE_MANAGER_AUTHORITY const win32security.SECURITY_RESOURCE_MANAGER_AUTHORITY;
+- **SECURITY_WORLD_SID_AUTHORITY** — --- ## SECURITY_WORLD_SID_AUTHORITY const win32security.SECURITY_WORLD_SID_AUTHORITY;
+- **SET_ACCESS** — --- ## SET_ACCESS const win32security.SET_ACCESS;
+- **SET_AUDIT_FAILURE** — --- ## SET_AUDIT_FAILURE const win32security.SET_AUDIT_FAILURE;
+- **SET_AUDIT_SUCCESS** — --- ## SET_AUDIT_SUCCESS const win32security.SET_AUDIT_SUCCESS;
+- **SE_DACL_AUTO_INHERITED** — --- ## SE_DACL_AUTO_INHERITED const win32security.SE_DACL_AUTO_INHERITED; win2k and up
+- **SE_DACL_DEFAULTED** — --- ## SE_DACL_DEFAULTED const win32security.SE_DACL_DEFAULTED;
+- **SE_DACL_PRESENT** — --- ## SE_DACL_PRESENT const win32security.SE_DACL_PRESENT;
+- **SE_DACL_PROTECTED** — --- ## SE_DACL_PROTECTED const win32security.SE_DACL_PROTECTED; win2k and up
+- **SE_DS_OBJECT** — --- ## SE_DS_OBJECT const win32security.SE_DS_OBJECT;
+- **SE_DS_OBJECT_ALL** — --- ## SE_DS_OBJECT_ALL const win32security.SE_DS_OBJECT_ALL;
+- **SE_FILE_OBJECT** — --- ## SE_FILE_OBJECT const win32security.SE_FILE_OBJECT;
+- **SE_GROUP_DEFAULTED** — --- ## SE_GROUP_DEFAULTED const win32security.SE_GROUP_DEFAULTED;
+- **SE_GROUP_ENABLED** — --- ## SE_GROUP_ENABLED const win32security.SE_GROUP_ENABLED;
+- **SE_GROUP_ENABLED_BY_DEFAULT** — --- ## SE_GROUP_ENABLED_BY_DEFAULT const win32security.SE_GROUP_ENABLED_BY_DEFAULT;
+- **SE_GROUP_LOGON_ID** — --- ## SE_GROUP_LOGON_ID const win32security.SE_GROUP_LOGON_ID;
+- **SE_GROUP_MANDATORY** — --- ## SE_GROUP_MANDATORY const win32security.SE_GROUP_MANDATORY;
+- **SE_GROUP_OWNER** — --- ## SE_GROUP_OWNER const win32security.SE_GROUP_OWNER;
+- **SE_GROUP_RESOURCE** — --- ## SE_GROUP_RESOURCE const win32security.SE_GROUP_RESOURCE;
+- **SE_GROUP_USE_FOR_DENY_ONLY** — --- ## SE_GROUP_USE_FOR_DENY_ONLY const win32security.SE_GROUP_USE_FOR_DENY_ONLY;
+- **SE_KERNEL_OBJECT** — --- ## SE_KERNEL_OBJECT const win32security.SE_KERNEL_OBJECT;
+- **SE_LMSHARE** — --- ## SE_LMSHARE const win32security.SE_LMSHARE;
+- **SE_OWNER_DEFAULTED** — --- ## SE_OWNER_DEFAULTED const win32security.SE_OWNER_DEFAULTED;
+- **SE_PRINTER** — --- ## SE_PRINTER const win32security.SE_PRINTER;
+- **SE_PRIVILEGE_ENABLED** — --- ## SE_PRIVILEGE_ENABLED const win32security.SE_PRIVILEGE_ENABLED;
+- **SE_PRIVILEGE_ENABLED_BY_DEFAULT** — --- ## SE_PRIVILEGE_ENABLED_BY_DEFAULT const win32security.SE_PRIVILEGE_ENABLED_BY_DEFAULT;
+- **SE_PRIVILEGE_REMOVED** — --- ## SE_PRIVILEGE_REMOVED const win32security.SE_PRIVILEGE_REMOVED;
+- **SE_PRIVILEGE_USED_FOR_ACCESS** — --- ## SE_PRIVILEGE_USED_FOR_ACCESS const win32security.SE_PRIVILEGE_USED_FOR_ACCESS;
+- **SE_PROVIDER_DEFINED_OBJECT** — --- ## SE_PROVIDER_DEFINED_OBJECT const win32security.SE_PROVIDER_DEFINED_OBJECT;
+- **SE_REGISTRY_KEY** — --- ## SE_REGISTRY_KEY const win32security.SE_REGISTRY_KEY;
+- **SE_REGISTRY_WOW64_32KEY** — --- ## SE_REGISTRY_WOW64_32KEY const win32security.SE_REGISTRY_WOW64_32KEY;
+- **SE_SACL_AUTO_INHERITED** — --- ## SE_SACL_AUTO_INHERITED const win32security.SE_SACL_AUTO_INHERITED; win2k and up
+- **SE_SACL_DEFAULTED** — --- ## SE_SACL_DEFAULTED const win32security.SE_SACL_DEFAULTED;
+- **SE_SACL_PRESENT** — --- ## SE_SACL_PRESENT const win32security.SE_SACL_PRESENT;
+- **SE_SACL_PROTECTED** — --- ## SE_SACL_PROTECTED const win32security.SE_SACL_PROTECTED; win2k and up
+- **SE_SELF_RELATIVE** — --- ## SE_SELF_RELATIVE const win32security.SE_SELF_RELATIVE;
+- **SE_SERVICE** — --- ## SE_SERVICE const win32security.SE_SERVICE;
+- **SE_UNKNOWN_OBJECT_TYPE** — --- ## SE_UNKNOWN_OBJECT_TYPE const win32security.SE_UNKNOWN_OBJECT_TYPE;
+- **SE_WINDOW_OBJECT** — --- ## SE_WINDOW_OBJECT const win32security.SE_WINDOW_OBJECT;
+- **SE_WMIGUID_OBJECT** — --- ## SE_WMIGUID_OBJECT const win32security.SE_WMIGUID_OBJECT;
+- **STYPE_DEVICE** — --- ## STYPE_DEVICE const win32security.STYPE_DEVICE;
+- **STYPE_DISKTREE** — --- ## STYPE_DISKTREE const win32security.STYPE_DISKTREE;
+- **STYPE_IPC** — --- ## STYPE_IPC const win32security.STYPE_IPC;
+- **STYPE_PRINTQ** — --- ## STYPE_PRINTQ const win32security.STYPE_PRINTQ;
+- **STYPE_SPECIAL** — --- ## STYPE_SPECIAL const win32security.STYPE_SPECIAL;
+- **STYPE_TEMPORARY** — --- ## STYPE_TEMPORARY const win32security.STYPE_TEMPORARY;
+- **SUB_CONTAINERS_AND_OBJECTS_INHERIT** — --- ## SUB_CONTAINERS_AND_OBJECTS_INHERIT const win32security.SUB_CONTAINERS_AND_OBJECTS_INHERIT;
+- **SUB_CONTAINERS_ONLY_INHERIT** — --- ## SUB_CONTAINERS_ONLY_INHERIT const win32security.SUB_CONTAINERS_ONLY_INHERIT;
+- **SUB_OBJECTS_ONLY_INHERIT** — --- ## SUB_OBJECTS_ONLY_INHERIT const win32security.SUB_OBJECTS_ONLY_INHERIT;
+- **SUCCESSFUL_ACCESS_ACE_FLAG** — --- ## SUCCESSFUL_ACCESS_ACE_FLAG const win32security.SUCCESSFUL_ACCESS_ACE_FLAG;
+- **SYSTEM_AUDIT_ACE_TYPE** — --- ## SYSTEM_AUDIT_ACE_TYPE const win32security.SYSTEM_AUDIT_ACE_TYPE; System-audit ACE that uses the SYSTEM_AUDIT_ACE structure.
+- **SYSTEM_AUDIT_OBJECT_ACE_TYPE** — --- ## SYSTEM_AUDIT_OBJECT_ACE_TYPE const win32security.SYSTEM_AUDIT_OBJECT_ACE_TYPE;
+- **SecurityAnonymous** — --- ## SecurityAnonymous const win32security.SecurityAnonymous;
+- **SecurityDelegation** — --- ## SecurityDelegation const win32security.SecurityDelegation;
+- **SecurityIdentification** — --- ## SecurityIdentification const win32security.SecurityIdentification;
+- **SecurityImpersonation** — --- ## SecurityImpersonation const win32security.SecurityImpersonation;
+- **SidTypeAlias** — --- ## SidTypeAlias const win32security.SidTypeAlias; Indicates an alias SID.
+- **SidTypeComputer** — --- ## SidTypeComputer const win32security.SidTypeComputer; Indicates a computer SID
+- **SidTypeDeletedAccount** — --- ## SidTypeDeletedAccount const win32security.SidTypeDeletedAccount; Indicates an SID for a deleted account.
+- **SidTypeDomain** — --- ## SidTypeDomain const win32security.SidTypeDomain; Indicates a domain SID.
+- **SidTypeGroup** — --- ## SidTypeGroup const win32security.SidTypeGroup; Indicates a group SID.
+- **SidTypeInvalid** — --- ## SidTypeInvalid const win32security.SidTypeInvalid; Indicates an invalid SID.
+- **SidTypeUnknown** — --- ## SidTypeUnknown const win32security.SidTypeUnknown; Indicates an unknown SID type.
+- **SidTypeUser** — --- ## SidTypeUser const win32security.SidTypeUser; Indicates a user SID.
+- **SidTypeWellKnownGroup** — --- ## SidTypeWellKnownGroup const win32security.SidTypeWellKnownGroup; Indicates an SID for a well-known group.
+- **TOKEN_ADJUST_DEFAULT** — --- ## TOKEN_ADJUST_DEFAULT const win32security.TOKEN_ADJUST_DEFAULT; Required to change the default ACL, primary group, or owner of an access token.
+- **TOKEN_ADJUST_GROUPS** — --- ## TOKEN_ADJUST_GROUPS const win32security.TOKEN_ADJUST_GROUPS; Required to change the groups specified in an access token.
+- **TOKEN_ADJUST_PRIVILEGES** — --- ## TOKEN_ADJUST_PRIVILEGES const win32security.TOKEN_ADJUST_PRIVILEGES; Required to change the privileges specified in an access token.
+- **TOKEN_ALL_ACCESS** — --- ## TOKEN_ALL_ACCESS const win32security.TOKEN_ALL_ACCESS; Combines the STANDARD_RIGHTS_REQUIRED standard access rights and all individual access rights for tokens.
+- **TOKEN_ASSIGN_PRIMARY** — --- ## TOKEN_ASSIGN_PRIMARY const win32security.TOKEN_ASSIGN_PRIMARY; Required to attach a primary token to a process in addition to the SE_CREATE_TOKEN_NAME privilege.
+- **TOKEN_DUPLICATE** — --- ## TOKEN_DUPLICATE const win32security.TOKEN_DUPLICATE; Required to duplicate an access token.
+- **TOKEN_EXECUTE** — --- ## TOKEN_EXECUTE const win32security.TOKEN_EXECUTE; Combines the STANDARD_RIGHTS_EXECUTE standard access rights and the TOKEN_IMPERSONATE access right.
+- **TOKEN_IMPERSONATE** — --- ## TOKEN_IMPERSONATE const win32security.TOKEN_IMPERSONATE; Required to attach an impersonation access token to a process.
+- **TOKEN_QUERY** — --- ## TOKEN_QUERY const win32security.TOKEN_QUERY; Required to query the contents of an access token.
+- **TOKEN_QUERY_SOURCE** — --- ## TOKEN_QUERY_SOURCE const win32security.TOKEN_QUERY_SOURCE; Required to query the source of an access token.
+- **TOKEN_READ** — --- ## TOKEN_READ const win32security.TOKEN_READ; Combines the STANDARD_RIGHTS_READ standard access rights and the TOKEN_QUERY access right.
+- **TOKEN_WRITE** — --- ## TOKEN_WRITE const win32security.TOKEN_WRITE; Combines the STANDARD_RIGHTS_WRITE standard access rights and the TOKEN_ADJUST_PRIVILEGES, TOKEN_ADJUST_GROUPS, and TOKEN_ADJUST_DEFAULT access rights.
+- **TRUSTEE_BAD_FORM** — --- ## TRUSTEE_BAD_FORM const win32security.TRUSTEE_BAD_FORM;
+- **TRUSTEE_IS_ALIAS** — --- ## TRUSTEE_IS_ALIAS const win32security.TRUSTEE_IS_ALIAS;
+- **TRUSTEE_IS_COMPUTER** — --- ## TRUSTEE_IS_COMPUTER const win32security.TRUSTEE_IS_COMPUTER;
+- **TRUSTEE_IS_DELETED** — --- ## TRUSTEE_IS_DELETED const win32security.TRUSTEE_IS_DELETED;
+- **TRUSTEE_IS_DOMAIN** — --- ## TRUSTEE_IS_DOMAIN const win32security.TRUSTEE_IS_DOMAIN;
+- **TRUSTEE_IS_GROUP** — --- ## TRUSTEE_IS_GROUP const win32security.TRUSTEE_IS_GROUP;
+- **TRUSTEE_IS_INVALID** — --- ## TRUSTEE_IS_INVALID const win32security.TRUSTEE_IS_INVALID;
+- **TRUSTEE_IS_NAME** — --- ## TRUSTEE_IS_NAME const win32security.TRUSTEE_IS_NAME;
+- **TRUSTEE_IS_OBJECTS_AND_NAME** — --- ## TRUSTEE_IS_OBJECTS_AND_NAME const win32security.TRUSTEE_IS_OBJECTS_AND_NAME;
+- **TRUSTEE_IS_OBJECTS_AND_SID** — --- ## TRUSTEE_IS_OBJECTS_AND_SID const win32security.TRUSTEE_IS_OBJECTS_AND_SID;
+- **TRUSTEE_IS_SID** — --- ## TRUSTEE_IS_SID const win32security.TRUSTEE_IS_SID;
+- **TRUSTEE_IS_UNKNOWN** — --- ## TRUSTEE_IS_UNKNOWN const win32security.TRUSTEE_IS_UNKNOWN;
+- **TRUSTEE_IS_USER** — --- ## TRUSTEE_IS_USER const win32security.TRUSTEE_IS_USER;
+- **TRUSTEE_IS_WELL_KNOWN_GROUP** — --- ## TRUSTEE_IS_WELL_KNOWN_GROUP const win32security.TRUSTEE_IS_WELL_KNOWN_GROUP;
+- **TokenImpersonation** — --- ## TokenImpersonation const win32security.TokenImpersonation;
+- **TokenPrimary** — --- ## TokenPrimary const win32security.TokenPrimary;
+- **TrustedControllersInformation** — --- ## TrustedControllersInformation const win32security.TrustedControllersInformation;
+- **TrustedDomainAuthInformation** — --- ## TrustedDomainAuthInformation const win32security.TrustedDomainAuthInformation;
+- **TrustedDomainAuthInformationInternal** — --- ## TrustedDomainAuthInformationInternal const win32security.TrustedDomainAuthInformationInternal;
+- **TrustedDomainFullInformation** — --- ## TrustedDomainFullInformation const win32security.TrustedDomainFullInformation;
+- **TrustedDomainFullInformation2Internal** — --- ## TrustedDomainFullInformation2Internal const win32security.TrustedDomainFullInformation2Internal;
+- **TrustedDomainFullInformationInternal** — --- ## TrustedDomainFullInformationInternal const win32security.TrustedDomainFullInformationInternal;
+- **TrustedDomainInformationBasic** — --- ## TrustedDomainInformationBasic const win32security.TrustedDomainInformationBasic;
+- **TrustedDomainInformationEx** — --- ## TrustedDomainInformationEx const win32security.TrustedDomainInformationEx;
+- **TrustedDomainInformationEx2Internal** — --- ## TrustedDomainInformationEx2Internal const win32security.TrustedDomainInformationEx2Internal;
+- **TrustedDomainNameInformation** — --- ## TrustedDomainNameInformation const win32security.TrustedDomainNameInformation;
+- **TrustedPasswordInformation** — --- ## TrustedPasswordInformation const win32security.TrustedPasswordInformation;
+- **TrustedPosixOffsetInformation** — --- ## TrustedPosixOffsetInformation const win32security.TrustedPosixOffsetInformation;
+- **UNPROTECTED_DACL_SECURITY_INFORMATION** — --- ## UNPROTECTED_DACL_SECURITY_INFORMATION const win32security.UNPROTECTED_DACL_SECURITY_INFORMATION;
+- **UNPROTECTED_SACL_SECURITY_INFORMATION** — --- ## UNPROTECTED_SACL_SECURITY_INFORMATION const win32security.UNPROTECTED_SACL_SECURITY_INFORMATION;
