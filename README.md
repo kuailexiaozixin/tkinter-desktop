@@ -1,8 +1,24 @@
 # tkinter-desktop
 
-原生 **Tkinter / ttk** 桌面应用的全生命周期 AI 技能（Agent Skill）。从需求澄清、MVC 架构分层、界面设计、编码、线程与异步、SQLite 数据层、运行验证到 PyInstaller 打包交付，一次跑通，最终交付物是**原生桌面 EXE**（无浏览器、无本地 HTTP 服务）。
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![skills.sh](https://skills.sh/b/kuailexiaozixin/tkinter-desktop)](https://skills.sh/kuailexiaozixin/tkinter-desktop)
 
-> 本技能以 `SKILL.md` 为入口，面向 AI Agent（如 Claude / 灵犀等支持 AgentSkills 规范的助手）。AI 读取后即可按标准化流程辅助开发 Tkinter 桌面应用。
+原生 **Tkinter / ttk** 桌面应用的全生命周期 **Agent Skill**——从需求澄清、MVC 架构分层、界面设计、编码、线程与异步、SQLite 数据层、运行验证到 PyInstaller 打包交付，一次跑通，最终交付物是**原生桌面 EXE**（无浏览器、无本地 HTTP 服务）。
+
+> **Agent Skill 是什么？** Skill 是「指令 + 脚本 + 资源」的文件夹，AI Agent 会动态发现并加载它，以在特定任务上表现得更好。本仓库遵循 [Agent Skills 开放标准](https://agentskills.io)——**一次编写，处处使用**，可被 Claude、灵犀、Codex 等支持该标准的助手直接读取。
+
+---
+
+## 这是什么
+
+本技能为 AI Agent 提供一套**标准化、可复现**的 Tkinter 桌面应用开发流程，解决「原生 GUI 项目结构混乱、可测试性差、打包反复踩坑」的痛点：
+
+- **界面以 `.ui` 为唯一载体**（pygubu Builder 加载），业务/数据层保持零第三方依赖
+- **MVC 分层 + Repository 数据模式**，Controller 可无头测试
+- **内置完整质量门禁**：pytest + 无头 GUI 冒烟 + release gate，交付前自动校验
+- **Win32 原生能力**（ctypes / pywin32）可选增强
+
+适合：库存管理、图像批处理、工具软件、内部系统等**不依赖浏览器**的桌面程序。
 
 ---
 
@@ -16,18 +32,22 @@
 | 打包 | **PyInstaller** | 产出原生 Windows EXE |
 | 原生能力 | ctypes / pywin32 | 可选增强（Win32 消息循环、资源管理等） |
 
-**架构铁律**：界面以 `.ui` 为唯一载体；非界面部分的业务/数据层保持**零第三方依赖**。第三方增强（tksheet / tkchart 等）按需合法引入，打包时补 `hidden-import`。
-
 ---
 
-## 特性
+## 安装 / 使用
 
-- **MVC 分层**：视图（`.ui`）与控制器、数据仓库（Repository）解耦，可测试性高
-- **pygubu 单一界面方案**：AI 只写 `.ui` + 用 `pygubu.Builder` 校验/加载，自动化闭环完整
-- **内置 SQLite 数据层**：`Repository` 模式，`:memory:` 便于集成测试
-- **完整质量门禁**：pytest + 无头 GUI 冒烟测试 + release gate，交付前自动校验
-- **Win32 原生能力**：ctypes 消息循环、资源管理，可做原生 Windows 增强
-- **参考实现优先**：`examples/` 提供可直接参考/改造的真实项目
+Agent Skills 通常已内置在支持该标准的助手中；也可将本仓库添加为 **Skill / Plugin**：
+
+```bash
+# 以支持 AgentSkills 的助手为例（如 Claude Code）
+/plugin marketplace add kuailexiaozixin/tkinter-desktop
+```
+
+安装后，只需对助手说一句，例如：
+
+> 「用 tkinter-desktop 技能，帮我做一个带 SQLite 的库存管理桌面程序，打包成 EXE。」
+
+助手会读取 `SKILL.md`，按其中的工作流与铁律自动完成从脚手架到打包的完整链路。
 
 ---
 
@@ -37,15 +57,10 @@
 tkinter-desktop/
 ├── SKILL.md              # 技能主入口（工作流 + 铁律）
 ├── CHANGELOG.md          # 版本变更记录
+├── LICENSE               # MIT 许可证
+├── README.md             # 本文件
 ├── references/           # 深度参考（架构、UI、打包、质量门禁、Win32 等）
 ├── examples/             # 参考实现（优先参考，非必要不自造轮子）
-│   ├── inventory-manager # 库存管理示例
-│   ├── bulk-image-processor
-│   ├── native-win32      # 原生 Win32 示例
-│   ├── pygubu-designer
-│   ├── tkinter-designer
-│   ├── thonny / idle     # 第三方开源项目参考
-│   └── README.md
 ├── templates/            # 项目脚手架模板（含启动.bat 等）
 ├── scripts/              # 自动化脚本（构建、测试、门禁、UI 设计）
 ├── docs/                 # 交付清单、术语表、排障
@@ -59,10 +74,10 @@ tkinter-desktop/
 
 ## 快速开始（给 Agent）
 
-1. **读取入口**：`SKILL.md` 定义了完整工作流与铁律，是执行的最高依据。
+1. **读取入口**：`SKILL.md` 定义完整工作流与铁律，是执行的最高依据。
 2. **写控件代码前**：必读 `references/official-docs/` 的 ttk 官方转档（HARD-GATE）。
 3. **界面设计**：只用 pygubu 写 `.ui` + `pygubu.Builder` 加载，参考 `pygubu/` 子技能。
-4. **生成项目**：用 `templates/` 脚手架模板（含 `bootstrap_project.ps1` / `run_dev.py`）初始化。
+4. **生成项目**：用 `templates/` 脚手架（含 `bootstrap_project.ps1` / `run_dev.py`）初始化。
 5. **开发迭代**：Controller + Repository 分层编码，线程用 `after()` 调度回 UI。
 6. **质量门禁**：`pytest` + `scripts/smoke_test_gui.py`（无头 GUI 冒烟）+ `release_gate.py`。
 7. **打包**：`scripts/build_windows_exe.ps1` 产出 EXE，按 `references/08-packaging.md` 补 hidden-import。
@@ -71,10 +86,21 @@ tkinter-desktop/
 
 ---
 
-## 许可与来源
+## 贡献
 
-- 由 AI Agent 按 AgentSkills 规范创建并维护，`author: agent`，`platform: windows`
-- 开源用于学习与二次开发，欢迎提交 Issue / PR 完善工作流
+欢迎提交 Issue 与 PR 完善工作流。请遵循：
+
+- 改动技能核心逻辑时，同步更新 `SKILL.md`、`references/` 与 `CHANGELOG.md`
+- 新增参考实现请放入 `examples/`，并登记到 `examples/README.md`
+- 保持「界面 `.ui` + 业务零依赖 + 质量门禁」三条铁律不被破坏
+
+详见 [contributing.md](contributing.md)。
+
+---
+
+## 许可证
+
+[MIT](LICENSE) © kuailexiaozixin
 
 ---
 
