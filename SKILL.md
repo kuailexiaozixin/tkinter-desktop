@@ -11,6 +11,13 @@ version: "1.7.10"
 author: agent
 agent_created: true
 platform: windows
+metadata:
+  openclaw:
+    requires:
+      bins:
+        - python
+    homepage: https://github.com/kuailexiaozixin/tkinter-desktop
+    emoji: "🖥️"
 ---
 
 # tkinter-desktop
