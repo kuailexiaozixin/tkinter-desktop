@@ -98,6 +98,12 @@ tkinter-desktop/
 
 ---
 
+## 第三方内容与合规
+
+`examples/` 目录下以完整源码形式收载了若干**第三方开源项目**（Thonny、IDLE、pygubu-designer、Tkinter-Designer 等），它们各自保留原始许可证与版权声明，与本仓库 MIT 许可相互独立。完整来源、许可证与使用注意详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+---
+
 ## 许可证
 
 [MIT](LICENSE) © kuailexiaozixin
