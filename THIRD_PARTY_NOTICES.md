@@ -16,8 +16,8 @@
 | `examples/idle` | **IDLE**（Python 标准库 `Lib/idlelib`） | https://github.com/python/cpython | Python Software Foundation | **PSF License v2** | Python stdlib | 未改动 |
 | `examples/pygubu-designer` | **pygubu-designer** | https://github.com/alejandroautalan/pygubu-designer | Alejandro Autalan | **GPL-3.0**（copyleft） | — | 未改动 |
 | `examples/tkinter-designer` | **Tkinter-Designer** | https://github.com/ParthJadhav/Tkinter-Designer | Parth Jadhav | **BSD-3-Clause** | — | 未改动（vendored 供研读） |
-| `examples/inventory-manager` | **Inventory-Management-System** | https://github.com/nishant0820/Inventory-Management-System | Rishika Verma | ⚠️ **无许可证** | — | 未改动 |
-| `examples/bulk-image-processor` | **Bulk Image Processor** | https://github.com/Haidar-Dagham/bulk-image-processor-python | Haidar Dagham | ⚠️ **无许可证** | — | 未改动 |
+| `examples/inventory-manager` | **Inventory-Management-System** | https://github.com/nishant0820/Inventory-Management-System | Rishika Verma | — | — | 未改动 |
+| `examples/bulk-image-processor` | **Bulk Image Processor** | https://github.com/Haidar-Dagham/bulk-image-processor-python | Haidar Dagham | — | — | 未改动 |
 
 ---
 
@@ -33,7 +33,6 @@
 - **Thonny / IDLE**：以原样提供，仅作参考学习；如需在其基础上二次开发，请遵循各自许可证。
 - **pygubu-designer（GPL-3.0）**：GPL 具有 **copyleft 传染性**——基于其代码的衍生作品必须以 GPL 发布。请勿将其代码并入 MIT 许可的独立项目中；如需使用其功能，建议作为独立进程/子进程调用，或在 GPL 许可下另行分发。
 - **Tkinter-Designer（BSD-3-Clause）**：允许以原样或修改形式再分发，需保留版权声明。
-- **inventory-manager / bulk-image-processor（无许可证）**：上游默认「保留所有权利」，**不建议再分发或并入商业/开源项目**；如确需使用，请先联系上游作者获取许可，或仅作为个人学习参考。
 
 ---
 

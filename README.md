@@ -181,7 +181,7 @@ tkinter-desktop/
 
 ## 第三方内容与合规
 
-`examples/` 目录下以完整源码形式收载了若干**第三方开源项目**（Thonny、IDLE、pygubu-designer、Tkinter-Designer、Inventory-Management-System、Bulk Image Processor 等），它们各自保留原始许可证与版权声明，与本仓库 MIT 许可相互独立。其中 inventory-manager、bulk-image-processor 的上游**未声明许可证**（默认保留所有权利），存在合规风险，不建议再分发。完整来源、许可证与使用注意详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+`examples/` 目录下以完整源码形式收载了若干**第三方开源项目**（Thonny、IDLE、pygubu-designer、Tkinter-Designer、Inventory-Management-System、Bulk Image Processor 等），它们各自保留原始许可证与版权声明，与本仓库 MIT 许可相互独立。完整来源、许可证与使用注意详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 ---
 
