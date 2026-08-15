@@ -1,0 +1,10 @@
+# dsh-tkinter-desktop bundle patch — registers the tkinter-desktop skill provider.
+#
+# When this bundle is listed in a profile's dsh.profile.bundles, this insert
+# mounts the plugin that registers the embedded tkinter-desktop skill on
+# ctx.skills. The `name` below is the package name; Node resolves it to this
+# package's index.js, which exports the Cordis plugin (name/apply/inject).
+
+- insert:
+    - id: tkinter-desktop
+      name: dsh-tkinter-desktop
