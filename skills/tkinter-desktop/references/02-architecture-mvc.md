@@ -142,6 +142,22 @@ class MainController:
 3. **界面地图**：Notebook 有哪些 Tab、每个 Tab 的主控件（表格/表单/按钮组）、
    模态对话框清单
 
+## 模块化 · 关注点分离 · 高内聚低耦合
+
+MVC 不只是三个目录，它是**模块化与关注点分离**在 Tkinter 里的落点。把下面四条当铁律：
+
+1. **单一职责（高内聚）**：一个 View 类只管一个页面/Tab；一个 Controller 只管一个功能的交互编排；一个 Model 服务只做一类领域计算。超过 500 行就拆，绝不养 God-class。
+2. **依赖单向（低耦合）**：View 不 import Model 内部、不写 SQL；Controller 是唯一"装配者"（持有 View + Model）；Model 谁都不持有。任何"互相引用、绕层调用"都是坏味道。
+3. **关注点分离**：界面（View）、业务规则（Model）、数据访问（Repository）、线程调度（Controller）各司其职；SQL 只出现在 Repository，控件操作只出现在 View，规则只出现在 Model。
+4. **公共逻辑归位**：跨模块复用的辅助（config、logging、DPI、组件工厂）抽到 `common/`，禁止各 View/Controller copy-paste。
+
+**落地清单（写完一个功能自检）**：
+- [ ] 这个类只做一件事？有没有超过 500 行？
+- [ ] View 里有没有 SQL / 业务 if-else？
+- [ ] Model 有没有 `import tkinter`？
+- [ ] 两个模块有没有互相 import（循环依赖）？
+- [ ] 重复的辅助代码抽到 `common/` 了吗？
+
 ## 常见反模式
 
 | 反模式 | 症状 | 纠正 |

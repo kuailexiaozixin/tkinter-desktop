@@ -1,6 +1,6 @@
 {
   "name": "dsh-tkinter-desktop",
-  "version": "1.7.10",
+  "version": "1.8.0",
   "description": "tkinter-desktop skill as a distributable DeepSeek Harness (dsh) Cordis Bundle plugin. Registers the tkinter-desktop Agent Skill (full repo, self-contained) as an embedded skill provider on ctx.skills.",
   "type": "module",
   "main": "index.js",

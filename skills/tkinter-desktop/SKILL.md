@@ -7,7 +7,7 @@ description: >
   界面默认以 `.ui` 定义、运行期用 pygubu Builder 加载。
   当用户提到"Tkinter""ttk""Tk 界面""原生桌面""不依赖浏览器的桌面程序"
   "Python 自带 GUI""基于 .ui 的 tkinter 应用"时使用本技能。
-version: "1.7.10"
+version: "1.8.0"
 author: agent
 agent_created: true
 platform: windows
@@ -396,6 +396,27 @@ PyInstaller 打包成 EXE（双击即用，--windowed 无黑框）
 - 用户问"怎么打包成 exe"时，默认理解为"请 AI 帮我打包并验证产物"
 
 ## 代码与结构原则
+
+### 架构分层铁律（MVC）
+
+所有 `tkinter-desktop` 项目强制按 **MVC（Model-View-Controller）** 分层，依赖方向**单向**：View 持有控件、Controller 持有 View+Model、Model 谁也不持有；**Model 层零 tkinter 依赖**（可测试性根基）：
+
+```
+View（views/）
+  │  只建控件、摆布局、暴露 refresh()；不写 SQL、不写业务规则
+  ▼
+Controller（controllers/）
+  │  事件处理：收集 View 输入 → 调 Model → 把结果喂回 View.refresh()
+  │  线程调度也在这层（worker 线程 + queue + after）
+  ▼
+Model（models/）
+     业务规则 + Repository（SQL）+ 领域计算；★ 禁止 import tkinter
+```
+
+- **模块化**：按业务功能拆 `models/`、`views/`、`controllers/` 子模块，一个 View 类只管一个页面/Tab；单文件超 500 行主动拆分。
+- **关注点分离**：界面（View）、业务规则（Model）、数据访问（Repository）、线程调度（Controller）各司其职，禁止把 SQL/业务逻辑/控件操作塞进同一个巨型类。
+- **高内聚低耦合**：Model 不依赖 View，View 不依赖 Model 内部；跨页面联动走 App 级中介或事件总线；公共逻辑抽 `common/`（config/logging/ui 工厂）复用，消除 copy-paste。
+- 完整分层与接线模式见 `references/02-architecture-mvc.md`；数据层 Repository 见 `references/06-data-layer-sqlite.md`。
 
 - 新项目使用 `src` 结构，MVC 目录：`models/`、`views/`、`controllers/`、`common/`
 - 业务逻辑（Model）零 tkinter 依赖——这是可测试性的根基

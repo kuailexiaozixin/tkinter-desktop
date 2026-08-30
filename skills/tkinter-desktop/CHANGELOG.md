@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.8.0 (2026-08-30)
+
+### 新增
+- **架构分层铁律（MVC）**：SKILL.md 新增"代码与结构原则 > 架构分层"章节，明确 MVC 单向依赖、Model 零 tkinter 依赖；强调模块化、关注点分离、高内聚低耦合。
+- `references/02-architecture-mvc.md` 新增"模块化 · 关注点分离 · 高内聚低耦合"章节：单一职责、依赖单向、关注点分离、公共逻辑归位，附落地自检清单。
+- 强化 `references/07-project-structure.md` 与 MVC 目录映射表达。
+
+### 修改
+- 更新 `SKILL.md`：架构分层铁律指向 `references/02-architecture-mvc.md`、`references/06-data-layer-sqlite.md`。
+
 ## 1.7.25 (2026-08-03)
 - **发布门禁瘦身 + pywinauto 回退段硬化验证循环纪律（形式审查减重约 40%）**。
   - `scripts/release_gate.py`：门禁从「4 步全 REQUIRED」精简为「2 步硬门禁（pytest + 无头 GUI 冒烟，REQUIRED 失败即非零退出）+ 2 项 CI 建议项（verify_imports / check_refs，ADVISORY，失败只告警不阻塞）」。`verify_imports` 由 `find_spec` 的 FAIL 降级为 WARNING（与 pytest+smoke 实际导入重复，不再阻塞）；`check_refs`（仅 `compile` 语法、不执行）维持 WARNING。`run()` 拆为硬门禁段与 CI 建议段两段输出，`--advisory-only` 可只跑建议项；更新模块 docstring 与退出码说明。实质防护未丢（逻辑 + 控件级仍每次必跑），形式审查负担降约 40%。
