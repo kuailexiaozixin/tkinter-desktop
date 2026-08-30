@@ -7,7 +7,7 @@ description: >
   界面默认以 `.ui` 定义、运行期用 pygubu Builder 加载。
   当用户提到"Tkinter""ttk""Tk 界面""原生桌面""不依赖浏览器的桌面程序"
   "Python 自带 GUI""基于 .ui 的 tkinter 应用"时使用本技能。
-version: "1.8.0"
+version: "1.8.2"
 author: agent
 agent_created: true
 platform: windows
