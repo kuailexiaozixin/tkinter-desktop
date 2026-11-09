@@ -170,6 +170,8 @@ PyInstaller 打包成 EXE（双击即用，--windowed 无黑框）
 - **GUI 行为回归（tkintertester，真实事件环内代码驱动、确定性、CI 友好）**：
   `./references/17-tkintertester.md`
 - **TDD 方法论与冒烟体系**（Red-Green-Refactor / Prove-It / 测试金字塔 / 发布门禁）：
+- **调试纪律（Debug 失败闭环）**（复现→定位→修复→回归→沉淀 / Prove-It / Flaky / 干净复测）：
+  `./references/18-debug-discipline.md`
   `./references/14-tdd-methodology.md`
 - GUI 冒烟脚本（无头驱动真实控件断言）：`./scripts/smoke_test_gui.py`（通用模板，覆写 `build_app()` 即用）
 - **发布门禁编排器**（2 步硬门禁：pytest → 冒烟；外加 2 项 CI 建议项：导入检查 / 文档代码块语法检查，失败只告警不阻塞）：
@@ -336,6 +338,20 @@ PyInstaller 打包成 EXE（双击即用，--windowed 无黑框）
   `ctypes.windll.shcore.SetProcessDpiAwareness(1)`（详见 03-ui-design.md）
 
 ### 质量
+
+**质量体系三层心智图（Check / Test / Debug，唯一参照）**：
+
+```
+写代码 → Check（静态关卡：py_compile/导入/Ruff，不运行完整应用）
+       → Test（动态验证：pytest/无头 GUI 冒烟/EXE 冒烟/tkintertester，运行真实代码）
+       → 失败 → Debug（复现→定位→修复→回归→沉淀，见 references/18-debug-discipline.md）
+       → 全绿 → release_gate → 打包交付
+```
+
+- **Check 管「规约对不对」**：语法检查 / 导入测试 / Ruff / UI 禁令——快、零 GUI 依赖，写入后立即执行。
+- **Test 管「行为对不对」**：pytest（Model 单测）/ 无头 GUI 冒烟 / EXE 冒烟 / tkintertester 行为回归——运行真实代码路径。
+- **Debug 管「失败为什么、怎么修」**：任何 Check/Test 失败后进入 `references/18-debug-discipline.md` 闭环，绝不无测试修 bug、绝不「改了没验证」。
+
 
 - **一键开发验证门禁**：每次改码后必须运行 `python scripts/run_dev.py --fast`（语法+导入），
   提 PR 前跑 `python scripts/release_gate.py`（硬门禁 pytest + 冒烟，外加 CI 建议项：导入检查 / 文档代码块语法检查），禁止跳过硬门禁

@@ -50,12 +50,13 @@ class Gate:
     def check_pytest(self) -> dict:
         """Step 1: pytest 单元测试 + 集成测试。"""
         if self.skip_pytest:
-            return {"name": "pytest", "status": "SKIPPED", "detail": "--skip-pytest"}
+            return {"name": "pytest", "status": "SKIPPED", "detail": "--skip-pytest", "layer": "Test"}
 
         tests_dir = self.root / "tests"
         if not tests_dir.exists():
             return {"name": "pytest", "status": "WARNING",
-                    "detail": "tests/ 目录不存在（无 Model 层测试）"}
+                    "detail": "tests/ 目录不存在（无 Model 层测试）",
+                    "layer": "Test"}
 
         result = subprocess.run(
             [sys.executable, "-m", "pytest", "-q", "--tb=short", str(tests_dir)],
@@ -67,17 +68,19 @@ class Gate:
             "status": "PASS" if ok else "FAIL",
             "detail": result.stdout.strip()[-200:] if result.stdout else result.stderr[:200],
             "required": True,
+            "layer": "Test",
         }
 
     def check_smoke(self) -> dict:
         """Step 2: 无头 GUI 冒烟测试。"""
         if self.skip_smoke:
-            return {"name": "smoke_test_gui", "status": "SKIPPED", "detail": "--skip-smoke"}
+            return {"name": "smoke_test_gui", "status": "SKIPPED", "detail": "--skip-smoke", "layer": "Test"}
 
         smoke_script = self.root / "scripts" / "smoke_test_gui.py"
         if not smoke_script.exists():
             return {"name": "smoke_test_gui", "status": "WARNING",
-                    "detail": "scripts/smoke_test_gui.py 不存在（请先创建并覆写 build_app()）"}
+                    "detail": "scripts/smoke_test_gui.py 不存在（请先创建并覆写 build_app()）",
+                    "layer": "Test"}
 
         result = subprocess.run(
             [sys.executable, str(smoke_script)],
@@ -89,12 +92,13 @@ class Gate:
             "status": "PASS" if ok else "FAIL",
             "detail": (result.stdout + result.stderr).strip()[-300:],
             "required": True,
+            "layer": "Test",
         }
 
     def check_imports(self) -> dict:
         """Step 3: 验证所有 Python 模块可导入。"""
         if self.skip_imports:
-            return {"name": "verify_imports", "status": "SKIPPED", "detail": "--skip-imports"}
+            return {"name": "verify_imports", "status": "SKIPPED", "detail": "--skip-imports", "layer": "Check"}
 
         failures = []
         # 收集项目内所有 .py 文件（排除 __pycache__、venv、.git）
@@ -130,20 +134,23 @@ class Gate:
         if failures:
             return {"name": "verify_imports", "status": "WARNING",
                     "detail": f"{len(failures)} 个模块导入失败（CI 建议项，不阻塞门禁）:\n  " + "\n  ".join(failures[:10]),
-                    "required": False}
+                    "required": False,
+                    "layer": "Check"}
         return {"name": "verify_imports", "status": "PASS",
                 "detail": f"已检查 {len(py_files)} 个 .py 文件（CI 建议项）",
-                "required": False}
+                "required": False,
+                "layer": "Check"}
 
     def check_refs(self) -> dict:
         """Step 4: 检查 references/ 中代码片段的语法正确性。"""
         if self.skip_refs:
-            return {"name": "check_refs", "status": "SKIPPED", "detail": "--skip-refs"}
+            return {"name": "check_refs", "status": "SKIPPED", "detail": "--skip-refs", "layer": "Check"}
 
         refs_dir = self.root / "references"
         if not refs_dir.exists():
             return {"name": "check_refs", "status": "WARNING",
-                    "detail": "references/ 目录不存在"}
+                    "detail": "references/ 目录不存在",
+                    "layer": "Check"}
 
         errors = []
         for md_file in sorted(refs_dir.rglob("*.md")):
@@ -173,9 +180,11 @@ class Gate:
 
         if errors:
             return {"name": "check_refs", "status": "WARNING",
-                    "detail": f"{len(errors)} 个代码块有语法问题:\n  " + "\n  ".join(errors[:5])}
+                    "detail": f"{len(errors)} 个代码块有语法问题:\n  " + "\n  ".join(errors[:5]),
+                    "layer": "Check"}
         return {"name": "check_refs", "status": "PASS",
-                "detail": "references/ 代码块语法检查通过"}
+                "detail": "references/ 代码块语法检查通过",
+                "layer": "Check"}
 
     # ── 编排 ───────────────────────────────────────────────────
 
@@ -207,6 +216,8 @@ class Gate:
             result = fn()
             self.results.append(result)
             status = result["status"]
+            layer = result.get("layer", "?")
+            print(f"      [Layer: {layer}]")
             icon = {"PASS": "✓", "FAIL": "✗", "WARNING": "⚠", "SKIPPED": "⊘"}.get(status, "?")
             print(f"  {icon} {status}")
             if "detail" in result and status != "PASS":
@@ -226,6 +237,8 @@ class Gate:
                 result = fn()
                 self.results.append(result)
                 status = result["status"]
+                layer = result.get("layer", "?")
+                print(f"      [Layer: {layer}]")
                 icon = {"PASS": "✓", "FAIL": "✗", "WARNING": "⚠", "SKIPPED": "⊘"}.get(status, "?")
                 print(f"  {icon} {status}")
                 if "detail" in result and status != "PASS":

@@ -5,6 +5,10 @@
 ### 新增
 - **架构分层铁律（MVC）**：SKILL.md 新增"代码与结构原则 > 架构分层"章节，明确 MVC 单向依赖、Model 零 tkinter 依赖；强调模块化、关注点分离、高内聚低耦合。
 - `references/02-architecture-mvc.md` 新增"模块化 · 关注点分离 · 高内聚低耦合"章节：单一职责、依赖单向、关注点分离、公共逻辑归位，附落地自检清单。
+- 强化 `references/07-project-structure.md` 与 MVC 目录映射表达。
+
+### 修改
+- 更新 `SKILL.md`：架构分层铁律指向 `references/02-architecture-mvc.md`、`references/06-data-layer-sqlite.md`。
 
 ## 1.7.25 (2026-08-03)
 - **发布门禁瘦身 + pywinauto 回退段硬化验证循环纪律（形式审查减重约 40%）**。
