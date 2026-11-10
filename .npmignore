@@ -1,0 +1,55 @@
+# Machine-local or regenerable content — never ship inside the npm package.
+
+# version control / CI metadata
+.git/
+.gitattributes
+.github/
+
+# shared Python virtualenv (regenerated on first use; pins a host path)
+.venv/
+**/.venv/
+venv/
+**/venv/
+
+# stale backups kept only on the maintainer's machine
+.backup_*/
+**/.backup_*/
+
+# interpreter and packaging caches
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+**/*.egg-info/
+dist/
+**/dist/
+build/
+**/build/
+output/
+**/output/
+*.spec
+
+# tooling caches
+.pytest_cache/
+**/.pytest_cache/
+.mypy_cache/
+**/.mypy_cache/
+.ruff_cache/
+**/.ruff_cache/
+
+# Runtime state and logs.
+# NOTE: *.sqlite / data/ are deliberately NOT excluded — they are runnable
+# sample data the skill relies on.
+*.log
+**/*.log
+
+# dependencies
+node_modules/
+**/node_modules/
+
+# editors and OS
+.idea/
+.vscode/
+.DS_Store
+**/.DS_Store
+Thumbs.db

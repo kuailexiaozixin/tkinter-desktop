@@ -81,8 +81,8 @@ dsh web
 ```bash
 # 下载源码归档（zip 或 tar.gz）
 curl -L -o tkinter-desktop.zip \
-  https://github.com/kuailexiaozixin/tkinter-desktop/archive/refs/tags/v1.7.10.zip
-unzip tkinter-desktop.zip      # 得到 tkinter-desktop-1.7.10/（内含 SKILL.md）
+  https://github.com/kuailexiaozixin/tkinter-desktop/archive/refs/tags/v1.8.2.zip
+unzip tkinter-desktop.zip      # 得到 tkinter-desktop-1.8.2/（内含 SKILL.md）
 ```
 
 解压后有两种安装方式：
@@ -93,7 +93,7 @@ unzip tkinter-desktop.zip      # 得到 tkinter-desktop-1.7.10/（内含 SKILL.m
 
 ```bash
 mkdir -p ~/.dsh/skills
-mv tkinter-desktop-1.7.10 ~/.dsh/skills/tkinter-desktop
+mv tkinter-desktop-1.8.2 ~/.dsh/skills/tkinter-desktop
 dsh web    # 重启后即可通过 skill 工具加载
 ```
 
@@ -102,7 +102,7 @@ dsh web    # 重启后即可通过 skill 工具加载
 **方式二：作为 dsh 插件从本地目录安装**
 
 ```bash
-dsh plugin --profile web add /绝对路径/tkinter-desktop-1.7.10
+dsh plugin --profile web add /绝对路径/tkinter-desktop-1.8.2
 ```
 
 > `dsh plugin add` 支持本地目录路径（pnpm 语义），与从 npm 安装等价。
